@@ -1,0 +1,12 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Large source and generated data files
+data/raw/2025_full_year_by_month/
+data/processed/*.csv
+
+# Local notebook checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
