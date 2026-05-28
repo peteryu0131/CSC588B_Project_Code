@@ -1,0 +1,5 @@
+day_type,area_type,trip_count,share_within_day_type
+weekday,Downtown/Loop mask,1368043,0.3445096507517277
+weekend,Downtown/Loop mask,406792,0.25808694681197986
+weekday,Other areas,2602943,0.6554903492482723
+weekend,Other areas,1169390,0.7419130531880201
