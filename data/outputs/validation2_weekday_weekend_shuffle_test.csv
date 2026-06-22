@@ -1,0 +1,2 @@
+observed_profile_difference,mean_shuffled_difference,std_shuffled_difference,p_value,n_permutations,interpretation
+0.07258939513254238,0.0013248947029193157,0.0006050886041782262,0.000999000999000999,1000,Small p-value means observed weekday/weekend service-profile difference is larger than most random label shuffles.

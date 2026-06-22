@@ -1,0 +1,4 @@
+radius_m,profile_difference_l1,most_weekend_associated_service,most_weekend_associated_value,most_weekday_associated_service,most_weekday_associated_value,n_stations_used
+100,0.16417447658637452,recreation,0.06608551864663276,food_drink,-0.03398872892288654,20
+250,0.11826735689610095,recreation,0.038218494177701734,food_drink,-0.02846724027785863,20
+500,0.07582259245871177,recreation,0.019428198798364493,food_drink,-0.01824099152172061,20
