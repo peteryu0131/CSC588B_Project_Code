@@ -1,247 +1,153 @@
-# CSC588B Divvy Bike-share Pipeline
+# CSC588B Divvy Final Project
 
-Project topic:
+This repository contains the final notebook and supporting outputs for the CSC588B Divvy bike-share spatial mobility project.
 
-`Weekday and Weekend Differences in Shared Mobility Patterns: A Bike-Share Case Study`
+## Final Submission
 
-This project uses Python only. Do not use Excel for cleaning or analysis.
+Submit this notebook:
 
-## Folder Guide
+```text
+notebooks/Divvy_Final_Project_Clean.ipynb
+```
 
-This project separates raw data, processed data, summary tables, figures, notebooks, and scripts.
+Use this meeting/defense guide when explaining the notebook:
+
+```text
+notebooks/Divvy_Final_Project_Clean_Notebook_Guide.md
+```
+
+Do not submit this older merged notebook:
+
+```text
+notebooks/Divvy_Final_Project_Merged_Notebook.ipynb
+```
+
+The clean notebook has been executed successfully. The merged notebook is kept only as legacy work and may contain old path errors or unfinished cells.
+
+## Project Question
+
+How do weekday and weekend Divvy end-station patterns differ in Chicago, and what nearby urban service environments are associated with high-volume weekday and weekend destinations?
+
+The project treats an end station as a destination proxy. Nearby OpenStreetMap services describe the station environment; they do not prove individual rider intent or causality.
+
+## Main Pipeline
+
+```text
+Divvy trips
+-> cleaning and preprocessing
+-> weekday/weekend temporal stratification
+-> end-station aggregation
+-> baseline duration/distance distributions
+-> Top20 end-station overlap
+-> normalized spatial heatmaps
+-> coordinate-based OSM service profiles
+-> Top100 main service-profile analysis
+-> validation system
+-> weather secondary check
+-> discussion and limitations
+```
+
+## Key Results
+
+| Result | Value / interpretation |
+|---|---|
+| Cleaned trip rows | 5,547,168 |
+| Weekday share | 71.59% |
+| Weekend share | 28.41% |
+| Top20 weekday/weekend overlap | 55% |
+| Main OSM profile set | Top100 weekday/weekend union, 250m radius |
+| Top100 OSM covered return share | 63.63% |
+| Weekend-oriented stable service | `tourism` |
+| Weekday-oriented stable services | `food_drink`, `office`, `health` |
+| Label shuffle p-value | 0.2657, so do not claim overall statistical significance |
+| Station-demand randomization p-value | 0.0010, structured under station-total/global-share null |
+| Station-service permutation p-value | 0.0010, real station-service pairing is structured |
+| Weather rain-effect L1 | about 0.0089, secondary only |
+
+Final claim: weekday and weekend high-volume Divvy destination patterns differ spatially and are associated with different nearby OSM service environments. The conclusion is exploratory and associative, not causal.
+
+## Folder Structure
 
 ```text
 data/
-  raw/
-    2025_full_year_by_month/
-      202501-divvy-tripdata.csv
-      ...
-      202512-divvy-tripdata.csv
-    Weather Dataset Station Chicago Midway Airport IL US.csv
-
-  processed/
-    divvy_2025_cleaned.csv
-    dwell_proxy_2025.csv
-
-outputs/
-  cleaning_summary.csv
-  weekday_weekend_counts.csv
-  monthly_counts_by_day_type.csv
-  trip_summary_by_day_type.csv
-  dwell_proxy_summary_by_day_type.csv
-  daily_trip_weather_summary.csv
+  raw/                         original raw data
+  processed/                   generated cleaned trip-level data
+  outputs/                     older/intermediate cached tables
+  openmapdata/                 older OSM-related working files
 
 figures/
-  heatmap_start_locations_weekday_weekend.png
-  heatmap_start_locations_overall.png
-  trip_length_boxplot.png
-  trip_duration_boxplot.png
-  monthly_trip_counts_by_day_type.png
-  dwell_proxy_boxplot.png
-
-src/
-  01_combine_and_clean.py
-  02_eda_trip_patterns.py
-  03_dwell_proxy.py
-  04_spatial_heatmaps.py
-  05_optional_weather_merge.py
+  final_clean/                 final notebook figures
+  *.png, *.html                older/intermediate figures
 
 notebooks/
-  proposal_summary.ipynb
+  Divvy_Final_Project_Clean.ipynb
+  Divvy_Final_Project_Clean_Notebook_Guide.md
+  other notebooks              legacy/proposal/development work
+
+outputs/
+  final_clean/                 final notebook tables
+  osm_pois_chicago_services.csv local OSM cache needed by clean notebook
+  other root files             older/intermediate outputs
+
+src/
+  pipeline scripts from earlier project stages
+
+tests/
+  focused unit tests for reusable pipeline utilities
 ```
 
-## Raw Data
+## Important Final Outputs
 
-`data/raw/` contains only original, unprocessed datasets. Do not edit these files after downloading them.
-
-### Divvy Monthly Trip Files
-
-Location:
+Tables:
 
 ```text
-data/raw/2025_full_year_by_month/
+outputs/final_clean/final_results_summary.csv
+outputs/final_clean/validation_overview.csv
+outputs/final_clean/final_validation_decision_summary.csv
+outputs/final_clean/weekday_weekend_service_profile_comparison.csv
+outputs/final_clean/bootstrap_service_category_stability.csv
+outputs/final_clean/osm_coverage_bias_summary.csv
 ```
 
-Expected files:
+Figures:
 
 ```text
-202501-divvy-tripdata.csv
-202502-divvy-tripdata.csv
-...
-202512-divvy-tripdata.csv
+figures/final_clean/weekday_weekend_normalized_destination_heatmaps.png
+figures/final_clean/weekend_minus_weekday_destination_difference_map.png
+figures/final_clean/weekend_minus_weekday_service_difference.png
+figures/final_clean/bootstrap_service_category_ci.png
+figures/final_clean/topk_radius_l1_heatmap.png
 ```
 
-These files are the official monthly Chicago Divvy trip records. Each row is one trip. Important raw columns include:
+## Running The Final Notebook
 
-- `ride_id`: unique trip ID
-- `rideable_type`: bike type
-- `started_at`, `ended_at`: trip start and end timestamps
-- `start_station_name`, `start_station_id`: trip start station
-- `end_station_name`, `end_station_id`: trip end station
-- `start_lat`, `start_lng`: start coordinates
-- `end_lat`, `end_lng`: end coordinates
-- `member_casual`: rider type
-
-### Weather Data
-
-Location:
-
-```text
-data/raw/Weather Dataset Station Chicago Midway Airport IL US.csv
-```
-
-This is the NOAA daily weather file for Chicago Midway Airport. It is optional for the proposal and is mainly for final-project extension work. Important columns include:
-
-- `DATE`: weather date
-- `TMAX`: daily maximum temperature
-- `TMIN`: daily minimum temperature
-- `PRCP`: precipitation
-- `SNOW`: snowfall
-- `SNWD`: snow depth
-
-The optional weather script can also read the same file from:
-
-```text
-data/raw/weather/Weather Dataset Station Chicago Midway Airport IL US.csv
-```
-
-## Run Order
-
-Run these commands from the project root:
-
-```powershell
-python src/01_combine_and_clean.py
-python src/02_eda_trip_patterns.py
-python src/03_dwell_proxy.py
-python src/04_spatial_heatmaps.py
-python src/05_optional_weather_merge.py
-```
-
-The weather merge is optional and should be run after the core Divvy pipeline works.
-
-After the pipeline runs, open the proposal notebook:
-
-```text
-notebooks/proposal_summary.ipynb
-```
-
-The notebook is for writing and presentation only. It reads `outputs/` and `figures/`; it does not replace the scripts in `src/`.
-
-Use the Jupyter kernel named:
+Use the Jupyter kernel:
 
 ```text
 Python (CSC588B Project)
 ```
 
-This kernel points to the same miniconda Python environment used by the scripts.
+Command-line verification from the project root:
 
-## Processed Data
-
-`data/processed/` contains script-generated cleaned datasets. These files can be deleted and regenerated from `data/raw/`.
-
-### `data/processed/divvy_2025_cleaned.csv`
-
-Created by:
-
-```text
-src/01_combine_and_clean.py
+```powershell
+jupyter nbconvert --to notebook --execute --inplace notebooks\Divvy_Final_Project_Clean.ipynb --ExecutePreprocessor.timeout=900 --ExecutePreprocessor.kernel_name=csc588b-project
 ```
 
-This is the main cleaned trip-level dataset. Each row is one valid 2025 Divvy trip after timestamp, coordinate, duration, and distance filters.
-
-It keeps the original Divvy fields and adds:
-
-- `source_month`: source monthly CSV, such as `2025-01`
-- `trip_duration_minutes`: trip duration in minutes
-- `trip_length_km`: straight-line start-to-end distance from the haversine formula
-- `day_type`: `weekday` for Monday-Friday, `weekend` for Saturday-Sunday
-- `date`: trip start date
-- `month`: trip start month as a number
-- `hour`: trip start hour
-- `season`: `Winter`, `Spring`, `Summer`, or `Fall`
-
-### `data/processed/dwell_proxy_2025.csv`
-
-Created by:
+The clean notebook reads the processed Divvy file and local cached OSM/weather inputs, then writes final outputs into:
 
 ```text
-src/03_dwell_proxy.py
+outputs/final_clean/
+figures/final_clean/
 ```
-
-This file stores the station-level dwell time proxy. Each row represents an arrival event at a station and the next departure event from the same station.
-
-Important columns:
-
-- `station_id`, `station_name`: station used for the proxy calculation
-- `arrival_time`: time when a trip ended at the station
-- `departure_time`: next time a trip started from the same station
-- `dwell_time_minutes`: time between arrival and next departure
-- `day_type`: based on `arrival_time`
-- `date`: arrival date
-
-Important limitation: this is not bike-level dwell time because the public Divvy data does not include `bike_id`.
-
-## Summary Tables
-
-`outputs/` contains small CSV tables for reporting and proposal writing.
-
-- `cleaning_summary.csv`: row counts after each cleaning step. Use this to explain data filtering.
-- `weekday_weekend_counts.csv`: total weekday and weekend trip counts plus shares.
-- `monthly_counts_by_day_type.csv`: monthly trip counts split by weekday/weekend. Use this to show full-year coverage.
-- `trip_summary_by_day_type.csv`: count, mean, median, quartiles, min, and max for trip duration and trip length by day type.
-- `dwell_proxy_summary_by_day_type.csv`: count, mean, median, q1, and q3 for station-level dwell proxy by day type.
-- `daily_trip_weather_summary.csv`: optional daily Divvy summary merged with NOAA weather fields.
-
-## Figures
-
-`figures/` contains PNG files generated from the processed data.
-
-- `heatmap_start_locations_weekday_weekend.png`: side-by-side weekday/weekend start-location density. This is the strongest spatial proposal figure.
-- `heatmap_start_locations_overall.png`: overall start-location density.
-- `trip_length_boxplot.png`: weekday/weekend straight-line trip length comparison.
-- `trip_duration_boxplot.png`: weekday/weekend trip duration comparison.
-- `monthly_trip_counts_by_day_type.png`: monthly trip counts by day type.
-- `dwell_proxy_boxplot.png`: weekday/weekend station-level dwell time proxy comparison.
-
-## Best Proposal Outputs
-
-Use these first for the 2-page proposal:
-
-- `figures/heatmap_start_locations_weekday_weekend.png`
-- `figures/trip_length_boxplot.png`
-- `figures/monthly_trip_counts_by_day_type.png`
-- `outputs/trip_summary_by_day_type.csv`
-- `outputs/cleaning_summary.csv`
-
-The dwell proxy is useful, but describe it carefully:
-
-`station-level dwell time proxy = time from an end event at a station to the next start event at the same station`
-
-It is not bike-level dwell time because the public Divvy trip data does not include `bike_id`.
-
-## Important Data Note
-
-The cleaner intentionally accepts only full timestamps such as:
-
-```text
-2025-02-25 21:21:21.171
-```
-
-It rejects time-only values such as:
-
-```text
-23:54.5
-```
-
-This prevents pandas from accidentally parsing time-only strings as the current date. If `202501-divvy-tripdata.csv` contains time-only values, January rows will be removed by the timestamp filter. Replace that file with the original Divvy CSV if you need January included in weekday/weekend, monthly, and seasonal analysis.
-
-The cleaner also keeps only rows where `started_at` is in 2025. This removes a small number of cross-year records, such as trips starting on `2024-12-31`, so the analysis stays aligned with the 2025 full-year scope.
 
 ## Checks
 
-Run:
+Run these from the project root:
 
 ```powershell
 python -m unittest discover -s tests
-python -m py_compile src/*.py
+python -m py_compile src\*.py
+python -m json.tool notebooks\Divvy_Final_Project_Clean.ipynb > $null
 ```
+
+For the final project, the most important check is that `Divvy_Final_Project_Clean.ipynb` executes with zero notebook error outputs.

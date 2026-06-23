@@ -1,0 +1,30 @@
+end_station_name,end_lat,end_lng,return_count_weekday,return_count_weekend,total_return_count,heavy_label,topk_group,topk_union,search_radius_m,education,food_drink,health,office,other_amenity,recreation,retail,tourism,transit,total_services_all,total_services_interpretable
+Canal St & Adams St,41.879255,-87.639904,19724.0,1747.0,21471.0,weekday-heavy,weekday_only,20,500,2,108,6,20,1,2,31,9,120,299,298
+Canal St & Madison St,41.882409,-87.639767,26693.0,2608.0,29301.0,weekday-heavy,weekday_only,20,500,2,137,6,23,1,3,49,12,111,344,343
+Clark St & Armitage Ave,41.918305755768,-87.63628183370878,15407.0,8627.0,24034.0,weekday-heavy,weekend_only,20,500,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Elm St,41.90301732164141,-87.63152289470456,20810.0,8555.0,29365.0,weekday-heavy,overlap,20,500,0,58,2,1,1,0,57,2,75,196,195
+Clark St & Lincoln Ave,41.915689,-87.6346,14534.0,8838.0,23372.0,weekday-heavy,weekend_only,20,500,0,5,0,0,0,0,0,0,2,7,7
+Clinton St & Jackson Blvd,41.87831662050808,-87.64098109175531,21413.0,2302.0,23715.0,weekday-heavy,weekday_only,20,500,2,86,3,13,0,1,26,9,98,238,238
+Clinton St & Madison St,41.88275006331282,-87.64119022354309,25104.0,4057.0,29161.0,weekday-heavy,weekday_only,20,500,2,108,4,19,1,3,42,9,76,264,263
+Clinton St & Washington Blvd,41.883378993326986,-87.64117008864396,29100.0,1489.0,30589.0,weekday-heavy,weekday_only,20,500,1,100,3,18,1,4,38,8,67,240,239
+Daley Center Plaza,41.88424087537072,-87.62963348535213,18249.0,3266.0,21515.0,weekday-heavy,weekday_only,20,500,3,205,9,50,1,3,104,14,164,553,552
+DuSable Lake Shore Dr & Diversey Pkwy,41.932588,-87.636427,12317.0,7044.0,19361.0,weekday-heavy,weekend_only,20,500,0,0,0,0,0,0,0,0,0,0,0
+DuSable Lake Shore Dr & Monroe St,41.880958,-87.616743,20698.0,17218.0,37916.0,weekday-heavy,overlap,20,500,0,4,1,1,0,0,0,4,13,23,23
+DuSable Lake Shore Dr & North Blvd,41.911722,-87.626804,19730.0,14940.0,34670.0,weekday-heavy,overlap,20,500,0,3,1,2,0,0,1,2,20,29,29
+Dusable Harbor,41.88697599432289,-87.61281299950515,11732.0,8761.0,20493.0,weekday-heavy,weekend_only,20,500,0,8,0,0,0,0,4,19,14,45,45
+Franklin St & Monroe St,41.88031616332084,-87.63518440237203,18703.0,774.0,19477.0,weekday-heavy,weekday_only,20,500,0,166,5,43,1,1,52,17,142,427,426
+Indiana Ave & Roosevelt Rd,41.86788801019692,-87.6230410031074,13985.0,6983.0,20968.0,weekday-heavy,weekend_only,20,500,0,32,2,3,0,4,24,8,74,147,147
+Kingsbury St & Kinzie St,41.889172621529056,-87.63849963502554,31094.0,8919.0,40013.0,weekday-heavy,overlap,20,500,1,66,1,12,0,0,28,11,38,157,157
+McClurg Ct & Ohio St,41.892592119709725,-87.61728912591934,15303.0,6651.0,21954.0,weekday-heavy,weekend_only,20,500,4,72,5,5,0,5,22,9,56,178,178
+Michigan Ave & Oak St,41.90096039009614,-87.62377663865593,21157.0,13471.0,34628.0,weekday-heavy,overlap,20,500,0,72,1,5,1,1,129,11,53,273,272
+Millennium Park,41.8810317,-87.62408432,17129.0,10356.0,27485.0,weekday-heavy,overlap,20,500,4,123,7,24,1,1,86,26,149,421,420
+Montrose Harbor,41.963982,-87.638181,10026.0,7717.0,17743.0,weekday-heavy,weekend_only,20,500,0,0,0,0,0,0,0,0,0,0,0
+Navy Pier,41.892278,-87.612043,19160.0,15617.0,34777.0,weekday-heavy,overlap,20,500,0,24,1,0,0,0,12,21,36,94,94
+Orleans St & Merchandise Mart Plaza,41.888243,-87.63638999999999,16865.0,3074.0,19939.0,weekday-heavy,weekday_only,20,500,1,117,1,26,0,0,38,12,59,254,254
+Shedd Aquarium,41.86722596201104,-87.61535540410257,11191.0,8315.0,19506.0,weekday-heavy,weekend_only,20,500,0,3,0,0,0,0,0,18,18,39,39
+State St & Chicago Ave,41.896617200407526,-87.62857854366302,19184.0,6966.0,26150.0,weekday-heavy,overlap,20,500,2,131,1,9,1,5,142,10,83,384,383
+Streeter Dr & Grand Ave,41.892278002970286,-87.61204300164603,17854.0,12071.0,29925.0,weekday-heavy,overlap,20,500,0,24,1,0,0,0,12,21,36,94,94
+Theater on the Lake,41.926277,-87.630834,15407.0,12444.0,27851.0,weekday-heavy,weekend_only,20,500,0,0,0,0,0,0,0,0,0,0,0
+Wells St & Concord Ln,41.912133,-87.634656,18316.0,9219.0,27535.0,weekday-heavy,overlap,20,500,0,34,3,1,0,0,19,2,45,104,104
+Wells St & Elm St,41.903222,-87.634324,18124.0,8113.0,26237.0,weekday-heavy,overlap,20,500,0,54,2,1,1,1,30,0,81,170,169
+Wells St & Huron St,41.89478399980203,-87.6343724037867,17689.0,6052.0,23741.0,weekday-heavy,weekday_only,20,500,1,93,3,9,0,5,31,4,63,209,209

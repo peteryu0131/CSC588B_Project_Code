@@ -1,0 +1,9 @@
+comparison,profile_difference_l1
+weekday_weekend_structure_under_dry,0.11992316438652972
+weekday_weekend_structure_under_rainy,0.11540575258104006
+weekday_weekend_structure_under_mild,0.11804567326374027
+weekday_weekend_structure_under_cold,0.057401117931971404
+rain_effect_on_weekday,0.010742135662727272
+rain_effect_on_weekend,0.01525954746821693
+cold_effect_on_weekday,0.14129729188669526
+cold_effect_on_weekend,0.24153778199876452

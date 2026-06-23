@@ -1,0 +1,4 @@
+analysis_set,topk_union,union_station_count,stations_with_interpretable_osm_profile,station_coverage_share,covered_return_count,union_return_count,covered_return_share,osm_radius_m,other_amenity_policy
+top20_weekday_weekend_union,20,29,24,0.8275862068965517,650531.0,762892.0,0.8527170294091431,250,excluded from interpreted profiles; retained in raw counts
+top50_weekday_weekend_union,50,72,45,0.625,1045023.0,1524188.0,0.6856260513794886,250,excluded from interpreted profiles; retained in raw counts
+top100_weekday_weekend_union,100,129,75,0.5813953488372093,1436667.0,2257954.0,0.6362693836986936,250,excluded from interpreted profiles; retained in raw counts

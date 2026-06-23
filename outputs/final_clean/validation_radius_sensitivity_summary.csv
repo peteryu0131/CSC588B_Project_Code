@@ -1,0 +1,4 @@
+radius_m,profile_difference_l1,stations_used,covered_return_share,most_weekend_oriented_service,most_weekday_oriented_service
+100,0.13444660791603708,72,0.6109951752781501,transit,food_drink
+250,0.12306125346782058,75,0.6362693836986936,tourism,food_drink
+500,0.08854442756354024,77,0.6527099312032043,tourism,food_drink

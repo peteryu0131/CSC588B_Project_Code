@@ -1,0 +1,2 @@
+top20_union_count,covered_by_coordinate_osm_count,missing_coordinate_osm_count,covered_return_count,top20_union_return_count,covered_top20_union_return_share,missing_coordinate_osm_stations,osm_radius_m,other_amenity_policy
+29,24,5,650531.0,762892.0,0.8527170294091431,Clark St & Armitage Ave; Clark St & Lincoln Ave; DuSable Lake Shore Dr & Diversey Pkwy; Montrose Harbor; Theater on the Lake,250,excluded from interpreted profiles; retained in raw counts

@@ -1,0 +1,7 @@
+metric,value
+real_difference_score,0.12306125346782058
+randomization_mean,0.0010012969169257025
+randomization_95th_percentile,0.0017533226878370665
+p_value,0.000999000999000999
+n_randomizations,1000.0
+global_weekday_share,0.7355831239946348

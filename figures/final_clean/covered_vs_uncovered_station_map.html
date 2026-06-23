@@ -1,0 +1,3068 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2adb259d57a919b61ea773e4c09cad43 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2adb259d57a919b61ea773e4c09cad43" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2adb259d57a919b61ea773e4c09cad43 = L.map(
+                "map_2adb259d57a919b61ea773e4c09cad43",
+                {
+                    center: [41.90356443050612, -87.63723466440533],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c159e4e6f41ba9bad060a3551cec9dc1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c159e4e6f41ba9bad060a3551cec9dc1.addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+            var circle_marker_cef2ad5b544b7a6442ed19f68afeee9c = L.circleMarker(
+                [41.87772613, -87.65478743],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.15602618935163, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a5298d50ad6bc8ed003ccac440050865 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_841b07f3b4afb60b282ca367dec1ca34 = $(`<div id="html_841b07f3b4afb60b282ca367dec1ca34" style="width: 100.0%; height: 100.0%;"><b>Aberdeen St & Jackson Blvd</b><br>Covered: True<br>Total returns: 12939<br>Weekday returns: 9771<br>Weekend returns: 3168</div>`)[0];
+                popup_a5298d50ad6bc8ed003ccac440050865.setContent(html_841b07f3b4afb60b282ca367dec1ca34);
+            
+        
+
+        circle_marker_cef2ad5b544b7a6442ed19f68afeee9c.bindPopup(popup_a5298d50ad6bc8ed003ccac440050865)
+        ;
+
+        
+    
+    
+            var circle_marker_1c92cdfb7b09de9321973c99350cfa16 = L.circleMarker(
+                [41.866095, -87.607267],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.148180850215709, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_450ef92447cc4494e0e4705311452771 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3d0de2b53313e35b55f0802841582b7 = $(`<div id="html_a3d0de2b53313e35b55f0802841582b7" style="width: 100.0%; height: 100.0%;"><b>Adler Planetarium</b><br>Covered: True<br>Total returns: 12638<br>Weekday returns: 7762<br>Weekend returns: 4876</div>`)[0];
+                popup_450ef92447cc4494e0e4705311452771.setContent(html_a3d0de2b53313e35b55f0802841582b7);
+            
+        
+
+        circle_marker_1c92cdfb7b09de9321973c99350cfa16.bindPopup(popup_450ef92447cc4494e0e4705311452771)
+        ;
+
+        
+    
+    
+            var circle_marker_6cbf206474fab34752aed5eaaa5abfa7 = L.circleMarker(
+                [41.90318794361149, -87.66894633544676],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.176288942574315, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_2de046e062c23f6747535685153e2601 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92c68361eae005870580d6e5d3a34ef2 = $(`<div id="html_92c68361eae005870580d6e5d3a34ef2" style="width: 100.0%; height: 100.0%;"><b>Ashland Ave & Division St</b><br>Covered: False<br>Total returns: 13750<br>Weekday returns: 10207<br>Weekend returns: 3543</div>`)[0];
+                popup_2de046e062c23f6747535685153e2601.setContent(html_92c68361eae005870580d6e5d3a34ef2);
+            
+        
+
+        circle_marker_6cbf206474fab34752aed5eaaa5abfa7.bindPopup(popup_2de046e062c23f6747535685153e2601)
+        ;
+
+        
+    
+    
+            var circle_marker_cf1789a0de52c529b0f6ae868c89f6bd = L.circleMarker(
+                [41.9182955629354, -87.65218332409859],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.122448040261949, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_943bcce3e0f7840c2e115caf7603d0e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7a1ddee51a60f081ce9686d4ccf7df9 = $(`<div id="html_a7a1ddee51a60f081ce9686d4ccf7df9" style="width: 100.0%; height: 100.0%;"><b>Bissell St & Armitage Ave*</b><br>Covered: False<br>Total returns: 11699<br>Weekday returns: 7701<br>Weekend returns: 3998</div>`)[0];
+                popup_943bcce3e0f7840c2e115caf7603d0e2.setContent(html_a7a1ddee51a60f081ce9686d4ccf7df9);
+            
+        
+
+        circle_marker_cf1789a0de52c529b0f6ae868c89f6bd.bindPopup(popup_943bcce3e0f7840c2e115caf7603d0e2)
+        ;
+
+        
+    
+    
+            var circle_marker_53dc5b856643828935f22065051047f8 = L.circleMarker(
+                [41.93758231600629, -87.6440978050232],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.269762252379101, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_d31d48ff9b3ab8b521f5930f695467b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0d5bf049c106375c42ed57b7fdd642c = $(`<div id="html_a0d5bf049c106375c42ed57b7fdd642c" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Covered: False<br>Total returns: 18201<br>Weekday returns: 11913<br>Weekend returns: 6288</div>`)[0];
+                popup_d31d48ff9b3ab8b521f5930f695467b0.setContent(html_a0d5bf049c106375c42ed57b7fdd642c);
+            
+        
+
+        circle_marker_53dc5b856643828935f22065051047f8.bindPopup(popup_d31d48ff9b3ab8b521f5930f695467b0)
+        ;
+
+        
+    
+    
+            var circle_marker_b73d1adce9bb01ff04015548cce2055b = L.circleMarker(
+                [41.94010600392988, -87.6454510048789],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.169604668502053, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_06d4f3b7bc1ce9d855fc525bcbe2222f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd78a570c3fcafb99fffc237e13df7a8 = $(`<div id="html_dd78a570c3fcafb99fffc237e13df7a8" style="width: 100.0%; height: 100.0%;"><b>Broadway & Belmont Ave</b><br>Covered: False<br>Total returns: 13477<br>Weekday returns: 9289<br>Weekend returns: 4188</div>`)[0];
+                popup_06d4f3b7bc1ce9d855fc525bcbe2222f.setContent(html_dd78a570c3fcafb99fffc237e13df7a8);
+            
+        
+
+        circle_marker_b73d1adce9bb01ff04015548cce2055b.bindPopup(popup_06d4f3b7bc1ce9d855fc525bcbe2222f)
+        ;
+
+        
+    
+    
+            var circle_marker_ba7ef568a1efcacc3631ffff18e9eb3a = L.circleMarker(
+                [41.945529, -87.646439],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.292090168747524, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_15a98ffc0565c7363e7920f5804bb4e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc1d91f3c89dae3ab4bde8a1147c638a = $(`<div id="html_fc1d91f3c89dae3ab4bde8a1147c638a" style="width: 100.0%; height: 100.0%;"><b>Broadway & Cornelia Ave</b><br>Covered: False<br>Total returns: 19462<br>Weekday returns: 13156<br>Weekend returns: 6306</div>`)[0];
+                popup_15a98ffc0565c7363e7920f5804bb4e0.setContent(html_fc1d91f3c89dae3ab4bde8a1147c638a);
+            
+        
+
+        circle_marker_ba7ef568a1efcacc3631ffff18e9eb3a.bindPopup(popup_15a98ffc0565c7363e7920f5804bb4e0)
+        ;
+
+        
+    
+    
+            var circle_marker_286964997a787cf1a4990488be67e1ae = L.circleMarker(
+                [41.952833, -87.649993],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.165022694867176, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_593191b02e5f786141e57d2a769e7e08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aec7ee76c78db95955385f6fdb217e02 = $(`<div id="html_aec7ee76c78db95955385f6fdb217e02" style="width: 100.0%; height: 100.0%;"><b>Broadway & Sheridan Rd</b><br>Covered: False<br>Total returns: 13293<br>Weekday returns: 9007<br>Weekend returns: 4286</div>`)[0];
+                popup_593191b02e5f786141e57d2a769e7e08.setContent(html_aec7ee76c78db95955385f6fdb217e02);
+            
+        
+
+        circle_marker_286964997a787cf1a4990488be67e1ae.bindPopup(popup_593191b02e5f786141e57d2a769e7e08)
+        ;
+
+        
+    
+    
+            var circle_marker_adcf24724f313b970daa41c60e84417d = L.circleMarker(
+                [41.949074, -87.648636],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.275517503687336, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_3a4c0fb1997d90bf0a01966f566578a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9914966498aedce7a5ce5cfc8c278141 = $(`<div id="html_9914966498aedce7a5ce5cfc8c278141" style="width: 100.0%; height: 100.0%;"><b>Broadway & Waveland Ave</b><br>Covered: False<br>Total returns: 18518<br>Weekday returns: 12636<br>Weekend returns: 5882</div>`)[0];
+                popup_3a4c0fb1997d90bf0a01966f566578a2.setContent(html_9914966498aedce7a5ce5cfc8c278141);
+            
+        
+
+        circle_marker_adcf24724f313b970daa41c60e84417d.bindPopup(popup_3a4c0fb1997d90bf0a01966f566578a2)
+        ;
+
+        
+    
+    
+            var circle_marker_685671863fc3aad2c030085307d887a2 = L.circleMarker(
+                [41.87130745884732, -87.62309887518705],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.066460177246613, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_572a5aff7211de35d152b1997df7f2af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8474867e8f97a1ec38c52fa17de32c22 = $(`<div id="html_8474867e8f97a1ec38c52fa17de32c22" style="width: 100.0%; height: 100.0%;"><b>Buckingham Fountain</b><br>Covered: True<br>Total returns: 9890<br>Weekday returns: 6292<br>Weekend returns: 3598</div>`)[0];
+                popup_572a5aff7211de35d152b1997df7f2af.setContent(html_8474867e8f97a1ec38c52fa17de32c22);
+            
+        
+
+        circle_marker_685671863fc3aad2c030085307d887a2.bindPopup(popup_572a5aff7211de35d152b1997df7f2af)
+        ;
+
+        
+    
+    
+            var circle_marker_9e956f778091e2f3c699d9f8a7de84fb = L.circleMarker(
+                [41.879255, -87.639904],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.324835013257136, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_016281bd32da4d8921e8a25ffe4141a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4ff623dff4bb19d169f75c4d5a50204 = $(`<div id="html_a4ff623dff4bb19d169f75c4d5a50204" style="width: 100.0%; height: 100.0%;"><b>Canal St & Adams St</b><br>Covered: True<br>Total returns: 21471<br>Weekday returns: 19724<br>Weekend returns: 1747</div>`)[0];
+                popup_016281bd32da4d8921e8a25ffe4141a8.setContent(html_a4ff623dff4bb19d169f75c4d5a50204);
+            
+        
+
+        circle_marker_9e956f778091e2f3c699d9f8a7de84fb.bindPopup(popup_016281bd32da4d8921e8a25ffe4141a8)
+        ;
+
+        
+    
+    
+            var circle_marker_1cba84fd19f9f217f05cf5e6271ab46b = L.circleMarker(
+                [41.87812864569744, -87.63996997065593],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.12604677741704, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_9ce7c60803e4e5cb7635391be037e37e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb8ab71a60394decd72e3b00d18ee566 = $(`<div id="html_bb8ab71a60394decd72e3b00d18ee566" style="width: 100.0%; height: 100.0%;"><b>Canal St & Jackson Blvd</b><br>Covered: True<br>Total returns: 11826<br>Weekday returns: 10978<br>Weekend returns: 848</div>`)[0];
+                popup_9ce7c60803e4e5cb7635391be037e37e.setContent(html_bb8ab71a60394decd72e3b00d18ee566);
+            
+        
+
+        circle_marker_1cba84fd19f9f217f05cf5e6271ab46b.bindPopup(popup_9ce7c60803e4e5cb7635391be037e37e)
+        ;
+
+        
+    
+    
+            var circle_marker_6e153367596cd0937381e498c6b09a23 = L.circleMarker(
+                [41.882409, -87.639767],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.4284703506870855, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_ab63119c95c480e91c9a13dab785a7d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55c06d2376f1e11ab4803a57177a2b25 = $(`<div id="html_55c06d2376f1e11ab4803a57177a2b25" style="width: 100.0%; height: 100.0%;"><b>Canal St & Madison St</b><br>Covered: True<br>Total returns: 29301<br>Weekday returns: 26693<br>Weekend returns: 2608</div>`)[0];
+                popup_ab63119c95c480e91c9a13dab785a7d7.setContent(html_55c06d2376f1e11ab4803a57177a2b25);
+            
+        
+
+        circle_marker_6e153367596cd0937381e498c6b09a23.bindPopup(popup_ab63119c95c480e91c9a13dab785a7d7)
+        ;
+
+        
+    
+    
+            var circle_marker_0b0581fb53a3dcd59cf709def31b9594 = L.circleMarker(
+                [41.95786652415175, -87.64950513839722],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.162884564807955, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_19697619e6199118690d89a8a705766e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_def7a0c8c15eb16e2427916dd986c530 = $(`<div id="html_def7a0c8c15eb16e2427916dd986c530" style="width: 100.0%; height: 100.0%;"><b>Clarendon Ave & Gordon Ter</b><br>Covered: False<br>Total returns: 13208<br>Weekday returns: 9174<br>Weekend returns: 4034</div>`)[0];
+                popup_19697619e6199118690d89a8a705766e.setContent(html_def7a0c8c15eb16e2427916dd986c530);
+            
+        
+
+        circle_marker_0b0581fb53a3dcd59cf709def31b9594.bindPopup(popup_19697619e6199118690d89a8a705766e)
+        ;
+
+        
+    
+    
+            var circle_marker_268c024bc72f51bbd8e08cbfa357ff9a = L.circleMarker(
+                [41.961004, -87.649603],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.110203068122376, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_b1db5bd69b9d1906f7b56da8cd4c447f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cb8531e18624b5008cc66176ff2eee5 = $(`<div id="html_7cb8531e18624b5008cc66176ff2eee5" style="width: 100.0%; height: 100.0%;"><b>Clarendon Ave & Junior Ter</b><br>Covered: False<br>Total returns: 11277<br>Weekday returns: 7400<br>Weekend returns: 3877</div>`)[0];
+                popup_b1db5bd69b9d1906f7b56da8cd4c447f.setContent(html_7cb8531e18624b5008cc66176ff2eee5);
+            
+        
+
+        circle_marker_268c024bc72f51bbd8e08cbfa357ff9a.bindPopup(popup_b1db5bd69b9d1906f7b56da8cd4c447f)
+        ;
+
+        
+    
+    
+            var circle_marker_9b66a614941d859a4e495f766ebc0fc4 = L.circleMarker(
+                [41.918305755768, -87.63628183370878],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3624221267760195, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_21cf1cc69457dbda54e4ae9b26070137 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0a2083eddb8e566bc3f2e48bbd90978 = $(`<div id="html_c0a2083eddb8e566bc3f2e48bbd90978" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Covered: False<br>Total returns: 24034<br>Weekday returns: 15407<br>Weekend returns: 8627</div>`)[0];
+                popup_21cf1cc69457dbda54e4ae9b26070137.setContent(html_c0a2083eddb8e566bc3f2e48bbd90978);
+            
+        
+
+        circle_marker_9b66a614941d859a4e495f766ebc0fc4.bindPopup(popup_21cf1cc69457dbda54e4ae9b26070137)
+        ;
+
+        
+    
+    
+            var circle_marker_a9627c98bf7ab33b2a46579ef1b55805 = L.circleMarker(
+                [41.97802884484359, -87.66836255860282],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.103937780302273, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_354bd587b73a92e8bb0d791eae593bd6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ceeafbf8246a5e75a9258f6f83d1b6b0 = $(`<div id="html_ceeafbf8246a5e75a9258f6f83d1b6b0" style="width: 100.0%; height: 100.0%;"><b>Clark St & Berwyn Ave</b><br>Covered: False<br>Total returns: 11067<br>Weekday returns: 7342<br>Weekend returns: 3725</div>`)[0];
+                popup_354bd587b73a92e8bb0d791eae593bd6.setContent(html_ceeafbf8246a5e75a9258f6f83d1b6b0);
+            
+        
+
+        circle_marker_a9627c98bf7ab33b2a46579ef1b55805.bindPopup(popup_354bd587b73a92e8bb0d791eae593bd6)
+        ;
+
+        
+    
+    
+            var circle_marker_843c975dd582ade8756d5ac53d677f8e = L.circleMarker(
+                [41.931248, -87.644336],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.206244839863409, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_929fdc4311ecb9b7796ccb8ef7154340 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e66a496f0a1e943ee2b72984d3882f1f = $(`<div id="html_e66a496f0a1e943ee2b72984d3882f1f" style="width: 100.0%; height: 100.0%;"><b>Clark St & Drummond Pl</b><br>Covered: False<br>Total returns: 15043<br>Weekday returns: 10279<br>Weekend returns: 4764</div>`)[0];
+                popup_929fdc4311ecb9b7796ccb8ef7154340.setContent(html_e66a496f0a1e943ee2b72984d3882f1f);
+            
+        
+
+        circle_marker_843c975dd582ade8756d5ac53d677f8e.bindPopup(popup_929fdc4311ecb9b7796ccb8ef7154340)
+        ;
+
+        
+    
+    
+            var circle_marker_ff0ff27a313b79e23cb1fedcea63db43 = L.circleMarker(
+                [41.90301732164141, -87.63152289470456],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.429197607174295, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_210c8cec646f56cce636c38f88fe21aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8a9ac81c9aedf1a87897f56afce2314 = $(`<div id="html_e8a9ac81c9aedf1a87897f56afce2314" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Covered: True<br>Total returns: 29365<br>Weekday returns: 20810<br>Weekend returns: 8555</div>`)[0];
+                popup_210c8cec646f56cce636c38f88fe21aa.setContent(html_e8a9ac81c9aedf1a87897f56afce2314);
+            
+        
+
+        circle_marker_ff0ff27a313b79e23cb1fedcea63db43.bindPopup(popup_210c8cec646f56cce636c38f88fe21aa)
+        ;
+
+        
+    
+    
+            var circle_marker_ea2bcbb893dbc48e28aa16576f101f2d = L.circleMarker(
+                [41.95078, -87.659172],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.079059008643247, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_27f30950fc04e4c798141b3a73767f21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbae7cbe3c3d1520b4843752ce29b328 = $(`<div id="html_fbae7cbe3c3d1520b4843752ce29b328" style="width: 100.0%; height: 100.0%;"><b>Clark St & Grace St</b><br>Covered: False<br>Total returns: 10271<br>Weekday returns: 6706<br>Weekend returns: 3565</div>`)[0];
+                popup_27f30950fc04e4c798141b3a73767f21.setContent(html_fbae7cbe3c3d1520b4843752ce29b328);
+            
+        
+
+        circle_marker_ea2bcbb893dbc48e28aa16576f101f2d.bindPopup(popup_27f30950fc04e4c798141b3a73767f21)
+        ;
+
+        
+    
+    
+            var circle_marker_71f812e6f863a30abb2d4e7c7710a898 = L.circleMarker(
+                [41.88602073203813, -87.63087535800302],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.264947958473128, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e2053ac8d674879274f189c1fa306162 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ec90dc83d7f3f2e80896826ddc8d5b7 = $(`<div id="html_3ec90dc83d7f3f2e80896826ddc8d5b7" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lake St</b><br>Covered: True<br>Total returns: 17940<br>Weekday returns: 14389<br>Weekend returns: 3551</div>`)[0];
+                popup_e2053ac8d674879274f189c1fa306162.setContent(html_3ec90dc83d7f3f2e80896826ddc8d5b7);
+            
+        
+
+        circle_marker_71f812e6f863a30abb2d4e7c7710a898.bindPopup(popup_e2053ac8d674879274f189c1fa306162)
+        ;
+
+        
+    
+    
+            var circle_marker_a1f40f016ec32dae00db29d887f1d3ca = L.circleMarker(
+                [41.915689, -87.6346],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.353112262999655, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_3e136c37a98c18bb44c5170309c871f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22f246bf93aadc06402e2ae5e35b95d3 = $(`<div id="html_22f246bf93aadc06402e2ae5e35b95d3" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Covered: False<br>Total returns: 23372<br>Weekday returns: 14534<br>Weekend returns: 8838</div>`)[0];
+                popup_3e136c37a98c18bb44c5170309c871f2.setContent(html_22f246bf93aadc06402e2ae5e35b95d3);
+            
+        
+
+        circle_marker_a1f40f016ec32dae00db29d887f1d3ca.bindPopup(popup_3e136c37a98c18bb44c5170309c871f2)
+        ;
+
+        
+    
+    
+            var circle_marker_12c8fcff312aac16ac0dea1727be7746 = L.circleMarker(
+                [41.94454, -87.654678],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.249665049220283, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_132080e4547468f9380dfdb374cde15f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd8a8211855398caf33db8e5ee22d6bf = $(`<div id="html_fd8a8211855398caf33db8e5ee22d6bf" style="width: 100.0%; height: 100.0%;"><b>Clark St & Newport St</b><br>Covered: False<br>Total returns: 17136<br>Weekday returns: 11196<br>Weekend returns: 5940</div>`)[0];
+                popup_132080e4547468f9380dfdb374cde15f.setContent(html_fd8a8211855398caf33db8e5ee22d6bf);
+            
+        
+
+        circle_marker_12c8fcff312aac16ac0dea1727be7746.bindPopup(popup_132080e4547468f9380dfdb374cde15f)
+        ;
+
+        
+    
+    
+            var circle_marker_7aea6ac93777ae037d8936d7337207c5 = L.circleMarker(
+                [41.911974, -87.631942],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.086408589901998, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_50823a96296e2752c6baae643fc03d37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b96f4357637829a005bc56a6bba6645b = $(`<div id="html_b96f4357637829a005bc56a6bba6645b" style="width: 100.0%; height: 100.0%;"><b>Clark St & North Ave</b><br>Covered: True<br>Total returns: 10500<br>Weekday returns: 6653<br>Weekend returns: 3847</div>`)[0];
+                popup_50823a96296e2752c6baae643fc03d37.setContent(html_b96f4357637829a005bc56a6bba6645b);
+            
+        
+
+        circle_marker_7aea6ac93777ae037d8936d7337207c5.bindPopup(popup_50823a96296e2752c6baae643fc03d37)
+        ;
+
+        
+    
+    
+            var circle_marker_9e31a098a2bd643c37f459b22a90e202 = L.circleMarker(
+                [41.907993, -87.631501],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.195664799410077, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c9d6a709b1103ae806f49f90333c23a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dcbe3dc8c2cbcc8bfbbf8791cbc0d9c = $(`<div id="html_7dcbe3dc8c2cbcc8bfbbf8791cbc0d9c" style="width: 100.0%; height: 100.0%;"><b>Clark St & Schiller St</b><br>Covered: True<br>Total returns: 14573<br>Weekday returns: 9835<br>Weekend returns: 4738</div>`)[0];
+                popup_c9d6a709b1103ae806f49f90333c23a2.setContent(html_7dcbe3dc8c2cbcc8bfbbf8791cbc0d9c);
+            
+        
+
+        circle_marker_9e31a098a2bd643c37f459b22a90e202.bindPopup(popup_c9d6a709b1103ae806f49f90333c23a2)
+        ;
+
+        
+    
+    
+            var circle_marker_d75c7d389e22105f979461e1f559dec3 = L.circleMarker(
+                [41.9364968219, -87.6475386582],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.153310364435081, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_30993b52dc243b51ba8abccea53616c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b02199b48837cbd03bfedbcc0001739e = $(`<div id="html_b02199b48837cbd03bfedbcc0001739e" style="width: 100.0%; height: 100.0%;"><b>Clark St & Wellington Ave</b><br>Covered: False<br>Total returns: 12834<br>Weekday returns: 9011<br>Weekend returns: 3823</div>`)[0];
+                popup_30993b52dc243b51ba8abccea53616c7.setContent(html_b02199b48837cbd03bfedbcc0001739e);
+            
+        
+
+        circle_marker_d75c7d389e22105f979461e1f559dec3.bindPopup(popup_30993b52dc243b51ba8abccea53616c7)
+        ;
+
+        
+    
+    
+            var circle_marker_e7d8fa81c1840d662b75e81fce88e9b7 = L.circleMarker(
+                [41.97334764047304, -87.6678554713726],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.164118807600445, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_ad25ad9da06446ee47683c7ba2489739 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_969b1e27df8ae428414b64475bdc4be3 = $(`<div id="html_969b1e27df8ae428414b64475bdc4be3" style="width: 100.0%; height: 100.0%;"><b>Clark St & Winnemac Ave</b><br>Covered: False<br>Total returns: 13257<br>Weekday returns: 8861<br>Weekend returns: 4396</div>`)[0];
+                popup_ad25ad9da06446ee47683c7ba2489739.setContent(html_969b1e27df8ae428414b64475bdc4be3);
+            
+        
+
+        circle_marker_e7d8fa81c1840d662b75e81fce88e9b7.bindPopup(popup_ad25ad9da06446ee47683c7ba2489739)
+        ;
+
+        
+    
+    
+            var circle_marker_3d643915a2faff8a30007f5ae955410c = L.circleMarker(
+                [41.929546, -87.643118],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.253224972390093, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_95f23fe004bf7f294657ba78e270db42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4fd2184eb0be69b03bfbab929c69e36 = $(`<div id="html_b4fd2184eb0be69b03bfbab929c69e36" style="width: 100.0%; height: 100.0%;"><b>Clark St & Wrightwood Ave</b><br>Covered: False<br>Total returns: 17320<br>Weekday returns: 11618<br>Weekend returns: 5702</div>`)[0];
+                popup_95f23fe004bf7f294657ba78e270db42.setContent(html_b4fd2184eb0be69b03bfbab929c69e36);
+            
+        
+
+        circle_marker_3d643915a2faff8a30007f5ae955410c.bindPopup(popup_95f23fe004bf7f294657ba78e270db42)
+        ;
+
+        
+    
+    
+            var circle_marker_c1609766d08e67cd13d29e3ecd726cc7 = L.circleMarker(
+                [41.87831662050808, -87.64098109175531],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.357968401609087, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_d4214db5cebc73c413bf0abf1a0321af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d75697b540ba54e4f075248d39d9464a = $(`<div id="html_d75697b540ba54e4f075248d39d9464a" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Jackson Blvd</b><br>Covered: True<br>Total returns: 23715<br>Weekday returns: 21413<br>Weekend returns: 2302</div>`)[0];
+                popup_d4214db5cebc73c413bf0abf1a0321af.setContent(html_d75697b540ba54e4f075248d39d9464a);
+            
+        
+
+        circle_marker_c1609766d08e67cd13d29e3ecd726cc7.bindPopup(popup_d4214db5cebc73c413bf0abf1a0321af)
+        ;
+
+        
+    
+    
+            var circle_marker_28bfa68a17dded83ad0ad55f43529b47 = L.circleMarker(
+                [41.885637, -87.641823],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.267188520936914, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_64e5562bbc784e6c502959ddba6a5d6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d89696f8fb446bb64c7f0fa43a92e44 = $(`<div id="html_4d89696f8fb446bb64c7f0fa43a92e44" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Lake St</b><br>Covered: True<br>Total returns: 18061<br>Weekday returns: 15088<br>Weekend returns: 2973</div>`)[0];
+                popup_64e5562bbc784e6c502959ddba6a5d6c.setContent(html_4d89696f8fb446bb64c7f0fa43a92e44);
+            
+        
+
+        circle_marker_28bfa68a17dded83ad0ad55f43529b47.bindPopup(popup_64e5562bbc784e6c502959ddba6a5d6c)
+        ;
+
+        
+    
+    
+            var circle_marker_3d2b9b22e6a91e8c94e818258925c1ef = L.circleMarker(
+                [41.88275006331282, -87.64119022354309],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.4268739236254095, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_18d693abdb5c4c868351e7020951912a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04cee1ce962b7382f72c2fe80cc86251 = $(`<div id="html_04cee1ce962b7382f72c2fe80cc86251" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>Covered: True<br>Total returns: 29161<br>Weekday returns: 25104<br>Weekend returns: 4057</div>`)[0];
+                popup_18d693abdb5c4c868351e7020951912a.setContent(html_04cee1ce962b7382f72c2fe80cc86251);
+            
+        
+
+        circle_marker_3d2b9b22e6a91e8c94e818258925c1ef.bindPopup(popup_18d693abdb5c4c868351e7020951912a)
+        ;
+
+        
+    
+    
+            var circle_marker_57f69e42a489ff217b61b92cfd32557b = L.circleMarker(
+                [41.883378993326986, -87.64117008864396],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.442809479048316, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_186cfc6ceb387d543b5b16d60a0a4dba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d3942d0d7eb33557aa7fd137466a559 = $(`<div id="html_6d3942d0d7eb33557aa7fd137466a559" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Washington Blvd</b><br>Covered: True<br>Total returns: 30589<br>Weekday returns: 29100<br>Weekend returns: 1489</div>`)[0];
+                popup_186cfc6ceb387d543b5b16d60a0a4dba.setContent(html_6d3942d0d7eb33557aa7fd137466a559);
+            
+        
+
+        circle_marker_57f69e42a489ff217b61b92cfd32557b.bindPopup(popup_186cfc6ceb387d543b5b16d60a0a4dba)
+        ;
+
+        
+    
+    
+            var circle_marker_090524e585e422bfb1bab2ea23e25bed = L.circleMarker(
+                [41.884728, -87.619521],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.289062190936599, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_8a8bcdb82e5f10afc4bf4618a7308049 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eda61ce01828952f3103dac3c4abf6b8 = $(`<div id="html_eda61ce01828952f3103dac3c4abf6b8" style="width: 100.0%; height: 100.0%;"><b>Columbus Dr & Randolph St</b><br>Covered: True<br>Total returns: 19286<br>Weekday returns: 14610<br>Weekend returns: 4676</div>`)[0];
+                popup_8a8bcdb82e5f10afc4bf4618a7308049.setContent(html_eda61ce01828952f3103dac3c4abf6b8);
+            
+        
+
+        circle_marker_090524e585e422bfb1bab2ea23e25bed.bindPopup(popup_8a8bcdb82e5f10afc4bf4618a7308049)
+        ;
+
+        
+    
+    
+            var circle_marker_3c055b3451c468ab5f0b88b4ed59ba55 = L.circleMarker(
+                [41.88424087537072, -87.62963348535213],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.325517374464377, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_81d78613d61c38114eb3fc1b1f523ba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c75237a71270b3a3c19fa3fc43c8a19 = $(`<div id="html_3c75237a71270b3a3c19fa3fc43c8a19" style="width: 100.0%; height: 100.0%;"><b>Daley Center Plaza</b><br>Covered: True<br>Total returns: 21515<br>Weekday returns: 18249<br>Weekend returns: 3266</div>`)[0];
+                popup_81d78613d61c38114eb3fc1b1f523ba9.setContent(html_3c75237a71270b3a3c19fa3fc43c8a19);
+            
+        
+
+        circle_marker_3c055b3451c468ab5f0b88b4ed59ba55.bindPopup(popup_81d78613d61c38114eb3fc1b1f523ba9)
+        ;
+
+        
+    
+    
+            var circle_marker_039fb880a7832f7b9ff80b8dd964ace1 = L.circleMarker(
+                [41.90913973176558, -87.6775313230267],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.169678855230355, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_f53b02d128cdb6a718c1ad01f6a71161 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e14a748ac243c36f2dce05f294a4d65a = $(`<div id="html_e14a748ac243c36f2dce05f294a4d65a" style="width: 100.0%; height: 100.0%;"><b>Damen Ave & Pierce Ave</b><br>Covered: False<br>Total returns: 13480<br>Weekday returns: 9083<br>Weekend returns: 4397</div>`)[0];
+                popup_f53b02d128cdb6a718c1ad01f6a71161.setContent(html_e14a748ac243c36f2dce05f294a4d65a);
+            
+        
+
+        circle_marker_039fb880a7832f7b9ff80b8dd964ace1.bindPopup(popup_f53b02d128cdb6a718c1ad01f6a71161)
+        ;
+
+        
+    
+    
+            var circle_marker_0bed54e58d5e3bb14546e085c663a116 = L.circleMarker(
+                [41.898969, -87.629912],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.324990218052664, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e38c371f3898f73c87af737aedc971e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbe0be2739eaf2a92e37a64b0302110a = $(`<div id="html_fbe0be2739eaf2a92e37a64b0302110a" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>Covered: True<br>Total returns: 21481<br>Weekday returns: 15557<br>Weekend returns: 5924</div>`)[0];
+                popup_e38c371f3898f73c87af737aedc971e3.setContent(html_fbe0be2739eaf2a92e37a64b0302110a);
+            
+        
+
+        circle_marker_0bed54e58d5e3bb14546e085c663a116.bindPopup(popup_e38c371f3898f73c87af737aedc971e3)
+        ;
+
+        
+    
+    
+            var circle_marker_4153344742701bbaea6641b1fe0e7662 = L.circleMarker(
+                [41.893992, -87.629318],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.334006602866792, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_2c8a7ebff891ccbfa9434f1cdfeff92e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0375c42ebd5d3217c4c47c94a9095950 = $(`<div id="html_0375c42ebd5d3217c4c47c94a9095950" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Covered: True<br>Total returns: 22070<br>Weekday returns: 16058<br>Weekend returns: 6012</div>`)[0];
+                popup_2c8a7ebff891ccbfa9434f1cdfeff92e.setContent(html_0375c42ebd5d3217c4c47c94a9095950);
+            
+        
+
+        circle_marker_4153344742701bbaea6641b1fe0e7662.bindPopup(popup_2c8a7ebff891ccbfa9434f1cdfeff92e)
+        ;
+
+        
+    
+    
+            var circle_marker_741b0cc8ab2eebd801f579959b3668d0 = L.circleMarker(
+                [41.881319815, -87.6295209193],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.221489550687876, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_cd0fa54c6bd79ec5e05053a60dfe1bcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26cd39347dfd033824065d200ddd568e = $(`<div id="html_26cd39347dfd033824065d200ddd568e" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Monroe St</b><br>Covered: True<br>Total returns: 15747<br>Weekday returns: 13388<br>Weekend returns: 2359</div>`)[0];
+                popup_cd0fa54c6bd79ec5e05053a60dfe1bcb.setContent(html_26cd39347dfd033824065d200ddd568e);
+            
+        
+
+        circle_marker_741b0cc8ab2eebd801f579959b3668d0.bindPopup(popup_cd0fa54c6bd79ec5e05053a60dfe1bcb)
+        ;
+
+        
+    
+    
+            var circle_marker_7baf3ddd2ebca005d92b92c6669c830c = L.circleMarker(
+                [41.888716036, -87.6444478533],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.295379304733672, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_7492e1b90eb8590d49bc2d2dc1c2fae7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_129a5e897f37fb0a54772eb93487420f = $(`<div id="html_129a5e897f37fb0a54772eb93487420f" style="width: 100.0%; height: 100.0%;"><b>Desplaines St & Kinzie St</b><br>Covered: True<br>Total returns: 19655<br>Weekday returns: 14298<br>Weekend returns: 5357</div>`)[0];
+                popup_7492e1b90eb8590d49bc2d2dc1c2fae7.setContent(html_129a5e897f37fb0a54772eb93487420f);
+            
+        
+
+        circle_marker_7baf3ddd2ebca005d92b92c6669c830c.bindPopup(popup_7492e1b90eb8590d49bc2d2dc1c2fae7)
+        ;
+
+        
+    
+    
+            var circle_marker_4561d56ee2ca2311add0eee07cd404ec = L.circleMarker(
+                [41.940775, -87.639192],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.244193533519143, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_5910b504c69e3816ed6fbbc1a4601e21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9e3d5791701a37a6b6fd98b6c2c35da = $(`<div id="html_c9e3d5791701a37a6b6fd98b6c2c35da" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & Belmont Ave</b><br>Covered: False<br>Total returns: 16857<br>Weekday returns: 10711<br>Weekend returns: 6146</div>`)[0];
+                popup_5910b504c69e3816ed6fbbc1a4601e21.setContent(html_c9e3d5791701a37a6b6fd98b6c2c35da);
+            
+        
+
+        circle_marker_4561d56ee2ca2311add0eee07cd404ec.bindPopup(popup_5910b504c69e3816ed6fbbc1a4601e21)
+        ;
+
+        
+    
+    
+            var circle_marker_8594fa35c1b6e09a3e838e4d9856be3d = L.circleMarker(
+                [41.932588, -87.636427],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.290355887093339, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_040d127f23443ee699fb7834d5f4b11e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d48d7f3be956f3f5587a6a15a832084 = $(`<div id="html_4d48d7f3be956f3f5587a6a15a832084" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & Diversey Pkwy</b><br>Covered: False<br>Total returns: 19361<br>Weekday returns: 12317<br>Weekend returns: 7044</div>`)[0];
+                popup_040d127f23443ee699fb7834d5f4b11e.setContent(html_4d48d7f3be956f3f5587a6a15a832084);
+            
+        
+
+        circle_marker_8594fa35c1b6e09a3e838e4d9856be3d.bindPopup(popup_040d127f23443ee699fb7834d5f4b11e)
+        ;
+
+        
+    
+    
+            var circle_marker_8f89422bb0e46b639536217039ef5c50 = L.circleMarker(
+                [41.880958, -87.616743],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.514384946438412, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_d8ec91498d27d96784fc3fc9cd032218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01ef3cb4d56d2b8b9ff73aba46492802 = $(`<div id="html_01ef3cb4d56d2b8b9ff73aba46492802" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & Monroe St</b><br>Covered: True<br>Total returns: 37916<br>Weekday returns: 20698<br>Weekend returns: 17218</div>`)[0];
+                popup_d8ec91498d27d96784fc3fc9cd032218.setContent(html_01ef3cb4d56d2b8b9ff73aba46492802);
+            
+        
+
+        circle_marker_8f89422bb0e46b639536217039ef5c50.bindPopup(popup_d8ec91498d27d96784fc3fc9cd032218)
+        ;
+
+        
+    
+    
+            var circle_marker_0cc856642b1e8e536e46fcc06b7fe927 = L.circleMarker(
+                [41.911722, -87.626804],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.48455296054785, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_878870491220b4755bfffda712e1c447 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e46363403fe8d76bd2ad0510f7aa8e5b = $(`<div id="html_e46363403fe8d76bd2ad0510f7aa8e5b" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & North Blvd</b><br>Covered: True<br>Total returns: 34670<br>Weekday returns: 19730<br>Weekend returns: 14940</div>`)[0];
+                popup_878870491220b4755bfffda712e1c447.setContent(html_e46363403fe8d76bd2ad0510f7aa8e5b);
+            
+        
+
+        circle_marker_0cc856642b1e8e536e46fcc06b7fe927.bindPopup(popup_878870491220b4755bfffda712e1c447)
+        ;
+
+        
+    
+    
+            var circle_marker_488b867754bba9de3228152b7fa6090d = L.circleMarker(
+                [41.936688449499705, -87.63682901859283],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.214689648452403, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_b14eafe44ab4e0836df0a51bc22dd597 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14d3347c69a44f162ee7de819879ea3e = $(`<div id="html_14d3347c69a44f162ee7de819879ea3e" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & Wellington Ave</b><br>Covered: False<br>Total returns: 15429<br>Weekday returns: 9542<br>Weekend returns: 5887</div>`)[0];
+                popup_b14eafe44ab4e0836df0a51bc22dd597.setContent(html_14d3347c69a44f162ee7de819879ea3e);
+            
+        
+
+        circle_marker_488b867754bba9de3228152b7fa6090d.bindPopup(popup_b14eafe44ab4e0836df0a51bc22dd597)
+        ;
+
+        
+    
+    
+            var circle_marker_7b59e0f5fc7623b1f22dec69ea0e51dd = L.circleMarker(
+                [41.88697599432289, -87.61281299950515],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.309295813119888, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c575f1e6e4fb1bb3292a44a108246051 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35bb73c6573b77faad5487fa2dda2d2c = $(`<div id="html_35bb73c6573b77faad5487fa2dda2d2c" style="width: 100.0%; height: 100.0%;"><b>Dusable Harbor</b><br>Covered: True<br>Total returns: 20493<br>Weekday returns: 11732<br>Weekend returns: 8761</div>`)[0];
+                popup_c575f1e6e4fb1bb3292a44a108246051.setContent(html_35bb73c6573b77faad5487fa2dda2d2c);
+            
+        
+
+        circle_marker_7b59e0f5fc7623b1f22dec69ea0e51dd.bindPopup(popup_c575f1e6e4fb1bb3292a44a108246051)
+        ;
+
+        
+    
+    
+            var circle_marker_08c5b56a1578bf6cb5f8bfbd057d302c = L.circleMarker(
+                [41.79430062054, -87.6014497734],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.250442186212341, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_952e6245e53b8b04a59edb1c5c4c29dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e524b9375f4c2670df31e386fc39bdc7 = $(`<div id="html_e524b9375f4c2670df31e386fc39bdc7" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 55th St</b><br>Covered: False<br>Total returns: 17176<br>Weekday returns: 13088<br>Weekend returns: 4088</div>`)[0];
+                popup_952e6245e53b8b04a59edb1c5c4c29dc.setContent(html_e524b9375f4c2670df31e386fc39bdc7);
+            
+        
+
+        circle_marker_08c5b56a1578bf6cb5f8bfbd057d302c.bindPopup(popup_952e6245e53b8b04a59edb1c5c4c29dc)
+        ;
+
+        
+    
+    
+            var circle_marker_5027af090b4d5c89d0d831dd15ed2954 = L.circleMarker(
+                [41.78509714636001, -87.6010727606],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.25979905576836, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_2775a8261a8ccc390269ca70c1e8731b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8eb0c623ad68653cd53db924f3ea9ef4 = $(`<div id="html_8eb0c623ad68653cd53db924f3ea9ef4" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>Covered: False<br>Total returns: 17665<br>Weekday returns: 13248<br>Weekend returns: 4417</div>`)[0];
+                popup_2775a8261a8ccc390269ca70c1e8731b.setContent(html_8eb0c623ad68653cd53db924f3ea9ef4);
+            
+        
+
+        circle_marker_5027af090b4d5c89d0d831dd15ed2954.bindPopup(popup_2775a8261a8ccc390269ca70c1e8731b)
+        ;
+
+        
+    
+    
+            var circle_marker_b68ac4c11144aa234fbaa855829e6600 = L.circleMarker(
+                [41.89184737210993, -87.62058019638062],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222166198133289, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c41c6470f4f677c5b9634db5b0a25cb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9719c4b3d31af03536852ae2e12d82ba = $(`<div id="html_9719c4b3d31af03536852ae2e12d82ba" style="width: 100.0%; height: 100.0%;"><b>Fairbanks Ct & Grand Ave</b><br>Covered: True<br>Total returns: 15779<br>Weekday returns: 11156<br>Weekend returns: 4623</div>`)[0];
+                popup_c41c6470f4f677c5b9634db5b0a25cb8.setContent(html_9719c4b3d31af03536852ae2e12d82ba);
+            
+        
+
+        circle_marker_b68ac4c11144aa234fbaa855829e6600.bindPopup(popup_c41c6470f4f677c5b9634db5b0a25cb8)
+        ;
+
+        
+    
+    
+            var circle_marker_452c6d5042032d7e3e8f2155a498d87a = L.circleMarker(
+                [41.87207763285, -87.6295437729],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.226697989988903, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_f9557ab35f5071b57005990b8fb2aca4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_236bd82b1b11660eb352e47b5cba36a5 = $(`<div id="html_236bd82b1b11660eb352e47b5cba36a5" style="width: 100.0%; height: 100.0%;"><b>Federal St & Polk St</b><br>Covered: True<br>Total returns: 15995<br>Weekday returns: 11632<br>Weekend returns: 4363</div>`)[0];
+                popup_f9557ab35f5071b57005990b8fb2aca4.setContent(html_236bd82b1b11660eb352e47b5cba36a5);
+            
+        
+
+        circle_marker_452c6d5042032d7e3e8f2155a498d87a.bindPopup(popup_f9557ab35f5071b57005990b8fb2aca4)
+        ;
+
+        
+    
+    
+            var circle_marker_d55c05f42cc51299460bc3a1b25b556d = L.circleMarker(
+                [41.88634906269, -87.6175165471],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.144894401288624, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_54eeb2d2f4885ae1bcd727a5e6cb5684 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1698b7defe8fe98d899ed0df18b3ea2 = $(`<div id="html_a1698b7defe8fe98d899ed0df18b3ea2" style="width: 100.0%; height: 100.0%;"><b>Field Blvd & South Water St</b><br>Covered: True<br>Total returns: 12514<br>Weekday returns: 8408<br>Weekend returns: 4106</div>`)[0];
+                popup_54eeb2d2f4885ae1bcd727a5e6cb5684.setContent(html_a1698b7defe8fe98d899ed0df18b3ea2);
+            
+        
+
+        circle_marker_d55c05f42cc51299460bc3a1b25b556d.bindPopup(popup_54eeb2d2f4885ae1bcd727a5e6cb5684)
+        ;
+
+        
+    
+    
+            var circle_marker_550afb1475fa9f64290eab3e6bb51070 = L.circleMarker(
+                [41.8653120005395, -87.61786701481803],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0743859585622655, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_42f1ff55d6710b3236b8fb4ed1f43c91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_408e9317c48670833ab44b16f140c1ff = $(`<div id="html_408e9317c48670833ab44b16f140c1ff" style="width: 100.0%; height: 100.0%;"><b>Field Museum</b><br>Covered: True<br>Total returns: 10128<br>Weekday returns: 5521<br>Weekend returns: 4607</div>`)[0];
+                popup_42f1ff55d6710b3236b8fb4ed1f43c91.setContent(html_408e9317c48670833ab44b16f140c1ff);
+            
+        
+
+        circle_marker_550afb1475fa9f64290eab3e6bb51070.bindPopup(popup_42f1ff55d6710b3236b8fb4ed1f43c91)
+        ;
+
+        
+    
+    
+            var circle_marker_1e1e856407fb2bef673b4e7a74ba795d = L.circleMarker(
+                [41.89102335487364, -87.63548087376064],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.154942513190107, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_98843de8981a822249c8a5e3eed37e33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee219743313746c318222d6615180d14 = $(`<div id="html_ee219743313746c318222d6615180d14" style="width: 100.0%; height: 100.0%;"><b>Franklin St & Illinois St</b><br>Covered: True<br>Total returns: 12897<br>Weekday returns: 9513<br>Weekend returns: 3384</div>`)[0];
+                popup_98843de8981a822249c8a5e3eed37e33.setContent(html_ee219743313746c318222d6615180d14);
+            
+        
+
+        circle_marker_1e1e856407fb2bef673b4e7a74ba795d.bindPopup(popup_98843de8981a822249c8a5e3eed37e33)
+        ;
+
+        
+    
+    
+            var circle_marker_ce53a372e2a16a65a536ee5fdbe1a0e3 = L.circleMarker(
+                [41.87770795589999, -87.6353211408],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2027478759590196, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c351a76dc79b5b80c6f47db7437585ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_419f83a917ad65a4f48f67b088e94083 = $(`<div id="html_419f83a917ad65a4f48f67b088e94083" style="width: 100.0%; height: 100.0%;"><b>Franklin St & Jackson Blvd</b><br>Covered: True<br>Total returns: 14886<br>Weekday returns: 12118<br>Weekend returns: 2768</div>`)[0];
+                popup_c351a76dc79b5b80c6f47db7437585ce.setContent(html_419f83a917ad65a4f48f67b088e94083);
+            
+        
+
+        circle_marker_ce53a372e2a16a65a536ee5fdbe1a0e3.bindPopup(popup_c351a76dc79b5b80c6f47db7437585ce)
+        ;
+
+        
+    
+    
+            var circle_marker_ebd72b72599dfcf69e1f332efd73bc05 = L.circleMarker(
+                [41.885837, -87.63549999999998],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.160198830201528, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_9b9c8ce7184045bbd3c95fbe49fd3382 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2bbc68e58b704751d737a455623efff = $(`<div id="html_b2bbc68e58b704751d737a455623efff" style="width: 100.0%; height: 100.0%;"><b>Franklin St & Lake St</b><br>Covered: True<br>Total returns: 13102<br>Weekday returns: 11187<br>Weekend returns: 1915</div>`)[0];
+                popup_9b9c8ce7184045bbd3c95fbe49fd3382.setContent(html_b2bbc68e58b704751d737a455623efff);
+            
+        
+
+        circle_marker_ebd72b72599dfcf69e1f332efd73bc05.bindPopup(popup_9b9c8ce7184045bbd3c95fbe49fd3382)
+        ;
+
+        
+    
+    
+            var circle_marker_9cdbae447e0865a8d6d4050f1a559215 = L.circleMarker(
+                [41.88031616332084, -87.63518440237203],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.292346967507049, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_ceb06574d15bafd3dc0a31e50ae4ecb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32f6fffeda025b794a17126b1882299c = $(`<div id="html_32f6fffeda025b794a17126b1882299c" style="width: 100.0%; height: 100.0%;"><b>Franklin St & Monroe St</b><br>Covered: True<br>Total returns: 19477<br>Weekday returns: 18703<br>Weekend returns: 774</div>`)[0];
+                popup_ceb06574d15bafd3dc0a31e50ae4ecb7.setContent(html_32f6fffeda025b794a17126b1882299c);
+            
+        
+
+        circle_marker_9cdbae447e0865a8d6d4050f1a559215.bindPopup(popup_ceb06574d15bafd3dc0a31e50ae4ecb7)
+        ;
+
+        
+    
+    
+            var circle_marker_949aa40b48c6ee78ebbae46bd7e66c9b = L.circleMarker(
+                [41.88185932803824, -87.64926373958588],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.267465230324952, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c729d811142be2805c0991bd7e4082ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e3192f02c88ae65aa35c5fdadaaa5ae = $(`<div id="html_9e3192f02c88ae65aa35c5fdadaaa5ae" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Covered: True<br>Total returns: 18076<br>Weekday returns: 13280<br>Weekend returns: 4796</div>`)[0];
+                popup_c729d811142be2805c0991bd7e4082ae.setContent(html_9e3192f02c88ae65aa35c5fdadaaa5ae);
+            
+        
+
+        circle_marker_949aa40b48c6ee78ebbae46bd7e66c9b.bindPopup(popup_c729d811142be2805c0991bd7e4082ae)
+        ;
+
+        
+    
+    
+            var circle_marker_ccbecb5e358002f36d05a69c484095d6 = L.circleMarker(
+                [41.909668, -87.648128],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.245417211053406, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_62467bd490a0e1792cf8655129eca0c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db7fa38a18b6c1cc7414a89ab17a0327 = $(`<div id="html_db7fa38a18b6c1cc7414a89ab17a0327" style="width: 100.0%; height: 100.0%;"><b>Halsted St & Clybourn Ave</b><br>Covered: True<br>Total returns: 16919<br>Weekday returns: 12290<br>Weekend returns: 4629</div>`)[0];
+                popup_62467bd490a0e1792cf8655129eca0c1.setContent(html_db7fa38a18b6c1cc7414a89ab17a0327);
+            
+        
+
+        circle_marker_ccbecb5e358002f36d05a69c484095d6.bindPopup(popup_62467bd490a0e1792cf8655129eca0c1)
+        ;
+
+        
+    
+    
+            var circle_marker_048800f34e09953864d97f4d1b8ab466 = L.circleMarker(
+                [41.919936, -87.64883],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.117511379226453, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_9ddb1e770b049c4a083c8469e83540c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20eed32242a50fee0264eadb2a4f61cc = $(`<div id="html_20eed32242a50fee0264eadb2a4f61cc" style="width: 100.0%; height: 100.0%;"><b>Halsted St & Dickens Ave</b><br>Covered: False<br>Total returns: 11527<br>Weekday returns: 7648<br>Weekend returns: 3879</div>`)[0];
+                popup_9ddb1e770b049c4a083c8469e83540c2.setContent(html_20eed32242a50fee0264eadb2a4f61cc);
+            
+        
+
+        circle_marker_048800f34e09953864d97f4d1b8ab466.bindPopup(popup_9ddb1e770b049c4a083c8469e83540c2)
+        ;
+
+        
+    
+    
+            var circle_marker_807374a06bb6a6147b89c209927d552e = L.circleMarker(
+                [41.88685835666811, -87.64802209919087],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1785116562292455, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_5319e51ff02581ec941577288e8d34f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4119a173bafca173252d94da03fa3907 = $(`<div id="html_4119a173bafca173252d94da03fa3907" style="width: 100.0%; height: 100.0%;"><b>Halsted St & Fulton St</b><br>Covered: True<br>Total returns: 13842<br>Weekday returns: 10542<br>Weekend returns: 3300</div>`)[0];
+                popup_5319e51ff02581ec941577288e8d34f2.setContent(html_4119a173bafca173252d94da03fa3907);
+            
+        
+
+        circle_marker_807374a06bb6a6147b89c209927d552e.bindPopup(popup_5319e51ff02581ec941577288e8d34f2)
+        ;
+
+        
+    
+    
+            var circle_marker_d09e89840c5bde3bef72b86f12984608 = L.circleMarker(
+                [41.943667741716816, -87.64895781893892],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.193001057853413, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_8b6dcacf20f922385fb990f09f796d5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00519e34b74bea655bd53c69adce9ad1 = $(`<div id="html_00519e34b74bea655bd53c69adce9ad1" style="width: 100.0%; height: 100.0%;"><b>Halsted St & Roscoe St</b><br>Covered: False<br>Total returns: 14457<br>Weekday returns: 9475<br>Weekend returns: 4982</div>`)[0];
+                popup_8b6dcacf20f922385fb990f09f796d5e.setContent(html_00519e34b74bea655bd53c69adce9ad1);
+            
+        
+
+        circle_marker_d09e89840c5bde3bef72b86f12984608.bindPopup(popup_8b6dcacf20f922385fb990f09f796d5e)
+        ;
+
+        
+    
+    
+            var circle_marker_3444a2a2e95f6a30151dd26a28b70de2 = L.circleMarker(
+                [41.929143, -87.64907700000002],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.175730940575914, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_422c97c3fea84f6e98ada9cfab24e388 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abb9171afa2c1a1c319062d2f3b0a351 = $(`<div id="html_abb9171afa2c1a1c319062d2f3b0a351" style="width: 100.0%; height: 100.0%;"><b>Halsted St & Wrightwood Ave</b><br>Covered: False<br>Total returns: 13727<br>Weekday returns: 9224<br>Weekend returns: 4503</div>`)[0];
+                popup_422c97c3fea84f6e98ada9cfab24e388.setContent(html_abb9171afa2c1a1c319062d2f3b0a351);
+            
+        
+
+        circle_marker_3444a2a2e95f6a30151dd26a28b70de2.bindPopup(popup_422c97c3fea84f6e98ada9cfab24e388)
+        ;
+
+        
+    
+    
+            var circle_marker_a0cb0114e5f86656d7df50d6912063f6 = L.circleMarker(
+                [41.86788801019692, -87.6230410031074],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.316933478528915, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_7d35dbf8c78de7f91189f04473d268e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cce126942c431f955f1b5364d0ba5162 = $(`<div id="html_cce126942c431f955f1b5364d0ba5162" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Covered: True<br>Total returns: 20968<br>Weekday returns: 13985<br>Weekend returns: 6983</div>`)[0];
+                popup_7d35dbf8c78de7f91189f04473d268e5.setContent(html_cce126942c431f955f1b5364d0ba5162);
+            
+        
+
+        circle_marker_a0cb0114e5f86656d7df50d6912063f6.bindPopup(popup_7d35dbf8c78de7f91189f04473d268e5)
+        ;
+
+        
+    
+    
+            var circle_marker_379f545bc053562b772500552f19b70a = L.circleMarker(
+                [41.929083085060974, -87.70802510914633],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.086281593678599, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c31b2b382b09b792557b7c1de2509a0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94699b953bce8614100f8527a1d488c6 = $(`<div id="html_94699b953bce8614100f8527a1d488c6" style="width: 100.0%; height: 100.0%;"><b>Kedzie Ave & Milwaukee Ave</b><br>Covered: False<br>Total returns: 10496<br>Weekday returns: 6896<br>Weekend returns: 3600</div>`)[0];
+                popup_c31b2b382b09b792557b7c1de2509a0f.setContent(html_94699b953bce8614100f8527a1d488c6);
+            
+        
+
+        circle_marker_379f545bc053562b772500552f19b70a.bindPopup(popup_c31b2b382b09b792557b7c1de2509a0f)
+        ;
+
+        
+    
+    
+            var circle_marker_f42f0c0735a2d09956bf0b118bfc56f0 = L.circleMarker(
+                [41.7994549, -87.59477789999998],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.163388889487461, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c213b0b67a8eb1c78ff71c2db7247683 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fecf46c7df874db7f4660804b668c6a = $(`<div id="html_9fecf46c7df874db7f4660804b668c6a" style="width: 100.0%; height: 100.0%;"><b>Kimbark Ave & 53rd St</b><br>Covered: False<br>Total returns: 13228<br>Weekday returns: 9671<br>Weekend returns: 3557</div>`)[0];
+                popup_c213b0b67a8eb1c78ff71c2db7247683.setContent(html_9fecf46c7df874db7f4660804b668c6a);
+            
+        
+
+        circle_marker_f42f0c0735a2d09956bf0b118bfc56f0.bindPopup(popup_c213b0b67a8eb1c78ff71c2db7247683)
+        ;
+
+        
+    
+    
+            var circle_marker_58f8fb4002631862cf8e97ebb02006b0 = L.circleMarker(
+                [41.8939139, -87.6417358],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.285552655059776, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_747133e3353a64838246270e8a4c96a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f85cf1506e9f04a96728419df6e0986 = $(`<div id="html_0f85cf1506e9f04a96728419df6e0986" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Erie St</b><br>Covered: True<br>Total returns: 19084<br>Weekday returns: 14745<br>Weekend returns: 4339</div>`)[0];
+                popup_747133e3353a64838246270e8a4c96a4.setContent(html_0f85cf1506e9f04a96728419df6e0986);
+            
+        
+
+        circle_marker_58f8fb4002631862cf8e97ebb02006b0.bindPopup(popup_747133e3353a64838246270e8a4c96a4)
+        ;
+
+        
+    
+    
+            var circle_marker_2f582c6870ea61bf3ad174da0d8ee744 = L.circleMarker(
+                [41.889172621529056, -87.63849963502554],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.532328223953455, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_751021f32f4d1b4ae2ccc45ac4afe170 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da055a00e48715951d37e33bfd9f36da = $(`<div id="html_da055a00e48715951d37e33bfd9f36da" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Covered: True<br>Total returns: 40013<br>Weekday returns: 31094<br>Weekend returns: 8919</div>`)[0];
+                popup_751021f32f4d1b4ae2ccc45ac4afe170.setContent(html_da055a00e48715951d37e33bfd9f36da);
+            
+        
+
+        circle_marker_2f582c6870ea61bf3ad174da0d8ee744.bindPopup(popup_751021f32f4d1b4ae2ccc45ac4afe170)
+        ;
+
+        
+    
+    
+            var circle_marker_d678eb6f351f746c30803e7c41101ccc = L.circleMarker(
+                [41.890762, -87.631697],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.292945396364999, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_6f0569ed29a4ff7587fad7d7c411d145 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_533e5b01f44478950b757e8004c97816 = $(`<div id="html_533e5b01f44478950b757e8004c97816" style="width: 100.0%; height: 100.0%;"><b>LaSalle St & Illinois St</b><br>Covered: True<br>Total returns: 19512<br>Weekday returns: 14260<br>Weekend returns: 5252</div>`)[0];
+                popup_6f0569ed29a4ff7587fad7d7c411d145.setContent(html_533e5b01f44478950b757e8004c97816);
+            
+        
+
+        circle_marker_d678eb6f351f746c30803e7c41101ccc.bindPopup(popup_6f0569ed29a4ff7587fad7d7c411d145)
+        ;
+
+        
+    
+    
+            var circle_marker_4ec27230652e09f13a63dacebb02a880 = L.circleMarker(
+                [41.878166, -87.631929],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.200951773636239, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_b7314b83885b47e599cc371f87bda24f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f95170f5742821ddb8a06f13e32f6f8 = $(`<div id="html_3f95170f5742821ddb8a06f13e32f6f8" style="width: 100.0%; height: 100.0%;"><b>LaSalle St & Jackson Blvd</b><br>Covered: True<br>Total returns: 14806<br>Weekday returns: 13930<br>Weekend returns: 876</div>`)[0];
+                popup_b7314b83885b47e599cc371f87bda24f.setContent(html_3f95170f5742821ddb8a06f13e32f6f8);
+            
+        
+
+        circle_marker_4ec27230652e09f13a63dacebb02a880.bindPopup(popup_b7314b83885b47e599cc371f87bda24f)
+        ;
+
+        
+    
+    
+            var circle_marker_28658a95a6f6a69aef4d4afa3e4e622d = L.circleMarker(
+                [41.98404411519213, -87.65228122472763],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.129104774147848, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_204adc16c83d712f428f55c509c7f916 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0958b0b17d4afb27baf7eff2bb567bd6 = $(`<div id="html_0958b0b17d4afb27baf7eff2bb567bd6" style="width: 100.0%; height: 100.0%;"><b>Lakefront Trail & Bryn Mawr Ave</b><br>Covered: False<br>Total returns: 11935<br>Weekday returns: 6778<br>Weekend returns: 5157</div>`)[0];
+                popup_204adc16c83d712f428f55c509c7f916.setContent(html_0958b0b17d4afb27baf7eff2bb567bd6);
+            
+        
+
+        circle_marker_28658a95a6f6a69aef4d4afa3e4e622d.bindPopup(popup_204adc16c83d712f428f55c509c7f916)
+        ;
+
+        
+    
+    
+            var circle_marker_8e02ec47ea94e27176e4f085e83b9fae = L.circleMarker(
+                [41.925858, -87.638973],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.211280614190148, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_9b9a4025608aadabbd5cdc53a6e8da9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33f04aba6cac10e0cf7dd0827a08a172 = $(`<div id="html_33f04aba6cac10e0cf7dd0827a08a172" style="width: 100.0%; height: 100.0%;"><b>Lakeview Ave & Fullerton Pkwy</b><br>Covered: False<br>Total returns: 15272<br>Weekday returns: 10132<br>Weekend returns: 5140</div>`)[0];
+                popup_9b9a4025608aadabbd5cdc53a6e8da9c.setContent(html_33f04aba6cac10e0cf7dd0827a08a172);
+            
+        
+
+        circle_marker_8e02ec47ea94e27176e4f085e83b9fae.bindPopup(popup_9b9a4025608aadabbd5cdc53a6e8da9c)
+        ;
+
+        
+    
+    
+            var circle_marker_e8b401e7815558329fc11c11a09922ba = L.circleMarker(
+                [41.897764, -87.642884],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.270073428188562, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e24751e8e4f8ce4fed610414f432e305 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_498cda3cae20367d7d15908fe91020c2 = $(`<div id="html_498cda3cae20367d7d15908fe91020c2" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Kingsbury St</b><br>Covered: True<br>Total returns: 18218<br>Weekday returns: 15621<br>Weekend returns: 2597</div>`)[0];
+                popup_e24751e8e4f8ce4fed610414f432e305.setContent(html_498cda3cae20367d7d15908fe91020c2);
+            
+        
+
+        circle_marker_e8b401e7815558329fc11c11a09922ba.bindPopup(popup_e24751e8e4f8ce4fed610414f432e305)
+        ;
+
+        
+    
+    
+            var circle_marker_451482a5b4168306e42b1ec081e540a6 = L.circleMarker(
+                [41.921822, -87.64414],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.213108891708565, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_3fa631eb51f2e925f2ebbf4cab6364d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2116adde5ff325bc092c0abe4c99a88d = $(`<div id="html_2116adde5ff325bc092c0abe4c99a88d" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Covered: False<br>Total returns: 15356<br>Weekday returns: 9969<br>Weekend returns: 5387</div>`)[0];
+                popup_3fa631eb51f2e925f2ebbf4cab6364d9.setContent(html_2116adde5ff325bc092c0abe4c99a88d);
+            
+        
+
+        circle_marker_451482a5b4168306e42b1ec081e540a6.bindPopup(popup_3fa631eb51f2e925f2ebbf4cab6364d9)
+        ;
+
+        
+    
+    
+            var circle_marker_c209085a24b939b6676ce6755cf34bbc = L.circleMarker(
+                [41.924161029067626, -87.64638036489487],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.238268604196497, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_0601a4390f2d1c0e827c4250dd44f4f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efbd7800e9104c1ea5a1244ffe48dc94 = $(`<div id="html_efbd7800e9104c1ea5a1244ffe48dc94" style="width: 100.0%; height: 100.0%;"><b>Lincoln Ave & Fullerton Ave</b><br>Covered: False<br>Total returns: 16560<br>Weekday returns: 11652<br>Weekend returns: 4908</div>`)[0];
+                popup_0601a4390f2d1c0e827c4250dd44f4f2.setContent(html_efbd7800e9104c1ea5a1244ffe48dc94);
+            
+        
+
+        circle_marker_c209085a24b939b6676ce6755cf34bbc.bindPopup(popup_0601a4390f2d1c0e827c4250dd44f4f2)
+        ;
+
+        
+    
+    
+            var circle_marker_1e6c9d1ce8a9db44bda1142c99efec95 = L.circleMarker(
+                [41.92393131136619, -87.63582453131676],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.154606374362155, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_42052cddfed10b732eee33f5e7c2493a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd1ad6184af23816668e3b65f199dea3 = $(`<div id="html_fd1ad6184af23816668e3b65f199dea3" style="width: 100.0%; height: 100.0%;"><b>Lincoln Park Conservatory</b><br>Covered: False<br>Total returns: 12884<br>Weekday returns: 7981<br>Weekend returns: 4903</div>`)[0];
+                popup_42052cddfed10b732eee33f5e7c2493a.setContent(html_fd1ad6184af23816668e3b65f199dea3);
+            
+        
+
+        circle_marker_1e6c9d1ce8a9db44bda1142c99efec95.bindPopup(popup_42052cddfed10b732eee33f5e7c2493a)
+        ;
+
+        
+    
+    
+            var circle_marker_65b2d253dc990debc43c75d3ad3d4658 = L.circleMarker(
+                [41.87222873224032, -87.66136385500431],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.13833134465885, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_6c43b1716d8a76668f820b7d58904255 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6fdb18b6c2ae86cde798596be480d7b = $(`<div id="html_a6fdb18b6c2ae86cde798596be480d7b" style="width: 100.0%; height: 100.0%;"><b>Loomis St & Lexington St</b><br>Covered: True<br>Total returns: 12270<br>Weekday returns: 9240<br>Weekend returns: 3030</div>`)[0];
+                popup_6c43b1716d8a76668f820b7d58904255.setContent(html_a6fdb18b6c2ae86cde798596be480d7b);
+            
+        
+
+        circle_marker_65b2d253dc990debc43c75d3ad3d4658.bindPopup(popup_6c43b1716d8a76668f820b7d58904255)
+        ;
+
+        
+    
+    
+            var circle_marker_61ca15a6c7b6888141065b9be6d2d8d3 = L.circleMarker(
+                [41.89450300000001, -87.617854],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.172265043250416, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_72045b763a111cd2238829de2f679214 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5284f7cc004fba84f69c733e045f10eb = $(`<div id="html_5284f7cc004fba84f69c733e045f10eb" style="width: 100.0%; height: 100.0%;"><b>McClurg Ct & Erie St</b><br>Covered: True<br>Total returns: 13585<br>Weekday returns: 10746<br>Weekend returns: 2839</div>`)[0];
+                popup_72045b763a111cd2238829de2f679214.setContent(html_5284f7cc004fba84f69c733e045f10eb);
+            
+        
+
+        circle_marker_61ca15a6c7b6888141065b9be6d2d8d3.bindPopup(popup_72045b763a111cd2238829de2f679214)
+        ;
+
+        
+    
+    
+            var circle_marker_9d10980b76d6072bef08166b30280f98 = L.circleMarker(
+                [41.892592119709725, -87.61728912591934],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.332250060998605, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_4c41f5b2edf8317cb321f191420bd00a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb5299e54fc94e6e21a47ea1e9786ca0 = $(`<div id="html_bb5299e54fc94e6e21a47ea1e9786ca0" style="width: 100.0%; height: 100.0%;"><b>McClurg Ct & Ohio St</b><br>Covered: True<br>Total returns: 21954<br>Weekday returns: 15303<br>Weekend returns: 6651</div>`)[0];
+                popup_4c41f5b2edf8317cb321f191420bd00a.setContent(html_bb5299e54fc94e6e21a47ea1e9786ca0);
+            
+        
+
+        circle_marker_9d10980b76d6072bef08166b30280f98.bindPopup(popup_4c41f5b2edf8317cb321f191420bd00a)
+        ;
+
+        
+    
+    
+            var circle_marker_2b9cd608e091d63614558fce9754805a = L.circleMarker(
+                [41.87277296771354, -87.62398098838872],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.227779836733905, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a4de5c97a63847cdc347a6da17082c82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3cffc94be69053ce07bd5731de59807 = $(`<div id="html_b3cffc94be69053ce07bd5731de59807" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & 8th St</b><br>Covered: True<br>Total returns: 16047<br>Weekday returns: 9895<br>Weekend returns: 6152</div>`)[0];
+                popup_a4de5c97a63847cdc347a6da17082c82.setContent(html_b3cffc94be69053ce07bd5731de59807);
+            
+        
+
+        circle_marker_2b9cd608e091d63614558fce9754805a.bindPopup(popup_a4de5c97a63847cdc347a6da17082c82)
+        ;
+
+        
+    
+    
+            var circle_marker_b02f206f26726bc02d2fc22df6f8f3bb = L.circleMarker(
+                [41.87834559823754, -87.62415080552178],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.117251041642168, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_380a45db6e7550f60125538898546f33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0922b1d834ba26c38ff31dedfdc91c17 = $(`<div id="html_0922b1d834ba26c38ff31dedfdc91c17" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Jackson Blvd</b><br>Covered: True<br>Total returns: 11518<br>Weekday returns: 7903<br>Weekend returns: 3615</div>`)[0];
+                popup_380a45db6e7550f60125538898546f33.setContent(html_0922b1d834ba26c38ff31dedfdc91c17);
+            
+        
+
+        circle_marker_b02f206f26726bc02d2fc22df6f8f3bb.bindPopup(popup_380a45db6e7550f60125538898546f33)
+        ;
+
+        
+    
+    
+            var circle_marker_c64d21213042c7ca582fc7c1bde7f5ad = L.circleMarker(
+                [41.886022, -87.624398],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.283168812889871, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_2bd23eee7009d8804e2f74fd5f191d3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_291db68275f94d3cc53a2d878a6240c2 = $(`<div id="html_291db68275f94d3cc53a2d878a6240c2" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Lake St</b><br>Covered: True<br>Total returns: 18948<br>Weekday returns: 14404<br>Weekend returns: 4544</div>`)[0];
+                popup_2bd23eee7009d8804e2f74fd5f191d3b.setContent(html_291db68275f94d3cc53a2d878a6240c2);
+            
+        
+
+        circle_marker_c64d21213042c7ca582fc7c1bde7f5ad.bindPopup(popup_2bd23eee7009d8804e2f74fd5f191d3b)
+        ;
+
+        
+    
+    
+            var circle_marker_9b74bdd3b7d324a7cb40ebc571b21a33 = L.circleMarker(
+                [41.90096039009614, -87.62377663865593],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.484148920094341, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_47e0aa4fe0e3f69dee858c1093493610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7568f24335da275adccc87cdf25082c3 = $(`<div id="html_7568f24335da275adccc87cdf25082c3" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Covered: True<br>Total returns: 34628<br>Weekday returns: 21157<br>Weekend returns: 13471</div>`)[0];
+                popup_47e0aa4fe0e3f69dee858c1093493610.setContent(html_7568f24335da275adccc87cdf25082c3);
+            
+        
+
+        circle_marker_9b74bdd3b7d324a7cb40ebc571b21a33.bindPopup(popup_47e0aa4fe0e3f69dee858c1093493610)
+        ;
+
+        
+    
+    
+            var circle_marker_c18f93fff4c07b71abd775b00e528c67 = L.circleMarker(
+                [41.88398406449815, -87.62468397185215],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.330224638071682, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_3eb1cf50697763568e1e16211bbea872 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaf95805713bd8d2f5921a9f513b77d9 = $(`<div id="html_aaf95805713bd8d2f5921a9f513b77d9" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>Covered: True<br>Total returns: 21821<br>Weekday returns: 16265<br>Weekend returns: 5556</div>`)[0];
+                popup_3eb1cf50697763568e1e16211bbea872.setContent(html_aaf95805713bd8d2f5921a9f513b77d9);
+            
+        
+
+        circle_marker_c18f93fff4c07b71abd775b00e528c67.bindPopup(popup_3eb1cf50697763568e1e16211bbea872)
+        ;
+
+        
+    
+    
+            var circle_marker_00b12d0f8141b63636eb99f89493604a = L.circleMarker(
+                [41.8985866514, -87.6219152258],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.192031326616039, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_07ef01b81a1bf1905c29da6599167c2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f0e1080417ff849dcc13f05218c46d4 = $(`<div id="html_6f0e1080417ff849dcc13f05218c46d4" style="width: 100.0%; height: 100.0%;"><b>Mies van der Rohe Way & Chestnut St</b><br>Covered: True<br>Total returns: 14415<br>Weekday returns: 10250<br>Weekend returns: 4165</div>`)[0];
+                popup_07ef01b81a1bf1905c29da6599167c2e.setContent(html_6f0e1080417ff849dcc13f05218c46d4);
+            
+        
+
+        circle_marker_00b12d0f8141b63636eb99f89493604a.bindPopup(popup_07ef01b81a1bf1905c29da6599167c2e)
+        ;
+
+        
+    
+    
+            var circle_marker_d6652859f59f09dc525f00af492b0a39 = L.circleMarker(
+                [41.89694462637082, -87.62175768613815],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.144467973363406, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_dd16f21d87b39a70ce9f0bd5f998ea89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fa79b32bf77b4c4ba1ba87abb9807c8 = $(`<div id="html_0fa79b32bf77b4c4ba1ba87abb9807c8" style="width: 100.0%; height: 100.0%;"><b>Mies van der Rohe Way & Chicago Ave</b><br>Covered: True<br>Total returns: 12498<br>Weekday returns: 9251<br>Weekend returns: 3247</div>`)[0];
+                popup_dd16f21d87b39a70ce9f0bd5f998ea89.setContent(html_0fa79b32bf77b4c4ba1ba87abb9807c8);
+            
+        
+
+        circle_marker_d6652859f59f09dc525f00af492b0a39.bindPopup(popup_dd16f21d87b39a70ce9f0bd5f998ea89)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc6e69471425dc0f852073be425063d = L.circleMarker(
+                [41.8810317, -87.62408432],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.407144021038265, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_1ecdca42475cfa190a47d5fb400cb621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30c792e10d8e4e4791a7984e298ff0d7 = $(`<div id="html_30c792e10d8e4e4791a7984e298ff0d7" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Covered: True<br>Total returns: 27485<br>Weekday returns: 17129<br>Weekend returns: 10356</div>`)[0];
+                popup_1ecdca42475cfa190a47d5fb400cb621.setContent(html_30c792e10d8e4e4791a7984e298ff0d7);
+            
+        
+
+        circle_marker_5fc6e69471425dc0f852073be425063d.bindPopup(popup_1ecdca42475cfa190a47d5fb400cb621)
+        ;
+
+        
+    
+    
+            var circle_marker_b4af447d525e43931fb6eb174845007f = L.circleMarker(
+                [41.963982, -87.638181],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.261267569863383, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_012e9bcba852cb6870f800ecfaa25c10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2085f449935f552c694001299d55f3b2 = $(`<div id="html_2085f449935f552c694001299d55f3b2" style="width: 100.0%; height: 100.0%;"><b>Montrose Harbor</b><br>Covered: False<br>Total returns: 17743<br>Weekday returns: 10026<br>Weekend returns: 7717</div>`)[0];
+                popup_012e9bcba852cb6870f800ecfaa25c10.setContent(html_2085f449935f552c694001299d55f3b2);
+            
+        
+
+        circle_marker_b4af447d525e43931fb6eb174845007f.bindPopup(popup_012e9bcba852cb6870f800ecfaa25c10)
+        ;
+
+        
+    
+    
+            var circle_marker_5993f7a5e0768863b7edf7a3b6734b2d = L.circleMarker(
+                [41.871737, -87.65103],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.096722557278579, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_dadb209188cb46cf0325cb98f8fc93b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02ee2e32ee228576efd89158acf8f646 = $(`<div id="html_02ee2e32ee228576efd89158acf8f646" style="width: 100.0%; height: 100.0%;"><b>Morgan St & Polk St</b><br>Covered: True<br>Total returns: 10830<br>Weekday returns: 9246<br>Weekend returns: 1584</div>`)[0];
+                popup_dadb209188cb46cf0325cb98f8fc93b2.setContent(html_02ee2e32ee228576efd89158acf8f646);
+            
+        
+
+        circle_marker_5993f7a5e0768863b7edf7a3b6734b2d.bindPopup(popup_dadb209188cb46cf0325cb98f8fc93b2)
+        ;
+
+        
+    
+    
+            var circle_marker_3dfb8df635fa6c83df03d3ab37df7920 = L.circleMarker(
+                [41.892278, -87.612043],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.485580093980671, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_5d439d00022b86a4e0231e60547e0ded = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a6a13c6931285d8caad12d24462bfcb = $(`<div id="html_0a6a13c6931285d8caad12d24462bfcb" style="width: 100.0%; height: 100.0%;"><b>Navy Pier</b><br>Covered: True<br>Total returns: 34777<br>Weekday returns: 19160<br>Weekend returns: 15617</div>`)[0];
+                popup_5d439d00022b86a4e0231e60547e0ded.setContent(html_0a6a13c6931285d8caad12d24462bfcb);
+            
+        
+
+        circle_marker_3dfb8df635fa6c83df03d3ab37df7920.bindPopup(popup_5d439d00022b86a4e0231e60547e0ded)
+        ;
+
+        
+    
+    
+            var circle_marker_20faeb229c1f075846e66360a58d30f3 = L.circleMarker(
+                [41.89084704062381, -87.61861681938171],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.306026851613009, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_7983296acc223343e36067fd69bae6ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab3ba0b6686e7ab74c3239ec1099d5ec = $(`<div id="html_ab3ba0b6686e7ab74c3239ec1099d5ec" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Covered: True<br>Total returns: 20293<br>Weekday returns: 13869<br>Weekend returns: 6424</div>`)[0];
+                popup_7983296acc223343e36067fd69bae6ec.setContent(html_ab3ba0b6686e7ab74c3239ec1099d5ec);
+            
+        
+
+        circle_marker_20faeb229c1f075846e66360a58d30f3.bindPopup(popup_7983296acc223343e36067fd69bae6ec)
+        ;
+
+        
+    
+    
+            var circle_marker_9683c1af122485b9658ad99d6aeb46dd = L.circleMarker(
+                [41.888243, -87.63638999999999],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.300161014505276, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_01169789bb129851cf0267ce99957282 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_020b51ec0514bde6ddd3f7207f030142 = $(`<div id="html_020b51ec0514bde6ddd3f7207f030142" style="width: 100.0%; height: 100.0%;"><b>Orleans St & Merchandise Mart Plaza</b><br>Covered: True<br>Total returns: 19939<br>Weekday returns: 16865<br>Weekend returns: 3074</div>`)[0];
+                popup_01169789bb129851cf0267ce99957282.setContent(html_020b51ec0514bde6ddd3f7207f030142);
+            
+        
+
+        circle_marker_9683c1af122485b9658ad99d6aeb46dd.bindPopup(popup_01169789bb129851cf0267ce99957282)
+        ;
+
+        
+    
+    
+            var circle_marker_cfe4b15fe3a0909f052dcb83c445dc98 = L.circleMarker(
+                [41.87764159627531, -87.64961779117584],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.154399351091261, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_ec1c6a38792d611877a873ddeb4efc63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97800489e0cecf402e3fea54fb6f35e1 = $(`<div id="html_97800489e0cecf402e3fea54fb6f35e1" style="width: 100.0%; height: 100.0%;"><b>Peoria St & Jackson Blvd</b><br>Covered: True<br>Total returns: 12876<br>Weekday returns: 10115<br>Weekend returns: 2761</div>`)[0];
+                popup_ec1c6a38792d611877a873ddeb4efc63.setContent(html_97800489e0cecf402e3fea54fb6f35e1);
+            
+        
+
+        circle_marker_cfe4b15fe3a0909f052dcb83c445dc98.bindPopup(popup_ec1c6a38792d611877a873ddeb4efc63)
+        ;
+
+        
+    
+    
+            var circle_marker_af3710d193e89e352a19b40273d11772 = L.circleMarker(
+                [41.95436725508892, -87.64794502215663],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.167246841265458, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_eb2a0ff286f3190f84bd33cd271b19ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e27be53c5c1ee2da967fb589eeed7ffc = $(`<div id="html_e27be53c5c1ee2da967fb589eeed7ffc" style="width: 100.0%; height: 100.0%;"><b>Pine Grove Ave & Irving Park Rd</b><br>Covered: False<br>Total returns: 13382<br>Weekday returns: 8971<br>Weekend returns: 4411</div>`)[0];
+                popup_eb2a0ff286f3190f84bd33cd271b19ba.setContent(html_e27be53c5c1ee2da967fb589eeed7ffc);
+            
+        
+
+        circle_marker_af3710d193e89e352a19b40273d11772.bindPopup(popup_eb2a0ff286f3190f84bd33cd271b19ba)
+        ;
+
+        
+    
+    
+            var circle_marker_ecddec89274965be6b6f115ba5c14b29 = L.circleMarker(
+                [41.94947274088333, -87.64645278453827],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.233708846801482, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c1d8ddfcbc3064432dc6a9eab49f4255 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_941be4184b0fb86fbe2184d7b4ccbdf6 = $(`<div id="html_941be4184b0fb86fbe2184d7b4ccbdf6" style="width: 100.0%; height: 100.0%;"><b>Pine Grove Ave & Waveland Ave</b><br>Covered: False<br>Total returns: 16335<br>Weekday returns: 10937<br>Weekend returns: 5398</div>`)[0];
+                popup_c1d8ddfcbc3064432dc6a9eab49f4255.setContent(html_941be4184b0fb86fbe2184d7b4ccbdf6);
+            
+        
+
+        circle_marker_ecddec89274965be6b6f115ba5c14b29.bindPopup(popup_c1d8ddfcbc3064432dc6a9eab49f4255)
+        ;
+
+        
+    
+    
+            var circle_marker_910301383690d1a46ff7e3f43ee51908 = L.circleMarker(
+                [41.968445, -87.674226],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.25615644695268, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e1670c7b82dd67840f49479e57e413c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11dd90f9c10b8a918a59eeae49d68b15 = $(`<div id="html_11dd90f9c10b8a918a59eeae49d68b15" style="width: 100.0%; height: 100.0%;"><b>Ravenswood Ave & Lawrence Ave</b><br>Covered: False<br>Total returns: 17473<br>Weekday returns: 13826<br>Weekend returns: 3647</div>`)[0];
+                popup_e1670c7b82dd67840f49479e57e413c8.setContent(html_11dd90f9c10b8a918a59eeae49d68b15);
+            
+        
+
+        circle_marker_910301383690d1a46ff7e3f43ee51908.bindPopup(popup_e1670c7b82dd67840f49479e57e413c8)
+        ;
+
+        
+    
+    
+            var circle_marker_6f6c2e3430ef117c6b5005e719bc8227 = L.circleMarker(
+                [41.90230870122, -87.627690528],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.187585419664844, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_d081105abf3bf914439e3d947ff00409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d3b79fba10d0d476e708d60b52c2a90 = $(`<div id="html_8d3b79fba10d0d476e708d60b52c2a90" style="width: 100.0%; height: 100.0%;"><b>Rush St & Cedar St</b><br>Covered: True<br>Total returns: 14224<br>Weekday returns: 9762<br>Weekend returns: 4462</div>`)[0];
+                popup_d081105abf3bf914439e3d947ff00409.setContent(html_8d3b79fba10d0d476e708d60b52c2a90);
+            
+        
+
+        circle_marker_6f6c2e3430ef117c6b5005e719bc8227.bindPopup(popup_d081105abf3bf914439e3d947ff00409)
+        ;
+
+        
+    
+    
+            var circle_marker_d296a19c2fd18d8d32f1ace0135375a7 = L.circleMarker(
+                [41.89576474564, -87.6259080327],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.151904990710571, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_95a62523f0f59d028b56939301e04f85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd798785331be5859e86fa118c761327 = $(`<div id="html_cd798785331be5859e86fa118c761327" style="width: 100.0%; height: 100.0%;"><b>Rush St & Superior St</b><br>Covered: True<br>Total returns: 12780<br>Weekday returns: 9518<br>Weekend returns: 3262</div>`)[0];
+                popup_95a62523f0f59d028b56939301e04f85.setContent(html_cd798785331be5859e86fa118c761327);
+            
+        
+
+        circle_marker_d296a19c2fd18d8d32f1ace0135375a7.bindPopup(popup_95a62523f0f59d028b56939301e04f85)
+        ;
+
+        
+    
+    
+            var circle_marker_f67b49813ecfe2b5dc5c4c664a932c0b = L.circleMarker(
+                [41.894666, -87.638437],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.15587159400218, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_f009cd4f415406fd05b6bbcd865655b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a602e45c43159c2356c2f7b55ee1c34e = $(`<div id="html_a602e45c43159c2356c2f7b55ee1c34e" style="width: 100.0%; height: 100.0%;"><b>Sedgwick St & Huron St</b><br>Covered: True<br>Total returns: 12933<br>Weekday returns: 10193<br>Weekend returns: 2740</div>`)[0];
+                popup_f009cd4f415406fd05b6bbcd865655b1.setContent(html_a602e45c43159c2356c2f7b55ee1c34e);
+            
+        
+
+        circle_marker_f67b49813ecfe2b5dc5c4c664a932c0b.bindPopup(popup_f009cd4f415406fd05b6bbcd865655b1)
+        ;
+
+        
+    
+    
+            var circle_marker_3b131f5cc89c08b995d5cb1b0529b83b = L.circleMarker(
+                [41.922167, -87.638888],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.121563677268702, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_92294e56f996794ae07b83e0b2b588f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6948c7206806af0a34e0610fb3c4eb78 = $(`<div id="html_6948c7206806af0a34e0610fb3c4eb78" style="width: 100.0%; height: 100.0%;"><b>Sedgwick St & Webster Ave</b><br>Covered: False<br>Total returns: 11668<br>Weekday returns: 8097<br>Weekend returns: 3571</div>`)[0];
+                popup_92294e56f996794ae07b83e0b2b588f4.setContent(html_6948c7206806af0a34e0610fb3c4eb78);
+            
+        
+
+        circle_marker_3b131f5cc89c08b995d5cb1b0529b83b.bindPopup(popup_92294e56f996794ae07b83e0b2b588f4)
+        ;
+
+        
+    
+    
+            var circle_marker_061c3dca8096a27b201d15c278475957 = L.circleMarker(
+                [41.86722596201104, -87.61535540410257],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.292842884831645, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_bd188265720351cd3666035ffc1da714 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aae6982cc87020f68437a55ddd678348 = $(`<div id="html_aae6982cc87020f68437a55ddd678348" style="width: 100.0%; height: 100.0%;"><b>Shedd Aquarium</b><br>Covered: True<br>Total returns: 19506<br>Weekday returns: 11191<br>Weekend returns: 8315</div>`)[0];
+                popup_bd188265720351cd3666035ffc1da714.setContent(html_aae6982cc87020f68437a55ddd678348);
+            
+        
+
+        circle_marker_061c3dca8096a27b201d15c278475957.bindPopup(popup_bd188265720351cd3666035ffc1da714)
+        ;
+
+        
+    
+    
+            var circle_marker_f33a89094201c17d1ac10af7d64bc1fd = L.circleMarker(
+                [41.9256163, -87.65365740000001],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.232441340418868, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_4424379160e7a6aa9c236f33f4398ceb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96a3137c082aaf8e44a669b090c8364b = $(`<div id="html_96a3137c082aaf8e44a669b090c8364b" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Fullerton Ave</b><br>Covered: False<br>Total returns: 16273<br>Weekday returns: 12434<br>Weekend returns: 3839</div>`)[0];
+                popup_4424379160e7a6aa9c236f33f4398ceb.setContent(html_96a3137c082aaf8e44a669b090c8364b);
+            
+        
+
+        circle_marker_f33a89094201c17d1ac10af7d64bc1fd.bindPopup(popup_4424379160e7a6aa9c236f33f4398ceb)
+        ;
+
+        
+    
+    
+            var circle_marker_e69bad981fca63c745218e94eace205f = L.circleMarker(
+                [41.949399, -87.654529],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.186740765169105, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_eb014a6ec073c0d68b39bec3482c329a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab3d8bc4fcbd99f1085a98e32cce726f = $(`<div id="html_ab3d8bc4fcbd99f1085a98e32cce726f" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Waveland Ave</b><br>Covered: False<br>Total returns: 14188<br>Weekday returns: 9766<br>Weekend returns: 4422</div>`)[0];
+                popup_eb014a6ec073c0d68b39bec3482c329a.setContent(html_ab3d8bc4fcbd99f1085a98e32cce726f);
+            
+        
+
+        circle_marker_e69bad981fca63c745218e94eace205f.bindPopup(popup_eb014a6ec073c0d68b39bec3482c329a)
+        ;
+
+        
+    
+    
+            var circle_marker_22d77ed4b06531289dd2dcc0ad7cc6af = L.circleMarker(
+                [41.92154, -87.653818],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.165248284227969, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e306f82ed9680c232959033c59886ee2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d61070d5864d19022252c00b2f665681 = $(`<div id="html_d61070d5864d19022252c00b2f665681" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Webster Ave</b><br>Covered: False<br>Total returns: 13302<br>Weekday returns: 9245<br>Weekend returns: 4057</div>`)[0];
+                popup_e306f82ed9680c232959033c59886ee2.setContent(html_d61070d5864d19022252c00b2f665681);
+            
+        
+
+        circle_marker_22d77ed4b06531289dd2dcc0ad7cc6af.bindPopup(popup_e306f82ed9680c232959033c59886ee2)
+        ;
+
+        
+    
+    
+            var circle_marker_04c022a79dc1716cb38bdc4b4ddff3fd = L.circleMarker(
+                [41.936253484169214, -87.6526620968688],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1529465768508995, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_4b3ab659ac3e6f4e346a1f58c2603933 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ad039df2c61698d286d7c5b18e07b61 = $(`<div id="html_8ad039df2c61698d286d7c5b18e07b61" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Wellington Ave</b><br>Covered: False<br>Total returns: 12820<br>Weekday returns: 9145<br>Weekend returns: 3675</div>`)[0];
+                popup_4b3ab659ac3e6f4e346a1f58c2603933.setContent(html_8ad039df2c61698d286d7c5b18e07b61);
+            
+        
+
+        circle_marker_04c022a79dc1716cb38bdc4b4ddff3fd.bindPopup(popup_4b3ab659ac3e6f4e346a1f58c2603933)
+        ;
+
+        
+    
+    
+            var circle_marker_16b4cfd6d90f5b962ae0248451a9f341 = L.circleMarker(
+                [41.928712, -87.653833],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.167545593992903, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_361f565e5bc622f9fa038609b5706273 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_527d641881dd9a40060032bf2fd0191e = $(`<div id="html_527d641881dd9a40060032bf2fd0191e" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Wrightwood Ave</b><br>Covered: False<br>Total returns: 13394<br>Weekday returns: 9249<br>Weekend returns: 4145</div>`)[0];
+                popup_361f565e5bc622f9fa038609b5706273.setContent(html_527d641881dd9a40060032bf2fd0191e);
+            
+        
+
+        circle_marker_16b4cfd6d90f5b962ae0248451a9f341.bindPopup(popup_361f565e5bc622f9fa038609b5706273)
+        ;
+
+        
+    
+    
+            var circle_marker_4058a89c97015b376b188f23b4be4fc6 = L.circleMarker(
+                [41.954245, -87.654406],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.169505727173535, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_365bb07359b6983c701399993113ce79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2d1cadb6d18abc121fe36a2cd866bd1 = $(`<div id="html_e2d1cadb6d18abc121fe36a2cd866bd1" style="width: 100.0%; height: 100.0%;"><b>Sheridan Rd & Irving Park Rd</b><br>Covered: False<br>Total returns: 13473<br>Weekday returns: 9501<br>Weekend returns: 3972</div>`)[0];
+                popup_365bb07359b6983c701399993113ce79.setContent(html_e2d1cadb6d18abc121fe36a2cd866bd1);
+            
+        
+
+        circle_marker_4058a89c97015b376b188f23b4be4fc6.bindPopup(popup_365bb07359b6983c701399993113ce79)
+        ;
+
+        
+    
+    
+            var circle_marker_268f407950c18f406c26bbe719beb6b0 = L.circleMarker(
+                [41.96167, -87.65464],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1346713057021205, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_de84839309f3f2985e9d5634a268598d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_758fb9a103a0cc50f794febcea7f4ff8 = $(`<div id="html_758fb9a103a0cc50f794febcea7f4ff8" style="width: 100.0%; height: 100.0%;"><b>Sheridan Rd & Montrose Ave</b><br>Covered: False<br>Total returns: 12136<br>Weekday returns: 8226<br>Weekend returns: 3910</div>`)[0];
+                popup_de84839309f3f2985e9d5634a268598d.setContent(html_758fb9a103a0cc50f794febcea7f4ff8);
+            
+        
+
+        circle_marker_268f407950c18f406c26bbe719beb6b0.bindPopup(popup_de84839309f3f2985e9d5634a268598d)
+        ;
+
+        
+    
+    
+            var circle_marker_572013d0dee733fb4670d43afcfa8a0c = L.circleMarker(
+                [41.795212, -87.580715],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.108097954017342, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a2411512c5593945054f410520bfb3f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_806d093cf91c2033b2cb590f42f21f81 = $(`<div id="html_806d093cf91c2033b2cb590f42f21f81" style="width: 100.0%; height: 100.0%;"><b>Shore Dr & 55th St</b><br>Covered: False<br>Total returns: 11206<br>Weekday returns: 7396<br>Weekend returns: 3810</div>`)[0];
+                popup_a2411512c5593945054f410520bfb3f5.setContent(html_806d093cf91c2033b2cb590f42f21f81);
+            
+        
+
+        circle_marker_572013d0dee733fb4670d43afcfa8a0c.bindPopup(popup_a2411512c5593945054f410520bfb3f5)
+        ;
+
+        
+    
+    
+            var circle_marker_811769d764adcd9c686ae2b1935a8abf = L.circleMarker(
+                [41.943739, -87.66402],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.197444041299569, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_cae14e4c2b5a8ac60c7be5ee6bdd414f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb902fbc383343db0f9494131da2b01e = $(`<div id="html_eb902fbc383343db0f9494131da2b01e" style="width: 100.0%; height: 100.0%;"><b>Southport Ave & Roscoe St</b><br>Covered: False<br>Total returns: 14651<br>Weekday returns: 9814<br>Weekend returns: 4837</div>`)[0];
+                popup_cae14e4c2b5a8ac60c7be5ee6bdd414f.setContent(html_eb902fbc383343db0f9494131da2b01e);
+            
+        
+
+        circle_marker_811769d764adcd9c686ae2b1935a8abf.bindPopup(popup_cae14e4c2b5a8ac60c7be5ee6bdd414f)
+        ;
+
+        
+    
+    
+            var circle_marker_6791c4c5de0a59c1c8308eaf7de0dfb3 = L.circleMarker(
+                [41.948226, -87.6640712],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2427271102120265, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_2859ba729f68dc639c42f45576954959 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_acd37f808e1fa9afd0167c148ec32756 = $(`<div id="html_acd37f808e1fa9afd0167c148ec32756" style="width: 100.0%; height: 100.0%;"><b>Southport Ave & Waveland Ave</b><br>Covered: False<br>Total returns: 16783<br>Weekday returns: 11217<br>Weekend returns: 5566</div>`)[0];
+                popup_2859ba729f68dc639c42f45576954959.setContent(html_acd37f808e1fa9afd0167c148ec32756);
+            
+        
+
+        circle_marker_6791c4c5de0a59c1c8308eaf7de0dfb3.bindPopup(popup_2859ba729f68dc639c42f45576954959)
+        ;
+
+        
+    
+    
+            var circle_marker_55d1ac85ec7902f897229acbea438ce3 = L.circleMarker(
+                [41.93577461766458, -87.66360014677048],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.104479443326584, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a69b17b10624929b39e7d3a50a21db8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8eeae6afec5b67411cc76962fe5b3ffe = $(`<div id="html_8eeae6afec5b67411cc76962fe5b3ffe" style="width: 100.0%; height: 100.0%;"><b>Southport Ave & Wellington Ave</b><br>Covered: False<br>Total returns: 11085<br>Weekday returns: 7347<br>Weekend returns: 3738</div>`)[0];
+                popup_a69b17b10624929b39e7d3a50a21db8b.setContent(html_8eeae6afec5b67411cc76962fe5b3ffe);
+            
+        
+
+        circle_marker_55d1ac85ec7902f897229acbea438ce3.bindPopup(popup_a69b17b10624929b39e7d3a50a21db8b)
+        ;
+
+        
+    
+    
+            var circle_marker_41fad151bf41d005d46c8166b4d82ec7 = L.circleMarker(
+                [41.89434700980045, -87.62280048612229],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.295481039308957, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a3d84db7cc2a6fe8a1b371f9f6c6aafe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f64d40e41f6482c25127fe18a3f1f10 = $(`<div id="html_0f64d40e41f6482c25127fe18a3f1f10" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Covered: True<br>Total returns: 19661<br>Weekday returns: 15631<br>Weekend returns: 4030</div>`)[0];
+                popup_a3d84db7cc2a6fe8a1b371f9f6c6aafe.setContent(html_0f64d40e41f6482c25127fe18a3f1f10);
+            
+        
+
+        circle_marker_41fad151bf41d005d46c8166b4d82ec7.bindPopup(popup_a3d84db7cc2a6fe8a1b371f9f6c6aafe)
+        ;
+
+        
+    
+    
+            var circle_marker_72abc9d49085354b97d3d0448c4e10da = L.circleMarker(
+                [41.896617200407526, -87.62857854366302],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.390547569893229, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_95c1c677e9ae0791482e371c8c9e7792 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6c1d5234c057ab342d6bbe966942b23 = $(`<div id="html_f6c1d5234c057ab342d6bbe966942b23" style="width: 100.0%; height: 100.0%;"><b>State St & Chicago Ave</b><br>Covered: True<br>Total returns: 26150<br>Weekday returns: 19184<br>Weekend returns: 6966</div>`)[0];
+                popup_95c1c677e9ae0791482e371c8c9e7792.setContent(html_f6c1d5234c057ab342d6bbe966942b23);
+            
+        
+
+        circle_marker_72abc9d49085354b97d3d0448c4e10da.bindPopup(popup_95c1c677e9ae0791482e371c8c9e7792)
+        ;
+
+        
+    
+    
+            var circle_marker_3398fc1a266d7134a71e2bbcb9f86abf = L.circleMarker(
+                [41.8893754597427, -87.62707652193124],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.167172111227407, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_57c8655f4d054effb5b6bcaab8310d0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd052fdfb3526b47aeaa13f9fdf7d510 = $(`<div id="html_dd052fdfb3526b47aeaa13f9fdf7d510" style="width: 100.0%; height: 100.0%;"><b>State St & Kinzie St</b><br>Covered: True<br>Total returns: 13379<br>Weekday returns: 10238<br>Weekend returns: 3141</div>`)[0];
+                popup_57c8655f4d054effb5b6bcaab8310d0b.setContent(html_dd052fdfb3526b47aeaa13f9fdf7d510);
+            
+        
+
+        circle_marker_3398fc1a266d7134a71e2bbcb9f86abf.bindPopup(popup_57c8655f4d054effb5b6bcaab8310d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_fdf546bc3b10cb32f8aeea2ddb6f4291 = L.circleMarker(
+                [41.88462107257936, -87.62783423066139],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.143693679558027, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_722ebfc3b638815eee83e082b3732686 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd26840bfad80197aea07f803b960ce2 = $(`<div id="html_fd26840bfad80197aea07f803b960ce2" style="width: 100.0%; height: 100.0%;"><b>State St & Randolph St</b><br>Covered: True<br>Total returns: 12469<br>Weekday returns: 8847<br>Weekend returns: 3622</div>`)[0];
+                popup_722ebfc3b638815eee83e082b3732686.setContent(html_fd26840bfad80197aea07f803b960ce2);
+            
+        
+
+        circle_marker_fdf546bc3b10cb32f8aeea2ddb6f4291.bindPopup(popup_722ebfc3b638815eee83e082b3732686)
+        ;
+
+        
+    
+    
+            var circle_marker_401aff56cb80bbe024265427ffd4c89b = L.circleMarker(
+                [41.93132, -87.63874200000001],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.147282946540674, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_b7e02cbeb583303694619d933215ec2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aed3be23defaa9a07c8b6bd7f2cdaad4 = $(`<div id="html_aed3be23defaa9a07c8b6bd7f2cdaad4" style="width: 100.0%; height: 100.0%;"><b>Stockton Dr & Wrightwood Ave</b><br>Covered: False<br>Total returns: 12604<br>Weekday returns: 8240<br>Weekend returns: 4364</div>`)[0];
+                popup_b7e02cbeb583303694619d933215ec2e.setContent(html_aed3be23defaa9a07c8b6bd7f2cdaad4);
+            
+        
+
+        circle_marker_401aff56cb80bbe024265427ffd4c89b.bindPopup(popup_b7e02cbeb583303694619d933215ec2e)
+        ;
+
+        
+    
+    
+            var circle_marker_dc62a199dd6e396ac7dbaac388a0563f = L.circleMarker(
+                [41.892278002970286, -87.61204300164603],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.435494315581122, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e8e69751da4d5928841742ad050dd2d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c83105553093e3e8d8b3e5b71049643 = $(`<div id="html_3c83105553093e3e8d8b3e5b71049643" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Covered: True<br>Total returns: 29925<br>Weekday returns: 17854<br>Weekend returns: 12071</div>`)[0];
+                popup_e8e69751da4d5928841742ad050dd2d5.setContent(html_3c83105553093e3e8d8b3e5b71049643);
+            
+        
+
+        circle_marker_dc62a199dd6e396ac7dbaac388a0563f.bindPopup(popup_e8e69751da4d5928841742ad050dd2d5)
+        ;
+
+        
+    
+    
+            var circle_marker_df6c48a00098f315cef9660058a68593 = L.circleMarker(
+                [41.926277, -87.630834],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.411553352020812, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a3e72c3eaab1724fe981dfcae2761303 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb8d59567913b8e24452a6439cccdb13 = $(`<div id="html_eb8d59567913b8e24452a6439cccdb13" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Covered: False<br>Total returns: 27851<br>Weekday returns: 15407<br>Weekend returns: 12444</div>`)[0];
+                popup_a3e72c3eaab1724fe981dfcae2761303.setContent(html_eb8d59567913b8e24452a6439cccdb13);
+            
+        
+
+        circle_marker_df6c48a00098f315cef9660058a68593.bindPopup(popup_a3e72c3eaab1724fe981dfcae2761303)
+        ;
+
+        
+    
+    
+            var circle_marker_6e9f996e27d3e449a1f5b02d5be6890e = L.circleMarker(
+                [41.79147800295527, -87.59986050810642],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3166153971713825, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_f0c0bd93b4818c88aeb82fcb701dc88e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_697e821e63c3266b755356247bfecd57 = $(`<div id="html_697e821e63c3266b755356247bfecd57" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>Covered: False<br>Total returns: 20948<br>Weekday returns: 16397<br>Weekend returns: 4551</div>`)[0];
+                popup_f0c0bd93b4818c88aeb82fcb701dc88e.setContent(html_697e821e63c3266b755356247bfecd57);
+            
+        
+
+        circle_marker_6e9f996e27d3e449a1f5b02d5be6890e.bindPopup(popup_f0c0bd93b4818c88aeb82fcb701dc88e)
+        ;
+
+        
+    
+    
+            var circle_marker_671977c006ad714340ce6090e67d46de = L.circleMarker(
+                [41.870769, -87.625734],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.153180485869894, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_e2d61fbd4aed9b1c15f03b1de5028782 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7a5d0305b4bc7efaea4552c10dca97b = $(`<div id="html_b7a5d0305b4bc7efaea4552c10dca97b" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & 9th St</b><br>Covered: True<br>Total returns: 12829<br>Weekday returns: 9254<br>Weekend returns: 3575</div>`)[0];
+                popup_e2d61fbd4aed9b1c15f03b1de5028782.setContent(html_b7a5d0305b4bc7efaea4552c10dca97b);
+            
+        
+
+        circle_marker_671977c006ad714340ce6090e67d46de.bindPopup(popup_e2d61fbd4aed9b1c15f03b1de5028782)
+        ;
+
+        
+    
+    
+            var circle_marker_94c9dd9f7c51ec4e2e0d1be270427216 = L.circleMarker(
+                [41.891466, -87.62676099999999],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.332765869099591, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c9791394d6ee5578643712471be69ccb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23e888faefdc11415ee449c0281181d4 = $(`<div id="html_23e888faefdc11415ee449c0281181d4" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Covered: True<br>Total returns: 21988<br>Weekday returns: 15575<br>Weekend returns: 6413</div>`)[0];
+                popup_c9791394d6ee5578643712471be69ccb.setContent(html_23e888faefdc11415ee449c0281181d4);
+            
+        
+
+        circle_marker_94c9dd9f7c51ec4e2e0d1be270427216.bindPopup(popup_c9791394d6ee5578643712471be69ccb)
+        ;
+
+        
+    
+    
+            var circle_marker_b9ef36a2de953beff06a016dca2b6079 = L.circleMarker(
+                [41.867227, -87.625961],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.262748345674616, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_f38fbcf1da91020c7b8141d2efaea328 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a182c379b44351b3adadbebb758959b = $(`<div id="html_7a182c379b44351b3adadbebb758959b" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Roosevelt Rd</b><br>Covered: True<br>Total returns: 17822<br>Weekday returns: 12698<br>Weekend returns: 5124</div>`)[0];
+                popup_f38fbcf1da91020c7b8141d2efaea328.setContent(html_7a182c379b44351b3adadbebb758959b);
+            
+        
+
+        circle_marker_b9ef36a2de953beff06a016dca2b6079.bindPopup(popup_f38fbcf1da91020c7b8141d2efaea328)
+        ;
+
+        
+    
+    
+            var circle_marker_04d81f032442eb35c9325e3e36198030 = L.circleMarker(
+                [41.912133, -87.634656],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.407749839483774, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_bddbcfff2a465b318ca2268e3d3917d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6464dc0de3bd27cf16f53be785578f7 = $(`<div id="html_c6464dc0de3bd27cf16f53be785578f7" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Covered: True<br>Total returns: 27535<br>Weekday returns: 18316<br>Weekend returns: 9219</div>`)[0];
+                popup_bddbcfff2a465b318ca2268e3d3917d6.setContent(html_c6464dc0de3bd27cf16f53be785578f7);
+            
+        
+
+        circle_marker_04d81f032442eb35c9325e3e36198030.bindPopup(popup_bddbcfff2a465b318ca2268e3d3917d6)
+        ;
+
+        
+    
+    
+            var circle_marker_533f266674c3f7b4e481289d02be60d4 = L.circleMarker(
+                [41.903222, -87.634324],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3916546735469915, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_51953d32b5e6a2762b751fa4273b9bb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1da0920c9cdda99c52a823392dbc37e4 = $(`<div id="html_1da0920c9cdda99c52a823392dbc37e4" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Covered: True<br>Total returns: 26237<br>Weekday returns: 18124<br>Weekend returns: 8113</div>`)[0];
+                popup_51953d32b5e6a2762b751fa4273b9bb1.setContent(html_1da0920c9cdda99c52a823392dbc37e4);
+            
+        
+
+        circle_marker_533f266674c3f7b4e481289d02be60d4.bindPopup(popup_51953d32b5e6a2762b751fa4273b9bb1)
+        ;
+
+        
+    
+    
+            var circle_marker_45255b0bc154b4dbb63cc22ba5d96198 = L.circleMarker(
+                [41.90672457611039, -87.63482999967887],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.184974163853592, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_c0d164818b002eecefdcd47742603425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0df5d5b90261ffe015fb173ff405cb22 = $(`<div id="html_0df5d5b90261ffe015fb173ff405cb22" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Covered: True<br>Total returns: 14113<br>Weekday returns: 9741<br>Weekend returns: 4372</div>`)[0];
+                popup_c0d164818b002eecefdcd47742603425.setContent(html_0df5d5b90261ffe015fb173ff405cb22);
+            
+        
+
+        circle_marker_45255b0bc154b4dbb63cc22ba5d96198.bindPopup(popup_c0d164818b002eecefdcd47742603425)
+        ;
+
+        
+    
+    
+            var circle_marker_0aecd44268e2c0c803e4a9eba0802806 = L.circleMarker(
+                [41.889906, -87.634266],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.322763887800541, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_5bc3f1bd9a44f3dbbe3f093b4b84f246 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8d1d8c11b5bfab332081c6f89461d1d = $(`<div id="html_f8d1d8c11b5bfab332081c6f89461d1d" style="width: 100.0%; height: 100.0%;"><b>Wells St & Hubbard St</b><br>Covered: True<br>Total returns: 21338<br>Weekday returns: 16733<br>Weekend returns: 4605</div>`)[0];
+                popup_5bc3f1bd9a44f3dbbe3f093b4b84f246.setContent(html_f8d1d8c11b5bfab332081c6f89461d1d);
+            
+        
+
+        circle_marker_0aecd44268e2c0c803e4a9eba0802806.bindPopup(popup_5bc3f1bd9a44f3dbbe3f093b4b84f246)
+        ;
+
+        
+    
+    
+            var circle_marker_8cb1e28b95e436ac69f341c8c16fa68b = L.circleMarker(
+                [41.89478399980203, -87.6343724037867],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.35833363687116, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_f40592837a3e20b040ced18f94398463 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d5b3973754681f8fccd43196035415d = $(`<div id="html_6d5b3973754681f8fccd43196035415d" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Covered: True<br>Total returns: 23741<br>Weekday returns: 17689<br>Weekend returns: 6052</div>`)[0];
+                popup_f40592837a3e20b040ced18f94398463.setContent(html_6d5b3973754681f8fccd43196035415d);
+            
+        
+
+        circle_marker_8cb1e28b95e436ac69f341c8c16fa68b.bindPopup(popup_f40592837a3e20b040ced18f94398463)
+        ;
+
+        
+    
+    
+            var circle_marker_35bb3f3c9d315c4296f4b5d70d4a9f7f = L.circleMarker(
+                [41.884295, -87.633963],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1406053728075705, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_2a847cc37c929360cb4caaa37c379db8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f47e7e4025c0fb7a49e89cc731fe35d = $(`<div id="html_5f47e7e4025c0fb7a49e89cc731fe35d" style="width: 100.0%; height: 100.0%;"><b>Wells St & Randolph St</b><br>Covered: True<br>Total returns: 12354<br>Weekday returns: 10306<br>Weekend returns: 2048</div>`)[0];
+                popup_2a847cc37c929360cb4caaa37c379db8.setContent(html_5f47e7e4025c0fb7a49e89cc731fe35d);
+            
+        
+
+        circle_marker_35bb3f3c9d315c4296f4b5d70d4a9f7f.bindPopup(popup_2a847cc37c929360cb4caaa37c379db8)
+        ;
+
+        
+    
+    
+            var circle_marker_a955222507133e805afe172fb4f58729 = L.circleMarker(
+                [41.89993001, -87.63443007],
+                {"bubblingMouseEvents": true, "color": "#4C78A8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C78A8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.151931070070075, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_a9c7c4f84bd0d9b2e63144614fb60dc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eccaeffd8b13472f56af0d386dd30d75 = $(`<div id="html_eccaeffd8b13472f56af0d386dd30d75" style="width: 100.0%; height: 100.0%;"><b>Wells St & Walton St</b><br>Covered: True<br>Total returns: 12781<br>Weekday returns: 9219<br>Weekend returns: 3562</div>`)[0];
+                popup_a9c7c4f84bd0d9b2e63144614fb60dc8.setContent(html_eccaeffd8b13472f56af0d386dd30d75);
+            
+        
+
+        circle_marker_a955222507133e805afe172fb4f58729.bindPopup(popup_a9c7c4f84bd0d9b2e63144614fb60dc8)
+        ;
+
+        
+    
+    
+            var circle_marker_6c6396da0164cf8570ce22c2e26f9d32 = L.circleMarker(
+                [41.940231918108594, -87.65294373035431],
+                {"bubblingMouseEvents": true, "color": "#E45756", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E45756", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.322841982905116, "stroke": true, "weight": 3}
+            ).addTo(map_2adb259d57a919b61ea773e4c09cad43);
+        
+    
+        var popup_6a51d3a27a6e05c5b333b6f8e6727f65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fa198b06a2135ab58382e2d381c4524 = $(`<div id="html_1fa198b06a2135ab58382e2d381c4524" style="width: 100.0%; height: 100.0%;"><b>Wilton Ave & Belmont Ave</b><br>Covered: False<br>Total returns: 21343<br>Weekday returns: 14736<br>Weekend returns: 6607</div>`)[0];
+                popup_6a51d3a27a6e05c5b333b6f8e6727f65.setContent(html_1fa198b06a2135ab58382e2d381c4524);
+            
+        
+
+        circle_marker_6c6396da0164cf8570ce22c2e26f9d32.bindPopup(popup_6a51d3a27a6e05c5b333b6f8e6727f65)
+        ;
+
+        
+    
+</script>
+</html>

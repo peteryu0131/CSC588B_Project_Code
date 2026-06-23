@@ -1,0 +1,9 @@
+result_item,value,interpretation
+Main weekday/weekend service-profile difference,0.12306125346782058,"L1 difference between weighted weekday and weekend OSM service profiles for covered Top 100 union stations, excluding other_amenity."
+Label shuffle p-value,0.26573426573426573,"If this is not below 0.05, do not claim the overall profile difference is statistically significant under the label-shuffle null."
+Station-demand randomization p-value,0.000999000999000999,Tests whether station totals plus global weekday share can explain the profile difference; it does not prove OSM services explain behavior.
+Station-service permutation p-value,0.000999000999000999,Tests whether real station-service pairing is more structured than random service-vector assignment.
+Bootstrap stable service directions,"Weekend-oriented stable: tourism; Weekday-oriented stable: food_drink, office, health","Service categories whose bootstrap confidence interval for weekend-minus-weekday excludes zero, reported with direction."
+Radius sensitivity result,"100m: weekend=transit, weekday=food_drink, 250m: weekend=tourism, weekday=food_drink, 500m: weekend=tourism, weekday=food_drink","Compares strongest service directions at 100m, 250m, and 500m."
+Top-K sensitivity result,"Top 20: weekend=tourism, weekday=food_drink, Top 50: weekend=tourism, weekday=food_drink, Top 100: weekend=tourism, weekday=food_drink","Compares strongest service directions for Top 20, Top 50, and Top 100 union sets."
+Key weather effect,weekday: 0.0089,Day type with the stronger rainy-vs-dry service-profile shift. Weather remains a secondary check.

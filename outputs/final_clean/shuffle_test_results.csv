@@ -1,0 +1,6 @@
+metric,value
+real_difference_score,0.12306125346782058
+shuffle_mean,0.10154088459329196
+shuffle_95th_percentile,0.17831236116909255
+p_value,0.26573426573426573
+n_shuffles,1000.0

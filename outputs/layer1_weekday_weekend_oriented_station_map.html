@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_775ed32a17749c18e492b7d0c0082131 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_775ed32a17749c18e492b7d0c0082131" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_775ed32a17749c18e492b7d0c0082131 = L.map(
+                "map_775ed32a17749c18e492b7d0c0082131",
+                {
+                    center: [41.88556160511167, -87.6720813145263],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25963c03d67748bb1ad990947c02a2f0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25963c03d67748bb1ad990947c02a2f0.addTo(map_775ed32a17749c18e492b7d0c0082131);
+        
+    
+            var feature_group_c49d8d470902aca932734317c1dcd332 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_f44a65a1394114d63149d7d2300f7d9e = L.circleMarker(
+                [41.880958, -87.616743],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.934836662152629, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_4e192a9d36207feaa66bf550ac4e7e49 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_443f1bace930cadac7043403d073cf4a = $(`<div id="html_443f1bace930cadac7043403d073cf4a" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>DuSable Lake Shore Dr & Monroe St</h4>         <b>Weekday returns:</b> 20698<br>         <b>Weekend returns:</b> 17218<br>         <b>Weekday share:</b> 0.006672<br>         <b>Weekend share:</b> 0.014263<br>         <b>Weekend - weekday share:</b> 0.007591<br>         <b>Weekend / weekday share ratio:</b> 2.14<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_4e192a9d36207feaa66bf550ac4e7e49.setContent(html_443f1bace930cadac7043403d073cf4a);
+            
+        
+
+        circle_marker_f44a65a1394114d63149d7d2300f7d9e.bindPopup(popup_4e192a9d36207feaa66bf550ac4e7e49)
+        ;
+
+        
+    
+    
+            circle_marker_f44a65a1394114d63149d7d2300f7d9e.bindTooltip(
+                `<div>
+                     weekend_oriented: DuSable Lake Shore Dr & Monroe St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16e24e18e57d6a140f96eff62ad03655 = L.circleMarker(
+                [41.892278, -87.612043],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.818992872437715, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_6767039b4ad461ac8078500fd33255d9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_efcedf7099f300bec293b51a6c58ed0f = $(`<div id="html_efcedf7099f300bec293b51a6c58ed0f" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Navy Pier</h4>         <b>Weekday returns:</b> 19160<br>         <b>Weekend returns:</b> 15617<br>         <b>Weekday share:</b> 0.006176<br>         <b>Weekend share:</b> 0.012937<br>         <b>Weekend - weekday share:</b> 0.006760<br>         <b>Weekend / weekday share ratio:</b> 2.09<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_6767039b4ad461ac8078500fd33255d9.setContent(html_efcedf7099f300bec293b51a6c58ed0f);
+            
+        
+
+        circle_marker_16e24e18e57d6a140f96eff62ad03655.bindPopup(popup_6767039b4ad461ac8078500fd33255d9)
+        ;
+
+        
+    
+    
+            circle_marker_16e24e18e57d6a140f96eff62ad03655.bindTooltip(
+                `<div>
+                     weekend_oriented: Navy Pier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd6014c8d4a2bda741b64c09ac15c99c = L.circleMarker(
+                [41.911722, -87.626804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.702330314297983, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_696aa8ab14131a55014b6f32f9f322fe = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_eedd79ca00f73e60c30f40946ffbf7c0 = $(`<div id="html_eedd79ca00f73e60c30f40946ffbf7c0" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>DuSable Lake Shore Dr & North Blvd</h4>         <b>Weekday returns:</b> 19730<br>         <b>Weekend returns:</b> 14940<br>         <b>Weekday share:</b> 0.006360<br>         <b>Weekend share:</b> 0.012376<br>         <b>Weekend - weekday share:</b> 0.006016<br>         <b>Weekend / weekday share ratio:</b> 1.95<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_696aa8ab14131a55014b6f32f9f322fe.setContent(html_eedd79ca00f73e60c30f40946ffbf7c0);
+            
+        
+
+        circle_marker_bd6014c8d4a2bda741b64c09ac15c99c.bindPopup(popup_696aa8ab14131a55014b6f32f9f322fe)
+        ;
+
+        
+    
+    
+            circle_marker_bd6014c8d4a2bda741b64c09ac15c99c.bindTooltip(
+                `<div>
+                     weekend_oriented: DuSable Lake Shore Dr & North Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_948dcb5ed5ac57ea8b60095aae24ea84 = L.circleMarker(
+                [41.926277, -87.630834],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.583506941110132, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_767598100c98915191f026436618e791 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_59bc1b67e32e3d257788e130e4770fa7 = $(`<div id="html_59bc1b67e32e3d257788e130e4770fa7" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Theater on the Lake</h4>         <b>Weekday returns:</b> 15407<br>         <b>Weekend returns:</b> 12444<br>         <b>Weekday share:</b> 0.004966<br>         <b>Weekend share:</b> 0.010308<br>         <b>Weekend - weekday share:</b> 0.005342<br>         <b>Weekend / weekday share ratio:</b> 2.08<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_767598100c98915191f026436618e791.setContent(html_59bc1b67e32e3d257788e130e4770fa7);
+            
+        
+
+        circle_marker_948dcb5ed5ac57ea8b60095aae24ea84.bindPopup(popup_767598100c98915191f026436618e791)
+        ;
+
+        
+    
+    
+            circle_marker_948dcb5ed5ac57ea8b60095aae24ea84.bindTooltip(
+                `<div>
+                     weekend_oriented: Theater on the Lake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dab1e80e536c68f1dcd1fc9c49e39583 = L.circleMarker(
+                [41.90096039009614, -87.62377663865593],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.375646953315146, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_f515b75cded681a85e542deed4bcd1b9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f2074bf9d3a15cec679736b08dc42b4e = $(`<div id="html_f2074bf9d3a15cec679736b08dc42b4e" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Michigan Ave & Oak St</h4>         <b>Weekday returns:</b> 21157<br>         <b>Weekend returns:</b> 13471<br>         <b>Weekday share:</b> 0.006820<br>         <b>Weekend share:</b> 0.011159<br>         <b>Weekend - weekday share:</b> 0.004339<br>         <b>Weekend / weekday share ratio:</b> 1.64<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_f515b75cded681a85e542deed4bcd1b9.setContent(html_f2074bf9d3a15cec679736b08dc42b4e);
+            
+        
+
+        circle_marker_dab1e80e536c68f1dcd1fc9c49e39583.bindPopup(popup_f515b75cded681a85e542deed4bcd1b9)
+        ;
+
+        
+    
+    
+            circle_marker_dab1e80e536c68f1dcd1fc9c49e39583.bindTooltip(
+                `<div>
+                     weekend_oriented: Michigan Ave & Oak St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_556063aa66f4fdbd0f2b5b7f35ca91ce = L.circleMarker(
+                [41.892278002970286, -87.61204300164603],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.353511902803117, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_49a72fa9d05f967cf8e11502adf76459 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4afcb32d5a05ed4f90af2b513406e21a = $(`<div id="html_4afcb32d5a05ed4f90af2b513406e21a" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Streeter Dr & Grand Ave</h4>         <b>Weekday returns:</b> 17854<br>         <b>Weekend returns:</b> 12071<br>         <b>Weekday share:</b> 0.005755<br>         <b>Weekend share:</b> 0.009999<br>         <b>Weekend - weekday share:</b> 0.004244<br>         <b>Weekend / weekday share ratio:</b> 1.74<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_49a72fa9d05f967cf8e11502adf76459.setContent(html_4afcb32d5a05ed4f90af2b513406e21a);
+            
+        
+
+        circle_marker_556063aa66f4fdbd0f2b5b7f35ca91ce.bindPopup(popup_49a72fa9d05f967cf8e11502adf76459)
+        ;
+
+        
+    
+    
+            circle_marker_556063aa66f4fdbd0f2b5b7f35ca91ce.bindTooltip(
+                `<div>
+                     weekend_oriented: Streeter Dr & Grand Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1e3d792b811dba5edb0e6769faf5780 = L.circleMarker(
+                [41.88697599432289, -87.61281299950515],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.153798952122225, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_3f749112d707b166ab92fab16b4893ab = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1cac08387f4026d2c7aacc33975b8208 = $(`<div id="html_1cac08387f4026d2c7aacc33975b8208" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Dusable Harbor</h4>         <b>Weekday returns:</b> 11732<br>         <b>Weekend returns:</b> 8761<br>         <b>Weekday share:</b> 0.003782<br>         <b>Weekend share:</b> 0.007257<br>         <b>Weekend - weekday share:</b> 0.003476<br>         <b>Weekend / weekday share ratio:</b> 1.92<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_3f749112d707b166ab92fab16b4893ab.setContent(html_1cac08387f4026d2c7aacc33975b8208);
+            
+        
+
+        circle_marker_d1e3d792b811dba5edb0e6769faf5780.bindPopup(popup_3f749112d707b166ab92fab16b4893ab)
+        ;
+
+        
+    
+    
+            circle_marker_d1e3d792b811dba5edb0e6769faf5780.bindTooltip(
+                `<div>
+                     weekend_oriented: Dusable Harbor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_215ab730f40d483aade22d619e26e478 = L.circleMarker(
+                [41.867225962011034, -87.61535540410257],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.096055615805923, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_6982bc38fa72be0f68b570339e966333 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5ea481830f39f7ded997552100a44fcc = $(`<div id="html_5ea481830f39f7ded997552100a44fcc" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Shedd Aquarium</h4>         <b>Weekday returns:</b> 11191<br>         <b>Weekend returns:</b> 8315<br>         <b>Weekday share:</b> 0.003607<br>         <b>Weekend share:</b> 0.006888<br>         <b>Weekend - weekday share:</b> 0.003280<br>         <b>Weekend / weekday share ratio:</b> 1.91<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_6982bc38fa72be0f68b570339e966333.setContent(html_5ea481830f39f7ded997552100a44fcc);
+            
+        
+
+        circle_marker_215ab730f40d483aade22d619e26e478.bindPopup(popup_6982bc38fa72be0f68b570339e966333)
+        ;
+
+        
+    
+    
+            circle_marker_215ab730f40d483aade22d619e26e478.bindTooltip(
+                `<div>
+                     weekend_oriented: Shedd Aquarium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_609e4d150c543f8f54a46030f2888b81 = L.circleMarker(
+                [41.963982, -87.638181],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.058854612379463, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_cc2995083dd0ac5c395172998cac162c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9bf7382016d3bf81e798b8e3599686a2 = $(`<div id="html_9bf7382016d3bf81e798b8e3599686a2" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Montrose Harbor</h4>         <b>Weekday returns:</b> 10026<br>         <b>Weekend returns:</b> 7717<br>         <b>Weekday share:</b> 0.003232<br>         <b>Weekend share:</b> 0.006392<br>         <b>Weekend - weekday share:</b> 0.003161<br>         <b>Weekend / weekday share ratio:</b> 1.98<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_cc2995083dd0ac5c395172998cac162c.setContent(html_9bf7382016d3bf81e798b8e3599686a2);
+            
+        
+
+        circle_marker_609e4d150c543f8f54a46030f2888b81.bindPopup(popup_cc2995083dd0ac5c395172998cac162c)
+        ;
+
+        
+    
+    
+            circle_marker_609e4d150c543f8f54a46030f2888b81.bindTooltip(
+                `<div>
+                     weekend_oriented: Montrose Harbor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c37c712e3b5f00352717180e2ae98e7 = L.circleMarker(
+                [41.8810317, -87.62408432],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.025556262627592, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_d732020d4bf1e849f4c225c23dd631be = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5aec02641e8302a6351a797a59e3ea77 = $(`<div id="html_5aec02641e8302a6351a797a59e3ea77" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Millennium Park</h4>         <b>Weekday returns:</b> 17129<br>         <b>Weekend returns:</b> 10356<br>         <b>Weekday share:</b> 0.005521<br>         <b>Weekend share:</b> 0.008579<br>         <b>Weekend - weekday share:</b> 0.003057<br>         <b>Weekend / weekday share ratio:</b> 1.55<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_d732020d4bf1e849f4c225c23dd631be.setContent(html_5aec02641e8302a6351a797a59e3ea77);
+            
+        
+
+        circle_marker_3c37c712e3b5f00352717180e2ae98e7.bindPopup(popup_d732020d4bf1e849f4c225c23dd631be)
+        ;
+
+        
+    
+    
+            circle_marker_3c37c712e3b5f00352717180e2ae98e7.bindTooltip(
+                `<div>
+                     weekend_oriented: Millennium Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a379447654f1dea643c981056788e3a = L.circleMarker(
+                [41.915689, -87.6346],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.877452420501845, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_8cc1030a0f7f86603fbd1a4a39de62fd = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1bd9090ceb4ba31d2498351be5ba4409 = $(`<div id="html_1bd9090ceb4ba31d2498351be5ba4409" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clark St & Lincoln Ave</h4>         <b>Weekday returns:</b> 14534<br>         <b>Weekend returns:</b> 8838<br>         <b>Weekday share:</b> 0.004685<br>         <b>Weekend share:</b> 0.007321<br>         <b>Weekend - weekday share:</b> 0.002636<br>         <b>Weekend / weekday share ratio:</b> 1.56<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_8cc1030a0f7f86603fbd1a4a39de62fd.setContent(html_1bd9090ceb4ba31d2498351be5ba4409);
+            
+        
+
+        circle_marker_7a379447654f1dea643c981056788e3a.bindPopup(popup_8cc1030a0f7f86603fbd1a4a39de62fd)
+        ;
+
+        
+    
+    
+            circle_marker_7a379447654f1dea643c981056788e3a.bindTooltip(
+                `<div>
+                     weekend_oriented: Clark St & Lincoln Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2f947720af87ca5f6870e164ed5cf63 = L.circleMarker(
+                [41.918305755767996, -87.63628183370878],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.687519483139635, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_ce696dbb401dd0e114016b8fd034be1f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9ec46d2714a95942d80524bf9417812a = $(`<div id="html_9ec46d2714a95942d80524bf9417812a" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clark St & Armitage Ave</h4>         <b>Weekday returns:</b> 15407<br>         <b>Weekend returns:</b> 8627<br>         <b>Weekday share:</b> 0.004966<br>         <b>Weekend share:</b> 0.007146<br>         <b>Weekend - weekday share:</b> 0.002180<br>         <b>Weekend / weekday share ratio:</b> 1.44<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_ce696dbb401dd0e114016b8fd034be1f.setContent(html_9ec46d2714a95942d80524bf9417812a);
+            
+        
+
+        circle_marker_c2f947720af87ca5f6870e164ed5cf63.bindPopup(popup_ce696dbb401dd0e114016b8fd034be1f)
+        ;
+
+        
+    
+    
+            circle_marker_c2f947720af87ca5f6870e164ed5cf63.bindTooltip(
+                `<div>
+                     weekend_oriented: Clark St & Armitage Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcf0dab3de0572823642225f9629d6df = L.circleMarker(
+                [41.98404411519213, -87.65228122472763],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.643975140698446, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_3b010bfb948e1748c955b20005740787 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e5cda5d9954236d91b9d159fb1ba9d4b = $(`<div id="html_e5cda5d9954236d91b9d159fb1ba9d4b" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Lakefront Trail & Bryn Mawr Ave</h4>         <b>Weekday returns:</b> 6778<br>         <b>Weekend returns:</b> 5157<br>         <b>Weekday share:</b> 0.002185<br>         <b>Weekend share:</b> 0.004272<br>         <b>Weekend - weekday share:</b> 0.002087<br>         <b>Weekend / weekday share ratio:</b> 1.96<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_3b010bfb948e1748c955b20005740787.setContent(html_e5cda5d9954236d91b9d159fb1ba9d4b);
+            
+        
+
+        circle_marker_dcf0dab3de0572823642225f9629d6df.bindPopup(popup_3b010bfb948e1748c955b20005740787)
+        ;
+
+        
+    
+    
+            circle_marker_dcf0dab3de0572823642225f9629d6df.bindTooltip(
+                `<div>
+                     weekend_oriented: Lakefront Trail & Bryn Mawr Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0446524b11a10f078b9d724d5e20d6c1 = L.circleMarker(
+                [41.8653120005395, -87.61786701481803],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.61953377230467, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_a141ab7855e8278d851a413e82824a8a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7857009bf50a965accdaf338d4d1b019 = $(`<div id="html_7857009bf50a965accdaf338d4d1b019" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Field Museum</h4>         <b>Weekday returns:</b> 5521<br>         <b>Weekend returns:</b> 4607<br>         <b>Weekday share:</b> 0.001780<br>         <b>Weekend share:</b> 0.003816<br>         <b>Weekend - weekday share:</b> 0.002037<br>         <b>Weekend / weekday share ratio:</b> 2.14<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_a141ab7855e8278d851a413e82824a8a.setContent(html_7857009bf50a965accdaf338d4d1b019);
+            
+        
+
+        circle_marker_0446524b11a10f078b9d724d5e20d6c1.bindPopup(popup_a141ab7855e8278d851a413e82824a8a)
+        ;
+
+        
+    
+    
+            circle_marker_0446524b11a10f078b9d724d5e20d6c1.bindTooltip(
+                `<div>
+                     weekend_oriented: Field Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_522aa1fe42e2fac5358b4f3d4bd95f17 = L.circleMarker(
+                [41.87277296771354, -87.62398098838872],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.553553665651478, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_d9631541588a21cba4f6c861d1c9cfd7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_fb3103d0dc3b5f090a1e360cedcba867 = $(`<div id="html_fb3103d0dc3b5f090a1e360cedcba867" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Michigan Ave & 8th St</h4>         <b>Weekday returns:</b> 9895<br>         <b>Weekend returns:</b> 6152<br>         <b>Weekday share:</b> 0.003190<br>         <b>Weekend share:</b> 0.005096<br>         <b>Weekend - weekday share:</b> 0.001907<br>         <b>Weekend / weekday share ratio:</b> 1.60<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_d9631541588a21cba4f6c861d1c9cfd7.setContent(html_fb3103d0dc3b5f090a1e360cedcba867);
+            
+        
+
+        circle_marker_522aa1fe42e2fac5358b4f3d4bd95f17.bindPopup(popup_d9631541588a21cba4f6c861d1c9cfd7)
+        ;
+
+        
+    
+    
+            circle_marker_522aa1fe42e2fac5358b4f3d4bd95f17.bindTooltip(
+                `<div>
+                     weekend_oriented: Michigan Ave & 8th St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ecf13bc48643f20c4c2d114b4061501b = L.circleMarker(
+                [41.932588, -87.636427],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.531389994112388, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_6ad259eb2be06cf219c9363bcca1136c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_46aeb8e7161c894ecbea7ad6a47b607c = $(`<div id="html_46aeb8e7161c894ecbea7ad6a47b607c" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>DuSable Lake Shore Dr & Diversey Pkwy</h4>         <b>Weekday returns:</b> 12317<br>         <b>Weekend returns:</b> 7044<br>         <b>Weekday share:</b> 0.003970<br>         <b>Weekend share:</b> 0.005835<br>         <b>Weekend - weekday share:</b> 0.001865<br>         <b>Weekend / weekday share ratio:</b> 1.47<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_6ad259eb2be06cf219c9363bcca1136c.setContent(html_46aeb8e7161c894ecbea7ad6a47b607c);
+            
+        
+
+        circle_marker_ecf13bc48643f20c4c2d114b4061501b.bindPopup(popup_6ad259eb2be06cf219c9363bcca1136c)
+        ;
+
+        
+    
+    
+            circle_marker_ecf13bc48643f20c4c2d114b4061501b.bindTooltip(
+                `<div>
+                     weekend_oriented: DuSable Lake Shore Dr & Diversey Pkwy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1393722c8d00a3f0028eed91f4445ec = L.circleMarker(
+                [41.936688449499705, -87.63682901859283],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.496530457943434, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_47447f2556f97de290af136d516b1bfd = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_774d676c852bdb5f28f79ba5f50af286 = $(`<div id="html_774d676c852bdb5f28f79ba5f50af286" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>DuSable Lake Shore Dr & Wellington Ave</h4>         <b>Weekday returns:</b> 9542<br>         <b>Weekend returns:</b> 5887<br>         <b>Weekday share:</b> 0.003076<br>         <b>Weekend share:</b> 0.004877<br>         <b>Weekend - weekday share:</b> 0.001801<br>         <b>Weekend / weekday share ratio:</b> 1.59<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_47447f2556f97de290af136d516b1bfd.setContent(html_774d676c852bdb5f28f79ba5f50af286);
+            
+        
+
+        circle_marker_a1393722c8d00a3f0028eed91f4445ec.bindPopup(popup_47447f2556f97de290af136d516b1bfd)
+        ;
+
+        
+    
+    
+            circle_marker_a1393722c8d00a3f0028eed91f4445ec.bindTooltip(
+                `<div>
+                     weekend_oriented: DuSable Lake Shore Dr & Wellington Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df55ecff168cc19c0f539f795f43d37c = L.circleMarker(
+                [41.912133, -87.634656],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.457988575883201, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_3dbd29e8b2215b6c72816594fdd36a54 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_90462e082cf47995bcc5b63f0b513c93 = $(`<div id="html_90462e082cf47995bcc5b63f0b513c93" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Wells St & Concord Ln</h4>         <b>Weekday returns:</b> 18316<br>         <b>Weekend returns:</b> 9219<br>         <b>Weekday share:</b> 0.005904<br>         <b>Weekend share:</b> 0.007637<br>         <b>Weekend - weekday share:</b> 0.001733<br>         <b>Weekend / weekday share ratio:</b> 1.29<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_3dbd29e8b2215b6c72816594fdd36a54.setContent(html_90462e082cf47995bcc5b63f0b513c93);
+            
+        
+
+        circle_marker_df55ecff168cc19c0f539f795f43d37c.bindPopup(popup_3dbd29e8b2215b6c72816594fdd36a54)
+        ;
+
+        
+    
+    
+            circle_marker_df55ecff168cc19c0f539f795f43d37c.bindTooltip(
+                `<div>
+                     weekend_oriented: Wells St & Concord Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e8ea64c5daf9cb13563567c959e903f = L.circleMarker(
+                [41.940775, -87.639192],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.402152060327253, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_91e1737490d0465fbfa0c0ba13757f2c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c3c9b22054cd7674da7b5eaaa7e3e070 = $(`<div id="html_c3c9b22054cd7674da7b5eaaa7e3e070" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>DuSable Lake Shore Dr & Belmont Ave</h4>         <b>Weekday returns:</b> 10711<br>         <b>Weekend returns:</b> 6146<br>         <b>Weekday share:</b> 0.003453<br>         <b>Weekend share:</b> 0.005091<br>         <b>Weekend - weekday share:</b> 0.001639<br>         <b>Weekend / weekday share ratio:</b> 1.47<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_91e1737490d0465fbfa0c0ba13757f2c.setContent(html_c3c9b22054cd7674da7b5eaaa7e3e070);
+            
+        
+
+        circle_marker_2e8ea64c5daf9cb13563567c959e903f.bindPopup(popup_91e1737490d0465fbfa0c0ba13757f2c)
+        ;
+
+        
+    
+    
+            circle_marker_2e8ea64c5daf9cb13563567c959e903f.bindTooltip(
+                `<div>
+                     weekend_oriented: DuSable Lake Shore Dr & Belmont Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47c5069b07a291f854c04c035af022cd = L.circleMarker(
+                [41.866094999999994, -87.607267],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.338286754720244, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c49d8d470902aca932734317c1dcd332);
+        
+    
+        var popup_afaee2fec6ca9c4d0c4dbe1ff539b5ce = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a72f2ea0bf4a73650df6d986e2355bd9 = $(`<div id="html_a72f2ea0bf4a73650df6d986e2355bd9" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Adler Planetarium</h4>         <b>Weekday returns:</b> 7762<br>         <b>Weekend returns:</b> 4876<br>         <b>Weekday share:</b> 0.002502<br>         <b>Weekend share:</b> 0.004039<br>         <b>Weekend - weekday share:</b> 0.001537<br>         <b>Weekend / weekday share ratio:</b> 1.61<br>         <b>Orientation:</b> weekend_oriented     </div>     </div>`)[0];
+                popup_afaee2fec6ca9c4d0c4dbe1ff539b5ce.setContent(html_a72f2ea0bf4a73650df6d986e2355bd9);
+            
+        
+
+        circle_marker_47c5069b07a291f854c04c035af022cd.bindPopup(popup_afaee2fec6ca9c4d0c4dbe1ff539b5ce)
+        ;
+
+        
+    
+    
+            circle_marker_47c5069b07a291f854c04c035af022cd.bindTooltip(
+                `<div>
+                     weekend_oriented: Adler Planetarium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_c49d8d470902aca932734317c1dcd332.addTo(map_775ed32a17749c18e492b7d0c0082131);
+        
+    
+            var feature_group_9fde0d25c917c0cb1c4c921ecb2fd652 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_c89a0e15d9e5c7d9be9ea3d110eecb5c = L.circleMarker(
+                [41.883378993326986, -87.64117008864396],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.005490166116195, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_21ee572c6aba4be238d03c8b3a3ba858 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1a777ccda69022b61c0da33a4a6a2f21 = $(`<div id="html_1a777ccda69022b61c0da33a4a6a2f21" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clinton St & Washington Blvd</h4>         <b>Weekday returns:</b> 29100<br>         <b>Weekend returns:</b> 1489<br>         <b>Weekday share:</b> 0.009380<br>         <b>Weekend share:</b> 0.001233<br>         <b>Weekend - weekday share:</b> -0.008147<br>         <b>Weekend / weekday share ratio:</b> 0.13<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_21ee572c6aba4be238d03c8b3a3ba858.setContent(html_1a777ccda69022b61c0da33a4a6a2f21);
+            
+        
+
+        circle_marker_c89a0e15d9e5c7d9be9ea3d110eecb5c.bindPopup(popup_21ee572c6aba4be238d03c8b3a3ba858)
+        ;
+
+        
+    
+    
+            circle_marker_c89a0e15d9e5c7d9be9ea3d110eecb5c.bindTooltip(
+                `<div>
+                     weekday_oriented: Clinton St & Washington Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_384f7bbbe41301178bbf31a59215ad48 = L.circleMarker(
+                [41.882409, -87.639767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.771041845158761, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_ad70baa07a63ec7d222be2b43b56d7b0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_271ef9e999955063f0db1b32944142a9 = $(`<div id="html_271ef9e999955063f0db1b32944142a9" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Canal St & Madison St</h4>         <b>Weekday returns:</b> 26693<br>         <b>Weekend returns:</b> 2608<br>         <b>Weekday share:</b> 0.008604<br>         <b>Weekend share:</b> 0.002160<br>         <b>Weekend - weekday share:</b> -0.006444<br>         <b>Weekend / weekday share ratio:</b> 0.25<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_ad70baa07a63ec7d222be2b43b56d7b0.setContent(html_271ef9e999955063f0db1b32944142a9);
+            
+        
+
+        circle_marker_384f7bbbe41301178bbf31a59215ad48.bindPopup(popup_ad70baa07a63ec7d222be2b43b56d7b0)
+        ;
+
+        
+    
+    
+            circle_marker_384f7bbbe41301178bbf31a59215ad48.bindTooltip(
+                `<div>
+                     weekday_oriented: Canal St & Madison St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c7fe3f272b983be209ef2f4b5823015 = L.circleMarker(
+                [41.88031616332084, -87.63518440237203],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.592039440013936, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_2b391760b8d216e7c6956791c962445c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_de27628235d741d66c1fe7eba96078c3 = $(`<div id="html_de27628235d741d66c1fe7eba96078c3" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Franklin St & Monroe St</h4>         <b>Weekday returns:</b> 18703<br>         <b>Weekend returns:</b> 774<br>         <b>Weekday share:</b> 0.006029<br>         <b>Weekend share:</b> 0.000641<br>         <b>Weekend - weekday share:</b> -0.005388<br>         <b>Weekend / weekday share ratio:</b> 0.11<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_2b391760b8d216e7c6956791c962445c.setContent(html_de27628235d741d66c1fe7eba96078c3);
+            
+        
+
+        circle_marker_1c7fe3f272b983be209ef2f4b5823015.bindPopup(popup_2b391760b8d216e7c6956791c962445c)
+        ;
+
+        
+    
+    
+            circle_marker_1c7fe3f272b983be209ef2f4b5823015.bindTooltip(
+                `<div>
+                     weekday_oriented: Franklin St & Monroe St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8124b11ca98139345c0454a7097a448 = L.circleMarker(
+                [41.87831662050808, -87.64098109175531],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.516473233764222, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_03f857dd4accac3d3c34c0a50d2efa66 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_54e8406ef1265c577c4f2cae904447e6 = $(`<div id="html_54e8406ef1265c577c4f2cae904447e6" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clinton St & Jackson Blvd</h4>         <b>Weekday returns:</b> 21413<br>         <b>Weekend returns:</b> 2302<br>         <b>Weekday share:</b> 0.006902<br>         <b>Weekend share:</b> 0.001907<br>         <b>Weekend - weekday share:</b> -0.004995<br>         <b>Weekend / weekday share ratio:</b> 0.28<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_03f857dd4accac3d3c34c0a50d2efa66.setContent(html_54e8406ef1265c577c4f2cae904447e6);
+            
+        
+
+        circle_marker_e8124b11ca98139345c0454a7097a448.bindPopup(popup_03f857dd4accac3d3c34c0a50d2efa66)
+        ;
+
+        
+    
+    
+            circle_marker_e8124b11ca98139345c0454a7097a448.bindTooltip(
+                `<div>
+                     weekday_oriented: Clinton St & Jackson Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f651f8f31d20848dfe7ce428282d1ba4 = L.circleMarker(
+                [41.879255, -87.639904],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.499376948086937, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_c7cdfb611f5bc8e1df5a9b93e28a36a9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d54ada5e20e1f55d000357b910e8d669 = $(`<div id="html_d54ada5e20e1f55d000357b910e8d669" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Canal St & Adams St</h4>         <b>Weekday returns:</b> 19724<br>         <b>Weekend returns:</b> 1747<br>         <b>Weekday share:</b> 0.006358<br>         <b>Weekend share:</b> 0.001447<br>         <b>Weekend - weekday share:</b> -0.004911<br>         <b>Weekend / weekday share ratio:</b> 0.23<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_c7cdfb611f5bc8e1df5a9b93e28a36a9.setContent(html_d54ada5e20e1f55d000357b910e8d669);
+            
+        
+
+        circle_marker_f651f8f31d20848dfe7ce428282d1ba4.bindPopup(popup_c7cdfb611f5bc8e1df5a9b93e28a36a9)
+        ;
+
+        
+    
+    
+            circle_marker_f651f8f31d20848dfe7ce428282d1ba4.bindTooltip(
+                `<div>
+                     weekday_oriented: Canal St & Adams St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0271c1847826aaedcf9a657a57ed4fdf = L.circleMarker(
+                [41.88275006331282, -87.64119022354309],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.462185534702265, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_09df33794a756b1a694ed149483a92d7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6d95764b8a0425cb87217f22fedb7404 = $(`<div id="html_6d95764b8a0425cb87217f22fedb7404" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clinton St & Madison St</h4>         <b>Weekday returns:</b> 25104<br>         <b>Weekend returns:</b> 4057<br>         <b>Weekday share:</b> 0.008092<br>         <b>Weekend share:</b> 0.003361<br>         <b>Weekend - weekday share:</b> -0.004731<br>         <b>Weekend / weekday share ratio:</b> 0.42<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_09df33794a756b1a694ed149483a92d7.setContent(html_6d95764b8a0425cb87217f22fedb7404);
+            
+        
+
+        circle_marker_0271c1847826aaedcf9a657a57ed4fdf.bindPopup(popup_09df33794a756b1a694ed149483a92d7)
+        ;
+
+        
+    
+    
+            circle_marker_0271c1847826aaedcf9a657a57ed4fdf.bindTooltip(
+                `<div>
+                     weekday_oriented: Clinton St & Madison St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_273036012ecd587ea9af57b08d23b68c = L.circleMarker(
+                [41.878166, -87.631929],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.23365345564073, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_2561f0dfbbf3eb09c3103ad37e829728 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b5e92d5dbbb3e4313682646859746670 = $(`<div id="html_b5e92d5dbbb3e4313682646859746670" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>LaSalle St & Jackson Blvd</h4>         <b>Weekday returns:</b> 13930<br>         <b>Weekend returns:</b> 876<br>         <b>Weekday share:</b> 0.004490<br>         <b>Weekend share:</b> 0.000726<br>         <b>Weekend - weekday share:</b> -0.003765<br>         <b>Weekend / weekday share ratio:</b> 0.16<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_2561f0dfbbf3eb09c3103ad37e829728.setContent(html_b5e92d5dbbb3e4313682646859746670);
+            
+        
+
+        circle_marker_273036012ecd587ea9af57b08d23b68c.bindPopup(popup_2561f0dfbbf3eb09c3103ad37e829728)
+        ;
+
+        
+    
+    
+            circle_marker_273036012ecd587ea9af57b08d23b68c.bindTooltip(
+                `<div>
+                     weekday_oriented: LaSalle St & Jackson Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e196c72796ed6b7dc42a853c98c8b845 = L.circleMarker(
+                [41.88424087537072, -87.62963348535213],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.063999557974167, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_a0d4a78047fd848d26b86c9d00f370a2 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_308434b112e9f2d61962dda5959ea4db = $(`<div id="html_308434b112e9f2d61962dda5959ea4db" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Daley Center Plaza</h4>         <b>Weekday returns:</b> 18249<br>         <b>Weekend returns:</b> 3266<br>         <b>Weekday share:</b> 0.005882<br>         <b>Weekend share:</b> 0.002705<br>         <b>Weekend - weekday share:</b> -0.003177<br>         <b>Weekend / weekday share ratio:</b> 0.46<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_a0d4a78047fd848d26b86c9d00f370a2.setContent(html_308434b112e9f2d61962dda5959ea4db);
+            
+        
+
+        circle_marker_e196c72796ed6b7dc42a853c98c8b845.bindPopup(popup_a0d4a78047fd848d26b86c9d00f370a2)
+        ;
+
+        
+    
+    
+            circle_marker_e196c72796ed6b7dc42a853c98c8b845.bindTooltip(
+                `<div>
+                     weekday_oriented: Daley Center Plaza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dee3b9ca2b71083f98800f1c0c451dd9 = L.circleMarker(
+                [41.888243, -87.63638999999999],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.969323339401841, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_de911f3ea77c9fbd03b055cf5b049599 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_437b27eb8bedb7e1315d1972fbd2b807 = $(`<div id="html_437b27eb8bedb7e1315d1972fbd2b807" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Orleans St & Merchandise Mart Plaza</h4>         <b>Weekday returns:</b> 16865<br>         <b>Weekend returns:</b> 3074<br>         <b>Weekday share:</b> 0.005436<br>         <b>Weekend share:</b> 0.002546<br>         <b>Weekend - weekday share:</b> -0.002890<br>         <b>Weekend / weekday share ratio:</b> 0.47<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_de911f3ea77c9fbd03b055cf5b049599.setContent(html_437b27eb8bedb7e1315d1972fbd2b807);
+            
+        
+
+        circle_marker_dee3b9ca2b71083f98800f1c0c451dd9.bindPopup(popup_de911f3ea77c9fbd03b055cf5b049599)
+        ;
+
+        
+    
+    
+            circle_marker_dee3b9ca2b71083f98800f1c0c451dd9.bindTooltip(
+                `<div>
+                     weekday_oriented: Orleans St & Merchandise Mart Plaza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1e2298baa5f178830a2e59bb2847d2d = L.circleMarker(
+                [41.897764, -87.642884],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.96729275898923, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_2425681c58653185d399480352dcd403 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a53711d32abdd3b02e25e650622d40bd = $(`<div id="html_a53711d32abdd3b02e25e650622d40bd" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Larrabee St & Kingsbury St</h4>         <b>Weekday returns:</b> 15621<br>         <b>Weekend returns:</b> 2597<br>         <b>Weekday share:</b> 0.005035<br>         <b>Weekend share:</b> 0.002151<br>         <b>Weekend - weekday share:</b> -0.002884<br>         <b>Weekend / weekday share ratio:</b> 0.43<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_2425681c58653185d399480352dcd403.setContent(html_a53711d32abdd3b02e25e650622d40bd);
+            
+        
+
+        circle_marker_a1e2298baa5f178830a2e59bb2847d2d.bindPopup(popup_2425681c58653185d399480352dcd403)
+        ;
+
+        
+    
+    
+            circle_marker_a1e2298baa5f178830a2e59bb2847d2d.bindTooltip(
+                `<div>
+                     weekday_oriented: Larrabee St & Kingsbury St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fca6e13687f9b8552db8108e8eef29f6 = L.circleMarker(
+                [41.878128645697444, -87.63996997065593],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.950576288573501, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_30fc7d184cada2c5728a77f9a22b99cf = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_84cc77e39b12cfa8742d62f6b8d7fb56 = $(`<div id="html_84cc77e39b12cfa8742d62f6b8d7fb56" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Canal St & Jackson Blvd</h4>         <b>Weekday returns:</b> 10978<br>         <b>Weekend returns:</b> 848<br>         <b>Weekday share:</b> 0.003539<br>         <b>Weekend share:</b> 0.000702<br>         <b>Weekend - weekday share:</b> -0.002836<br>         <b>Weekend / weekday share ratio:</b> 0.20<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_30fc7d184cada2c5728a77f9a22b99cf.setContent(html_84cc77e39b12cfa8742d62f6b8d7fb56);
+            
+        
+
+        circle_marker_fca6e13687f9b8552db8108e8eef29f6.bindPopup(popup_30fc7d184cada2c5728a77f9a22b99cf)
+        ;
+
+        
+    
+    
+            circle_marker_fca6e13687f9b8552db8108e8eef29f6.bindTooltip(
+                `<div>
+                     weekday_oriented: Canal St & Jackson Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8af94231a785b160e23d1dd796771cde = L.circleMarker(
+                [41.889172621529056, -87.63849963502554],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.876913033475324, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_a1a23074fec6fc110e28cfe6678231f0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_725955476f6af502225545973014eb1a = $(`<div id="html_725955476f6af502225545973014eb1a" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Kingsbury St & Kinzie St</h4>         <b>Weekday returns:</b> 31094<br>         <b>Weekend returns:</b> 8919<br>         <b>Weekday share:</b> 0.010023<br>         <b>Weekend share:</b> 0.007388<br>         <b>Weekend - weekday share:</b> -0.002635<br>         <b>Weekend / weekday share ratio:</b> 0.74<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_a1a23074fec6fc110e28cfe6678231f0.setContent(html_725955476f6af502225545973014eb1a);
+            
+        
+
+        circle_marker_8af94231a785b160e23d1dd796771cde.bindPopup(popup_a1a23074fec6fc110e28cfe6678231f0)
+        ;
+
+        
+    
+    
+            circle_marker_8af94231a785b160e23d1dd796771cde.bindTooltip(
+                `<div>
+                     weekday_oriented: Kingsbury St & Kinzie St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_819dbb6ff29fa450513d1a8da43a2283 = L.circleMarker(
+                [41.885637, -87.641823],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.783959180670243, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_e49c03ce609a9a7ab33a3ff2a8a926cb = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a58c643932161fb5f150bca98916a007 = $(`<div id="html_a58c643932161fb5f150bca98916a007" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clinton St & Lake St</h4>         <b>Weekday returns:</b> 15088<br>         <b>Weekend returns:</b> 2973<br>         <b>Weekday share:</b> 0.004863<br>         <b>Weekend share:</b> 0.002463<br>         <b>Weekend - weekday share:</b> -0.002401<br>         <b>Weekend / weekday share ratio:</b> 0.51<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_e49c03ce609a9a7ab33a3ff2a8a926cb.setContent(html_a58c643932161fb5f150bca98916a007);
+            
+        
+
+        circle_marker_819dbb6ff29fa450513d1a8da43a2283.bindPopup(popup_e49c03ce609a9a7ab33a3ff2a8a926cb)
+        ;
+
+        
+    
+    
+            circle_marker_819dbb6ff29fa450513d1a8da43a2283.bindTooltip(
+                `<div>
+                     weekday_oriented: Clinton St & Lake St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_193b00c0b44a3b9cb328e83a0f30bd38 = L.circleMarker(
+                [41.881319815, -87.6295209193],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.767432774752937, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_9cd348e4ed8076a64248c85ab4410e08 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_053854fbdebfc5ebc412eb0c6c98edcb = $(`<div id="html_053854fbdebfc5ebc412eb0c6c98edcb" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Dearborn St & Monroe St</h4>         <b>Weekday returns:</b> 13388<br>         <b>Weekend returns:</b> 2359<br>         <b>Weekday share:</b> 0.004316<br>         <b>Weekend share:</b> 0.001954<br>         <b>Weekend - weekday share:</b> -0.002361<br>         <b>Weekend / weekday share ratio:</b> 0.45<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_9cd348e4ed8076a64248c85ab4410e08.setContent(html_053854fbdebfc5ebc412eb0c6c98edcb);
+            
+        
+
+        circle_marker_193b00c0b44a3b9cb328e83a0f30bd38.bindPopup(popup_9cd348e4ed8076a64248c85ab4410e08)
+        ;
+
+        
+    
+    
+            circle_marker_193b00c0b44a3b9cb328e83a0f30bd38.bindTooltip(
+                `<div>
+                     weekday_oriented: Dearborn St & Monroe St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_baf4ec8d9359c3834030ce331824747e = L.circleMarker(
+                [41.88314336439022, -87.63724207878113],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.70346097244674, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_67b8f5fbb3b25001dd174e19852714ca = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f8d6927ece24849fb22ef0a4b29df5d5 = $(`<div id="html_f8d6927ece24849fb22ef0a4b29df5d5" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Wacker Dr & Washington St</h4>         <b>Weekday returns:</b> 8781<br>         <b>Weekend returns:</b> 743<br>         <b>Weekday share:</b> 0.002830<br>         <b>Weekend share:</b> 0.000615<br>         <b>Weekend - weekday share:</b> -0.002215<br>         <b>Weekend / weekday share ratio:</b> 0.22<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_67b8f5fbb3b25001dd174e19852714ca.setContent(html_f8d6927ece24849fb22ef0a4b29df5d5);
+            
+        
+
+        circle_marker_baf4ec8d9359c3834030ce331824747e.bindPopup(popup_67b8f5fbb3b25001dd174e19852714ca)
+        ;
+
+        
+    
+    
+            circle_marker_baf4ec8d9359c3834030ce331824747e.bindTooltip(
+                `<div>
+                     weekday_oriented: Wacker Dr & Washington St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b580f8c671a2afdb7be63b90b2993ecd = L.circleMarker(
+                [41.8829056, -87.6397409],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.699572251095095, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_63f15b6eef27f170c7882d822e3dc23d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_59c4866f764670caf7205301ff9a2a59 = $(`<div id="html_59c4866f764670caf7205301ff9a2a59" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Canal St & Monroe St</h4>         <b>Weekday returns:</b> 8577<br>         <b>Weekend returns:</b> 674<br>         <b>Weekday share:</b> 0.002765<br>         <b>Weekend share:</b> 0.000558<br>         <b>Weekend - weekday share:</b> -0.002206<br>         <b>Weekend / weekday share ratio:</b> 0.20<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_63f15b6eef27f170c7882d822e3dc23d.setContent(html_59c4866f764670caf7205301ff9a2a59);
+            
+        
+
+        circle_marker_b580f8c671a2afdb7be63b90b2993ecd.bindPopup(popup_63f15b6eef27f170c7882d822e3dc23d)
+        ;
+
+        
+    
+    
+            circle_marker_b580f8c671a2afdb7be63b90b2993ecd.bindTooltip(
+                `<div>
+                     weekday_oriented: Canal St & Monroe St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71caeff68ec067b84e1ddc6d2ac69968 = L.circleMarker(
+                [41.885836999999995, -87.63549999999998],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.61120828971158, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_3e3ed81f6e3d8b6e83ff031df29cf0a7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8f04bf88951856b4e4bf4ed687201ef2 = $(`<div id="html_8f04bf88951856b4e4bf4ed687201ef2" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Franklin St & Lake St</h4>         <b>Weekday returns:</b> 11187<br>         <b>Weekend returns:</b> 1915<br>         <b>Weekday share:</b> 0.003606<br>         <b>Weekend share:</b> 0.001586<br>         <b>Weekend - weekday share:</b> -0.002020<br>         <b>Weekend / weekday share ratio:</b> 0.44<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_3e3ed81f6e3d8b6e83ff031df29cf0a7.setContent(html_8f04bf88951856b4e4bf4ed687201ef2);
+            
+        
+
+        circle_marker_71caeff68ec067b84e1ddc6d2ac69968.bindPopup(popup_3e3ed81f6e3d8b6e83ff031df29cf0a7)
+        ;
+
+        
+    
+    
+            circle_marker_71caeff68ec067b84e1ddc6d2ac69968.bindTooltip(
+                `<div>
+                     weekday_oriented: Franklin St & Lake St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ab415f052c9681ded6869e5a6b51a00 = L.circleMarker(
+                [41.89434700980045, -87.62280048612229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.439100470799543, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_887b6fcdd1b21ec6e1d27a67b7d98cd5 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2d33349e067330f6b05a88dc1b7644b8 = $(`<div id="html_2d33349e067330f6b05a88dc1b7644b8" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>St. Clair St & Erie St</h4>         <b>Weekday returns:</b> 15631<br>         <b>Weekend returns:</b> 4030<br>         <b>Weekday share:</b> 0.005039<br>         <b>Weekend share:</b> 0.003338<br>         <b>Weekend - weekday share:</b> -0.001700<br>         <b>Weekend / weekday share ratio:</b> 0.66<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_887b6fcdd1b21ec6e1d27a67b7d98cd5.setContent(html_2d33349e067330f6b05a88dc1b7644b8);
+            
+        
+
+        circle_marker_5ab415f052c9681ded6869e5a6b51a00.bindPopup(popup_887b6fcdd1b21ec6e1d27a67b7d98cd5)
+        ;
+
+        
+    
+    
+            circle_marker_5ab415f052c9681ded6869e5a6b51a00.bindTooltip(
+                `<div>
+                     weekday_oriented: St. Clair St & Erie St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c35ff651ae23d3a6364d66d8522b382 = L.circleMarker(
+                [41.88602073203813, -87.63087535800302],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.437003984179482, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_9767ee404f2e000532fd973e3346834e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5b10a21d3d6be2fc68db2de7f0b3cd80 = $(`<div id="html_5b10a21d3d6be2fc68db2de7f0b3cd80" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Clark St & Lake St</h4>         <b>Weekday returns:</b> 14389<br>         <b>Weekend returns:</b> 3551<br>         <b>Weekday share:</b> 0.004638<br>         <b>Weekend share:</b> 0.002942<br>         <b>Weekend - weekday share:</b> -0.001697<br>         <b>Weekend / weekday share ratio:</b> 0.63<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_9767ee404f2e000532fd973e3346834e.setContent(html_5b10a21d3d6be2fc68db2de7f0b3cd80);
+            
+        
+
+        circle_marker_0c35ff651ae23d3a6364d66d8522b382.bindPopup(popup_9767ee404f2e000532fd973e3346834e)
+        ;
+
+        
+    
+    
+            circle_marker_0c35ff651ae23d3a6364d66d8522b382.bindTooltip(
+                `<div>
+                     weekday_oriented: Clark St & Lake St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce0ce0af51ae79701da130da24515a81 = L.circleMarker(
+                [41.871737, -87.65103],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.420124736990498, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9fde0d25c917c0cb1c4c921ecb2fd652);
+        
+    
+        var popup_ae1df2df6ed0ba8381b262041ba97bdc = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2bedbe49e17fa7472661742189b1028e = $(`<div id="html_2bedbe49e17fa7472661742189b1028e" style="width: 100.0%; height: 100.0%;">     <div style="width: 330px;">         <h4>Morgan St & Polk St</h4>         <b>Weekday returns:</b> 9246<br>         <b>Weekend returns:</b> 1584<br>         <b>Weekday share:</b> 0.002980<br>         <b>Weekend share:</b> 0.001312<br>         <b>Weekend - weekday share:</b> -0.001668<br>         <b>Weekend / weekday share ratio:</b> 0.44<br>         <b>Orientation:</b> weekday_oriented     </div>     </div>`)[0];
+                popup_ae1df2df6ed0ba8381b262041ba97bdc.setContent(html_2bedbe49e17fa7472661742189b1028e);
+            
+        
+
+        circle_marker_ce0ce0af51ae79701da130da24515a81.bindPopup(popup_ae1df2df6ed0ba8381b262041ba97bdc)
+        ;
+
+        
+    
+    
+            circle_marker_ce0ce0af51ae79701da130da24515a81.bindTooltip(
+                `<div>
+                     weekday_oriented: Morgan St & Polk St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_9fde0d25c917c0cb1c4c921ecb2fd652.addTo(map_775ed32a17749c18e492b7d0c0082131);
+        
+    
+            var layer_control_29e389e6da0f251b7642eff19269104e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_25963c03d67748bb1ad990947c02a2f0,
+                },
+                overlays :  {
+                    "Weekend-oriented return stations" : feature_group_c49d8d470902aca932734317c1dcd332,
+                    "Weekday-oriented return stations" : feature_group_9fde0d25c917c0cb1c4c921ecb2fd652,
+                },
+            };
+            let layer_control_29e389e6da0f251b7642eff19269104e = L.control.layers(
+                layer_control_29e389e6da0f251b7642eff19269104e_layers.base_layers,
+                layer_control_29e389e6da0f251b7642eff19269104e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_775ed32a17749c18e492b7d0c0082131);
+
+        
+</script>
+</html>

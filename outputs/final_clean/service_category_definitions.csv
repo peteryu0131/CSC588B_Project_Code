@@ -1,0 +1,10 @@
+service_category,included_osm_tags,main_analysis_use
+education,"amenity=school, university, college, library",Interpretable category
+food_drink,"amenity=restaurant, cafe, bar, pub, fast_food",Interpretable category
+health,"amenity=hospital, clinic, doctors, dentist, pharmacy",Interpretable category
+office,office=*,Interpretable category
+recreation,"leisure=park, garden, fitness_centre, sports_centre, marina, stadium, pitch, playground",Interpretable category
+retail,shop=*,Interpretable category
+tourism,tourism=*,Interpretable category
+transit,"public_transport=*, railway=station/stop/subway_entrance, highway=bus_stop, amenity=bus_station",Interpretable category
+other_amenity,"catch-all category, for example parking, bench, waste_basket, post_box, toilets, bank, vending_machine",Kept in raw counts only; excluded from interpreted profiles and validation

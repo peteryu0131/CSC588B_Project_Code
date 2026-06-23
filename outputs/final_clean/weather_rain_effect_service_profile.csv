@@ -1,0 +1,17 @@
+day_type,service_category,rainy_minus_dry
+weekday,education,5.761624216543259e-05
+weekday,food_drink,0.003262037955931718
+weekday,health,9.957929685781852e-05
+weekday,office,0.0006528002854440523
+weekday,recreation,9.357149223149924e-05
+weekday,retail,0.0002726106797892869
+weekday,tourism,-0.0024754306379332763
+weekday,transit,-0.0019627853144864593
+weekend,education,4.414358954133238e-05
+weekend,food_drink,0.0028046602059368375
+weekend,health,9.577612265166888e-05
+weekend,office,0.000669455503099943
+weekend,recreation,2.9935803403172145e-06
+weekend,retail,-0.0008321083011924579
+weekend,tourism,0.0006190041502651678
+weekend,transit,-0.0034039248506427255

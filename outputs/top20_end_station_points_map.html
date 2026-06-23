@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bffc5a78ca34645e97b935144937f513 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bffc5a78ca34645e97b935144937f513" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bffc5a78ca34645e97b935144937f513 = L.map(
+                "map_bffc5a78ca34645e97b935144937f513",
+                {
+                    center: [41.880418910526316, -87.63048289473683],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_70535c32583f553c5058b8dbac6207c9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_70535c32583f553c5058b8dbac6207c9.addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+            var circle_marker_9b0df8fe4fb0483df92e23cff4db0c66 = L.circleMarker(
+                [41.8891873, -87.638528],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.17249967412258, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_22c1fbf846f14592fca49c6c1d0ddc19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69d3fe09b4a94cc42cbd1542973b5af1 = $(`<div id="html_69d3fe09b4a94cc42cbd1542973b5af1" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>End trips: 10495<br>Lat: 41.8891873<br>Lng: -87.638528</div>`)[0];
+                popup_22c1fbf846f14592fca49c6c1d0ddc19.setContent(html_69d3fe09b4a94cc42cbd1542973b5af1);
+            
+        
+
+        circle_marker_9b0df8fe4fb0483df92e23cff4db0c66.bindPopup(popup_22c1fbf846f14592fca49c6c1d0ddc19)
+        ;
+
+        
+    
+    
+            circle_marker_9b0df8fe4fb0483df92e23cff4db0c66.bindTooltip(
+                `<div>
+                     Kingsbury St & Kinzie St (10495)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62645237ec184a674c498fe4f4d332f0 = L.circleMarker(
+                [41.8834683, -87.6411569],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.979440088783882, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_56838bfdfba527ab8927ebb41f0df16f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e97ffd49c3c70ec4a0c45be34b1ae18d = $(`<div id="html_e97ffd49c3c70ec4a0c45be34b1ae18d" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Washington Blvd</b><br>End trips: 7856<br>Lat: 41.8834683<br>Lng: -87.6411569</div>`)[0];
+                popup_56838bfdfba527ab8927ebb41f0df16f.setContent(html_e97ffd49c3c70ec4a0c45be34b1ae18d);
+            
+        
+
+        circle_marker_62645237ec184a674c498fe4f4d332f0.bindPopup(popup_56838bfdfba527ab8927ebb41f0df16f)
+        ;
+
+        
+    
+    
+            circle_marker_62645237ec184a674c498fe4f4d332f0.bindTooltip(
+                `<div>
+                     Clinton St & Washington Blvd (7856)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_781fad4df100576630b4483e327784fe = L.circleMarker(
+                [41.8827604, -87.6412057],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.957619802405546, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_adeec368a8e7584182777c664c95a0d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6e59e3e89364c2fff62bd0aca2e0e5c = $(`<div id="html_e6e59e3e89364c2fff62bd0aca2e0e5c" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>End trips: 7603<br>Lat: 41.8827604<br>Lng: -87.6412057</div>`)[0];
+                popup_adeec368a8e7584182777c664c95a0d7.setContent(html_e6e59e3e89364c2fff62bd0aca2e0e5c);
+            
+        
+
+        circle_marker_781fad4df100576630b4483e327784fe.bindPopup(popup_adeec368a8e7584182777c664c95a0d7)
+        ;
+
+        
+    
+    
+            circle_marker_781fad4df100576630b4483e327784fe.bindTooltip(
+                `<div>
+                     Clinton St & Madison St (7603)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37e312b230f0fa4fcb278627270c6c47 = L.circleMarker(
+                [41.8922419, -87.6119493],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.95595192785509, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_dab3cb9ac4df0f5269375fce9e9fb1ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05ef0cbd652e8082f5c8da5ad1d65cb9 = $(`<div id="html_05ef0cbd652e8082f5c8da5ad1d65cb9" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>End trips: 7584<br>Lat: 41.8922419<br>Lng: -87.6119493</div>`)[0];
+                popup_dab3cb9ac4df0f5269375fce9e9fb1ba.setContent(html_05ef0cbd652e8082f5c8da5ad1d65cb9);
+            
+        
+
+        circle_marker_37e312b230f0fa4fcb278627270c6c47.bindPopup(popup_dab3cb9ac4df0f5269375fce9e9fb1ba)
+        ;
+
+        
+    
+    
+            circle_marker_37e312b230f0fa4fcb278627270c6c47.bindTooltip(
+                `<div>
+                     Streeter Dr & Grand Ave (7584)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_875182e265e2525fab271619b7abf7f4 = L.circleMarker(
+                [41.8816545, -87.6395712],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.949149598470932, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_8e22ee0e6172b4bd5cc918404a5be47c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bc6de1c6c496993e6b505f09a7b1b5d = $(`<div id="html_5bc6de1c6c496993e6b505f09a7b1b5d" style="width: 100.0%; height: 100.0%;"><b>Canal St & Madison St</b><br>End trips: 7507<br>Lat: 41.8816545<br>Lng: -87.6395712</div>`)[0];
+                popup_8e22ee0e6172b4bd5cc918404a5be47c.setContent(html_5bc6de1c6c496993e6b505f09a7b1b5d);
+            
+        
+
+        circle_marker_875182e265e2525fab271619b7abf7f4.bindPopup(popup_8e22ee0e6172b4bd5cc918404a5be47c)
+        ;
+
+        
+    
+    
+            circle_marker_875182e265e2525fab271619b7abf7f4.bindTooltip(
+                `<div>
+                     Canal St & Madison St (7507)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4264a9f5e1300ae4f0c0ef5f9b7a29a3 = L.circleMarker(
+                [41.7914785, -87.5998378],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.900631634646935, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_1df65a04480b25d35df2e45420e55c26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_860a9e0aa994a4b34997c61c0969c5e3 = $(`<div id="html_860a9e0aa994a4b34997c61c0969c5e3" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>End trips: 6980<br>Lat: 41.7914785<br>Lng: -87.5998378</div>`)[0];
+                popup_1df65a04480b25d35df2e45420e55c26.setContent(html_860a9e0aa994a4b34997c61c0969c5e3);
+            
+        
+
+        circle_marker_4264a9f5e1300ae4f0c0ef5f9b7a29a3.bindPopup(popup_1df65a04480b25d35df2e45420e55c26)
+        ;
+
+        
+    
+    
+            circle_marker_4264a9f5e1300ae4f0c0ef5f9b7a29a3.bindTooltip(
+                `<div>
+                     University Ave & 57th St (6980)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_423584ce107601ee573ac785b3962927 = L.circleMarker(
+                [41.9029296, -87.6313227],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.896896797614488, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_91999b075ac264d9a8270d93084d56dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_304790e239bf7f2aad1bc3302155cf65 = $(`<div id="html_304790e239bf7f2aad1bc3302155cf65" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>End trips: 6941<br>Lat: 41.9029296<br>Lng: -87.6313227</div>`)[0];
+                popup_91999b075ac264d9a8270d93084d56dd.setContent(html_304790e239bf7f2aad1bc3302155cf65);
+            
+        
+
+        circle_marker_423584ce107601ee573ac785b3962927.bindPopup(popup_91999b075ac264d9a8270d93084d56dd)
+        ;
+
+        
+    
+    
+            circle_marker_423584ce107601ee573ac785b3962927.bindTooltip(
+                `<div>
+                     Clark St & Elm St (6941)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_797a75b1ddaea43818d10934c3a217b1 = L.circleMarker(
+                [41.7851231, -87.6010967],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.825609931445165, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_e57ef4191bfc41ad44df0732837ab9e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d076931066d7fd62bf3782e30bb7ef3c = $(`<div id="html_d076931066d7fd62bf3782e30bb7ef3c" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>End trips: 6237<br>Lat: 41.7851231<br>Lng: -87.6010967</div>`)[0];
+                popup_e57ef4191bfc41ad44df0732837ab9e8.setContent(html_d076931066d7fd62bf3782e30bb7ef3c);
+            
+        
+
+        circle_marker_797a75b1ddaea43818d10934c3a217b1.bindPopup(popup_e57ef4191bfc41ad44df0732837ab9e8)
+        ;
+
+        
+    
+    
+            circle_marker_797a75b1ddaea43818d10934c3a217b1.bindTooltip(
+                `<div>
+                     Ellis Ave & 60th St (6237)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81d9825a0dd7084ac53110483329f737 = L.circleMarker(
+                [41.8784565, -87.6409984],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.790389895117794, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_fbf6acb54bcf3f85de97e07116c5ec52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6466cf5387f03e298ec01d2eeab6896b = $(`<div id="html_6466cf5387f03e298ec01d2eeab6896b" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Jackson Blvd</b><br>End trips: 5916<br>Lat: 41.8784565<br>Lng: -87.6409984</div>`)[0];
+                popup_fbf6acb54bcf3f85de97e07116c5ec52.setContent(html_6466cf5387f03e298ec01d2eeab6896b);
+            
+        
+
+        circle_marker_81d9825a0dd7084ac53110483329f737.bindPopup(popup_fbf6acb54bcf3f85de97e07116c5ec52)
+        ;
+
+        
+    
+    
+            circle_marker_81d9825a0dd7084ac53110483329f737.bindTooltip(
+                `<div>
+                     Clinton St & Jackson Blvd (5916)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_012fa48ff51702b24fa18ec9fb6b6d08 = L.circleMarker(
+                [41.9032468, -87.6343279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.772114523117207, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_770fcbad8296d5d2e5b4b3f02ea31d79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_452131d4d7c13df9857a0cc733895401 = $(`<div id="html_452131d4d7c13df9857a0cc733895401" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>End trips: 5756<br>Lat: 41.9032468<br>Lng: -87.6343279</div>`)[0];
+                popup_770fcbad8296d5d2e5b4b3f02ea31d79.setContent(html_452131d4d7c13df9857a0cc733895401);
+            
+        
+
+        circle_marker_012fa48ff51702b24fa18ec9fb6b6d08.bindPopup(popup_770fcbad8296d5d2e5b4b3f02ea31d79)
+        ;
+
+        
+    
+    
+            circle_marker_012fa48ff51702b24fa18ec9fb6b6d08.bindTooltip(
+                `<div>
+                     Wells St & Elm St (5756)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_530ca8b888d4cfd060eb7a6ab8825041 = L.circleMarker(
+                [41.8792478, -87.6400073],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.766649535100036, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_67f8b55fa77b12a7df151c49aff5b32a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4d4c28d281a530f082a111b83b68d94 = $(`<div id="html_c4d4c28d281a530f082a111b83b68d94" style="width: 100.0%; height: 100.0%;"><b>Canal St & Adams St</b><br>End trips: 5709<br>Lat: 41.8792478<br>Lng: -87.6400073</div>`)[0];
+                popup_67f8b55fa77b12a7df151c49aff5b32a.setContent(html_c4d4c28d281a530f082a111b83b68d94);
+            
+        
+
+        circle_marker_530ca8b888d4cfd060eb7a6ab8825041.bindPopup(popup_67f8b55fa77b12a7df151c49aff5b32a)
+        ;
+
+        
+    
+    
+            circle_marker_530ca8b888d4cfd060eb7a6ab8825041.bindTooltip(
+                `<div>
+                     Canal St & Adams St (5709)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7bec8c300a590ec0cd4be96675a965a = L.circleMarker(
+                [41.8965841, -87.6286602],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.735947463284042, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_bda6625c30091409d04d0c594e57e09c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d82a1f51b3f57e9c2232882d2b5bf7f5 = $(`<div id="html_d82a1f51b3f57e9c2232882d2b5bf7f5" style="width: 100.0%; height: 100.0%;"><b>State St & Chicago Ave</b><br>End trips: 5452<br>Lat: 41.8965841<br>Lng: -87.6286602</div>`)[0];
+                popup_bda6625c30091409d04d0c594e57e09c.setContent(html_d82a1f51b3f57e9c2232882d2b5bf7f5);
+            
+        
+
+        circle_marker_d7bec8c300a590ec0cd4be96675a965a.bindPopup(popup_bda6625c30091409d04d0c594e57e09c)
+        ;
+
+        
+    
+    
+            circle_marker_d7bec8c300a590ec0cd4be96675a965a.bindTooltip(
+                `<div>
+                     State St & Chicago Ave (5452)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c016b80c8acb54a3a20b0f01cb1f2c1b = L.circleMarker(
+                [41.897744, -87.642884],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.720612588197856, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_8ddf7e871c839f1f762daf18f28f7722 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_056a3578776c86afdbe75b4077c87c51 = $(`<div id="html_056a3578776c86afdbe75b4077c87c51" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Kingsbury St</b><br>End trips: 5328<br>Lat: 41.897744<br>Lng: -87.642884</div>`)[0];
+                popup_8ddf7e871c839f1f762daf18f28f7722.setContent(html_056a3578776c86afdbe75b4077c87c51);
+            
+        
+
+        circle_marker_c016b80c8acb54a3a20b0f01cb1f2c1b.bindPopup(popup_8ddf7e871c839f1f762daf18f28f7722)
+        ;
+
+        
+    
+    
+            circle_marker_c016b80c8acb54a3a20b0f01cb1f2c1b.bindTooltip(
+                `<div>
+                     Larrabee St & Kingsbury St (5328)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b2f08ef1ce58cc2054f0fbd9cce983d = L.circleMarker(
+                [41.912198, -87.6346694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.706451868681594, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_6a695673c451a07de6e4c6432ba5adf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88128a9b9917fe9694e74ef757aee509 = $(`<div id="html_88128a9b9917fe9694e74ef757aee509" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>End trips: 5216<br>Lat: 41.912198<br>Lng: -87.6346694</div>`)[0];
+                popup_6a695673c451a07de6e4c6432ba5adf9.setContent(html_88128a9b9917fe9694e74ef757aee509);
+            
+        
+
+        circle_marker_7b2f08ef1ce58cc2054f0fbd9cce983d.bindPopup(popup_6a695673c451a07de6e4c6432ba5adf9)
+        ;
+
+        
+    
+    
+            circle_marker_7b2f08ef1ce58cc2054f0fbd9cce983d.bindTooltip(
+                `<div>
+                     Wells St & Concord Ln (5216)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d35ed61abee6f7a6f35594ab667bac9d = L.circleMarker(
+                [41.8989441, -87.6299106],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.685685800719988, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_5ff18ae41f3fccbb8b3773854747775a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27137131c51b4bd52024c06ce00ac64a = $(`<div id="html_27137131c51b4bd52024c06ce00ac64a" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>End trips: 5056<br>Lat: 41.8989441<br>Lng: -87.6299106</div>`)[0];
+                popup_5ff18ae41f3fccbb8b3773854747775a.setContent(html_27137131c51b4bd52024c06ce00ac64a);
+            
+        
+
+        circle_marker_d35ed61abee6f7a6f35594ab667bac9d.bindPopup(popup_5ff18ae41f3fccbb8b3773854747775a)
+        ;
+
+        
+    
+    
+            circle_marker_d35ed61abee6f7a6f35594ab667bac9d.bindTooltip(
+                `<div>
+                     Dearborn Pkwy & Delaware Pl (5056)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71a3c5c8de6aff4ab337e1c7f45039cf = L.circleMarker(
+                [41.8947285, -87.634423],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.681719109128384, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_bd4fb311df0444eb1523568f0fac1bbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4acafea1cf109f431899f75257280853 = $(`<div id="html_4acafea1cf109f431899f75257280853" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>End trips: 5026<br>Lat: 41.8947285<br>Lng: -87.634423</div>`)[0];
+                popup_bd4fb311df0444eb1523568f0fac1bbc.setContent(html_4acafea1cf109f431899f75257280853);
+            
+        
+
+        circle_marker_71a3c5c8de6aff4ab337e1c7f45039cf.bindPopup(popup_bd4fb311df0444eb1523568f0fac1bbc)
+        ;
+
+        
+    
+    
+            circle_marker_71a3c5c8de6aff4ab337e1c7f45039cf.bindTooltip(
+                `<div>
+                     Wells St & Huron St (5026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f738d22926e058ecec326956bcd604f8 = L.circleMarker(
+                [41.8841812, -87.6296407],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.663707260859415, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_a9c4d497c919f4ece2957391232a27c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9da5823827591277b65278510dce5bc = $(`<div id="html_f9da5823827591277b65278510dce5bc" style="width: 100.0%; height: 100.0%;"><b>Daley Center Plaza</b><br>End trips: 4892<br>Lat: 41.8841812<br>Lng: -87.6296407</div>`)[0];
+                popup_a9c4d497c919f4ece2957391232a27c8.setContent(html_f9da5823827591277b65278510dce5bc);
+            
+        
+
+        circle_marker_f738d22926e058ecec326956bcd604f8.bindPopup(popup_a9c4d497c919f4ece2957391232a27c8)
+        ;
+
+        
+    
+    
+            circle_marker_f738d22926e058ecec326956bcd604f8.bindTooltip(
+                `<div>
+                     Daley Center Plaza (4892)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74d8a62b5a348a2acc2b5178f59c675c = L.circleMarker(
+                [41.883885, -87.6246938],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.65658439329313, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_3c2e9692c0cf6963d93258985197816b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d68622f514d45bfb1b4c08fe203c6569 = $(`<div id="html_d68622f514d45bfb1b4c08fe203c6569" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>End trips: 4840<br>Lat: 41.883885<br>Lng: -87.6246938</div>`)[0];
+                popup_3c2e9692c0cf6963d93258985197816b.setContent(html_d68622f514d45bfb1b4c08fe203c6569);
+            
+        
+
+        circle_marker_74d8a62b5a348a2acc2b5178f59c675c.bindPopup(popup_3c2e9692c0cf6963d93258985197816b)
+        ;
+
+        
+    
+    
+            circle_marker_74d8a62b5a348a2acc2b5178f59c675c.bindTooltip(
+                `<div>
+                     Michigan Ave & Washington St (4840)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_762e88dcc6d58326dedbbf49c89a18cb = L.circleMarker(
+                [41.8898997, -87.6342914],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.651053005687295, "stroke": true, "weight": 3}
+            ).addTo(map_bffc5a78ca34645e97b935144937f513);
+        
+    
+        var popup_bf562c5783dae2fe3229921a6d853445 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed9f08bf5a5294e79944484432153849 = $(`<div id="html_ed9f08bf5a5294e79944484432153849" style="width: 100.0%; height: 100.0%;"><b>Wells St & Hubbard St</b><br>End trips: 4800<br>Lat: 41.8898997<br>Lng: -87.6342914</div>`)[0];
+                popup_bf562c5783dae2fe3229921a6d853445.setContent(html_ed9f08bf5a5294e79944484432153849);
+            
+        
+
+        circle_marker_762e88dcc6d58326dedbbf49c89a18cb.bindPopup(popup_bf562c5783dae2fe3229921a6d853445)
+        ;
+
+        
+    
+    
+            circle_marker_762e88dcc6d58326dedbbf49c89a18cb.bindTooltip(
+                `<div>
+                     Wells St & Hubbard St (4800)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

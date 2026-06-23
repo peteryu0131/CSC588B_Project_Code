@@ -1,0 +1,6 @@
+metric,value
+real_difference_score,0.12306125346782058
+permutation_mean,0.036624731843609946
+permutation_95th_percentile,0.0642270465863349
+p_value,0.000999000999000999
+n_permutations,1000.0

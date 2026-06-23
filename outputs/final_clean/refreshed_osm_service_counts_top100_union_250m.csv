@@ -1,0 +1,130 @@
+end_station_name,end_lat,end_lng,return_count_weekday,return_count_weekend,total_return_count,heavy_label,topk_group,topk_union,search_radius_m,education,food_drink,health,office,other_amenity,recreation,retail,tourism,transit,total_services_all,total_services_interpretable
+Aberdeen St & Jackson Blvd,41.87772613,-87.65478743,9771.0,3168.0,12939.0,weekday-heavy,weekday_only,100,250,0,2,1,0,0,0,4,1,5,13,13
+Adler Planetarium,41.866095,-87.607267,7762.0,4876.0,12638.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,3,6,9,9
+Ashland Ave & Division St,41.90318794361149,-87.66894633544676,10207.0,3543.0,13750.0,weekday-heavy,weekday_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Bissell St & Armitage Ave*,41.9182955629354,-87.65218332409859,7701.0,3998.0,11699.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Broadway & Barry Ave,41.93758231600629,-87.6440978050232,11913.0,6288.0,18201.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Broadway & Belmont Ave,41.94010600392988,-87.6454510048789,9289.0,4188.0,13477.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Broadway & Cornelia Ave,41.945529,-87.646439,13156.0,6306.0,19462.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Broadway & Sheridan Rd,41.952833,-87.649993,9007.0,4286.0,13293.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Broadway & Waveland Ave,41.949074,-87.648636,12636.0,5882.0,18518.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Buckingham Fountain,41.87130745884732,-87.62309887518705,6292.0,3598.0,9890.0,weekday-heavy,weekend_only,100,250,0,7,0,0,0,0,2,2,16,27,27
+Canal St & Adams St,41.879255,-87.639904,19724.0,1747.0,21471.0,weekday-heavy,weekday_only,100,250,2,32,2,4,0,0,9,1,52,102,102
+Canal St & Jackson Blvd,41.87812864569744,-87.63996997065593,10978.0,848.0,11826.0,weekday-heavy,weekday_only,100,250,2,29,1,8,0,0,8,1,54,103,103
+Canal St & Madison St,41.882409,-87.639767,26693.0,2608.0,29301.0,weekday-heavy,weekday_only,100,250,0,56,1,9,1,2,12,2,36,119,118
+Clarendon Ave & Gordon Ter,41.95786652415175,-87.64950513839722,9174.0,4034.0,13208.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clarendon Ave & Junior Ter,41.961004,-87.649603,7400.0,3877.0,11277.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Armitage Ave,41.918305755768,-87.63628183370878,15407.0,8627.0,24034.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Berwyn Ave,41.97802884484359,-87.66836255860282,7342.0,3725.0,11067.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Drummond Pl,41.931248,-87.644336,10279.0,4764.0,15043.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Elm St,41.90301732164141,-87.63152289470456,20810.0,8555.0,29365.0,weekday-heavy,overlap,100,250,0,28,1,1,0,0,11,0,38,79,79
+Clark St & Grace St,41.95078,-87.659172,6706.0,3565.0,10271.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Lake St,41.88602073203813,-87.63087535800302,14389.0,3551.0,17940.0,weekday-heavy,weekday_only,100,250,0,36,0,14,0,0,8,1,32,91,91
+Clark St & Lincoln Ave,41.915689,-87.6346,14534.0,8838.0,23372.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Newport St,41.94454,-87.654678,11196.0,5940.0,17136.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & North Ave,41.911974,-87.631942,6653.0,3847.0,10500.0,weekday-heavy,weekend_only,100,250,0,4,1,0,0,0,3,0,14,22,22
+Clark St & Schiller St,41.907993,-87.631501,9835.0,4738.0,14573.0,weekday-heavy,overlap,100,250,0,4,0,0,0,0,1,0,14,19,19
+Clark St & Wellington Ave,41.9364968219,-87.6475386582,9011.0,3823.0,12834.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Winnemac Ave,41.97334764047304,-87.6678554713726,8861.0,4396.0,13257.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clark St & Wrightwood Ave,41.929546,-87.643118,11618.0,5702.0,17320.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Clinton St & Jackson Blvd,41.87831662050808,-87.64098109175531,21413.0,2302.0,23715.0,weekday-heavy,weekday_only,100,250,2,30,2,8,0,0,13,1,54,110,110
+Clinton St & Lake St,41.885637,-87.641823,15088.0,2973.0,18061.0,weekday-heavy,weekday_only,100,250,0,38,0,2,0,1,19,4,12,76,76
+Clinton St & Madison St,41.88275006331282,-87.64119022354309,25104.0,4057.0,29161.0,weekday-heavy,overlap,100,250,0,56,1,3,0,2,14,4,41,121,121
+Clinton St & Washington Blvd,41.883378993326986,-87.64117008864396,29100.0,1489.0,30589.0,weekday-heavy,weekday_only,100,250,0,54,1,4,0,2,15,5,43,124,124
+Columbus Dr & Randolph St,41.884728,-87.619521,14610.0,4676.0,19286.0,weekday-heavy,overlap,100,250,0,8,2,4,0,0,1,3,15,33,33
+Daley Center Plaza,41.88424087537072,-87.62963348535213,18249.0,3266.0,21515.0,weekday-heavy,weekday_only,100,250,1,27,2,17,1,1,21,3,56,129,128
+Damen Ave & Pierce Ave,41.90913973176558,-87.6775313230267,9083.0,4397.0,13480.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Dearborn Pkwy & Delaware Pl,41.898969,-87.629912,15557.0,5924.0,21481.0,weekday-heavy,overlap,100,250,1,14,0,0,0,0,12,0,22,49,49
+Dearborn St & Erie St,41.893992,-87.629318,16058.0,6012.0,22070.0,weekday-heavy,overlap,100,250,0,39,0,1,0,2,11,3,24,80,80
+Dearborn St & Monroe St,41.881319815,-87.6295209193,13388.0,2359.0,15747.0,weekday-heavy,weekday_only,100,250,1,52,3,22,0,0,33,3,56,170,170
+Desplaines St & Kinzie St,41.888716036,-87.6444478533,14298.0,5357.0,19655.0,weekday-heavy,overlap,100,250,0,6,0,0,0,0,3,0,6,15,15
+DuSable Lake Shore Dr & Belmont Ave,41.940775,-87.639192,10711.0,6146.0,16857.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+DuSable Lake Shore Dr & Diversey Pkwy,41.932588,-87.636427,12317.0,7044.0,19361.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+DuSable Lake Shore Dr & Monroe St,41.880958,-87.616743,20698.0,17218.0,37916.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,1,3,4,4
+DuSable Lake Shore Dr & North Blvd,41.911722,-87.626804,19730.0,14940.0,34670.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,2,3,5,5
+DuSable Lake Shore Dr & Wellington Ave,41.936688449499705,-87.63682901859283,9542.0,5887.0,15429.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Dusable Harbor,41.88697599432289,-87.61281299950515,11732.0,8761.0,20493.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,2,7,2,11,11
+Ellis Ave & 55th St,41.79430062054,-87.6014497734,13088.0,4088.0,17176.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Ellis Ave & 60th St,41.78509714636001,-87.6010727606,13248.0,4417.0,17665.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Fairbanks Ct & Grand Ave,41.89184737210993,-87.62058019638062,11156.0,4623.0,15779.0,weekday-heavy,overlap,100,250,1,44,3,5,0,5,17,4,33,112,112
+Federal St & Polk St,41.87207763285,-87.6295437729,11632.0,4363.0,15995.0,weekday-heavy,overlap,100,250,1,22,1,0,0,6,11,1,24,66,66
+Field Blvd & South Water St,41.88634906269,-87.6175165471,8408.0,4106.0,12514.0,weekday-heavy,weekend_only,100,250,0,10,2,1,0,0,1,2,8,24,24
+Field Museum,41.8653120005395,-87.61786701481803,5521.0,4607.0,10128.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,5,4,9,9
+Franklin St & Illinois St,41.89102335487364,-87.63548087376064,9513.0,3384.0,12897.0,weekday-heavy,weekday_only,100,250,0,30,1,3,0,0,16,0,15,65,65
+Franklin St & Jackson Blvd,41.87770795589999,-87.6353211408,12118.0,2768.0,14886.0,weekday-heavy,weekday_only,100,250,0,37,2,4,0,0,14,6,30,93,93
+Franklin St & Lake St,41.885837,-87.63549999999998,11187.0,1915.0,13102.0,weekday-heavy,weekday_only,100,250,0,38,0,14,0,0,7,9,13,81,81
+Franklin St & Monroe St,41.88031616332084,-87.63518440237203,18703.0,774.0,19477.0,weekday-heavy,weekday_only,100,250,0,47,3,11,0,0,16,7,29,113,113
+Green St & Madison St,41.88185932803824,-87.64926373958588,13280.0,4796.0,18076.0,weekday-heavy,overlap,100,250,0,15,3,4,2,4,35,2,18,83,81
+Halsted St & Clybourn Ave,41.909668,-87.648128,12290.0,4629.0,16919.0,weekday-heavy,overlap,100,250,0,10,1,1,0,1,15,0,20,48,48
+Halsted St & Dickens Ave,41.919936,-87.64883,7648.0,3879.0,11527.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Halsted St & Fulton St,41.88685835666811,-87.64802209919087,10542.0,3300.0,13842.0,weekday-heavy,weekday_only,100,250,0,40,2,2,0,4,7,1,8,64,64
+Halsted St & Roscoe St,41.943667741716816,-87.64895781893892,9475.0,4982.0,14457.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Halsted St & Wrightwood Ave,41.929143,-87.64907700000002,9224.0,4503.0,13727.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Indiana Ave & Roosevelt Rd,41.86788801019692,-87.6230410031074,13985.0,6983.0,20968.0,weekday-heavy,overlap,100,250,0,9,0,0,0,0,9,2,19,39,39
+Kedzie Ave & Milwaukee Ave,41.929083085060974,-87.70802510914633,6896.0,3600.0,10496.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Kimbark Ave & 53rd St,41.7994549,-87.59477789999998,9671.0,3557.0,13228.0,weekday-heavy,weekday_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Kingsbury St & Erie St,41.8939139,-87.6417358,14745.0,4339.0,19084.0,weekday-heavy,overlap,100,250,0,3,1,2,0,0,1,0,0,7,7
+Kingsbury St & Kinzie St,41.889172621529056,-87.63849963502554,31094.0,8919.0,40013.0,weekday-heavy,overlap,100,250,0,11,1,1,0,0,5,2,4,24,24
+LaSalle St & Illinois St,41.890762,-87.631697,14260.0,5252.0,19512.0,weekday-heavy,overlap,100,250,1,67,0,3,0,0,13,5,23,112,112
+LaSalle St & Jackson Blvd,41.878166,-87.631929,13930.0,876.0,14806.0,weekday-heavy,weekday_only,100,250,0,46,1,17,0,0,13,9,53,139,139
+Lakefront Trail & Bryn Mawr Ave,41.98404411519213,-87.65228122472763,6778.0,5157.0,11935.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Lakeview Ave & Fullerton Pkwy,41.925858,-87.638973,10132.0,5140.0,15272.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Larrabee St & Kingsbury St,41.897764,-87.642884,15621.0,2597.0,18218.0,weekday-heavy,weekday_only,100,250,0,5,1,1,0,1,6,0,3,17,17
+Larrabee St & Webster Ave,41.921822,-87.64414,9969.0,5387.0,15356.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Lincoln Ave & Fullerton Ave,41.924161029067626,-87.64638036489487,11652.0,4908.0,16560.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Lincoln Park Conservatory,41.92393131136619,-87.63582453131676,7981.0,4903.0,12884.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Loomis St & Lexington St,41.87222873224032,-87.66136385500431,9240.0,3030.0,12270.0,weekday-heavy,weekday_only,100,250,1,0,0,0,0,0,0,1,4,6,6
+McClurg Ct & Erie St,41.89450300000001,-87.617854,10746.0,2839.0,13585.0,weekday-heavy,weekday_only,100,250,3,13,2,0,0,1,5,2,16,42,42
+McClurg Ct & Ohio St,41.892592119709725,-87.61728912591934,15303.0,6651.0,21954.0,weekday-heavy,overlap,100,250,0,20,2,0,0,2,12,4,25,65,65
+Michigan Ave & 8th St,41.87277296771354,-87.62398098838872,9895.0,6152.0,16047.0,weekday-heavy,overlap,100,250,1,18,0,0,0,0,6,2,18,45,45
+Michigan Ave & Jackson Blvd,41.87834559823754,-87.62415080552178,7903.0,3615.0,11518.0,weekday-heavy,weekend_only,100,250,0,33,2,8,0,0,14,15,31,103,103
+Michigan Ave & Lake St,41.886022,-87.624398,14404.0,4544.0,18948.0,weekday-heavy,overlap,100,250,0,56,3,15,0,1,23,9,30,137,137
+Michigan Ave & Oak St,41.90096039009614,-87.62377663865593,21157.0,13471.0,34628.0,weekday-heavy,overlap,100,250,0,17,0,3,0,1,57,2,10,90,90
+Michigan Ave & Washington St,41.88398406449815,-87.62468397185215,16265.0,5556.0,21821.0,weekday-heavy,overlap,100,250,1,52,6,10,1,1,34,8,38,151,150
+Mies van der Rohe Way & Chestnut St,41.8985866514,-87.6219152258,10250.0,4165.0,14415.0,weekday-heavy,overlap,100,250,0,28,0,2,1,0,45,5,26,107,106
+Mies van der Rohe Way & Chicago Ave,41.89694462637082,-87.62175768613815,9251.0,3247.0,12498.0,weekday-heavy,weekday_only,100,250,0,21,1,4,1,0,30,7,34,98,97
+Millennium Park,41.8810317,-87.62408432,17129.0,10356.0,27485.0,weekday-heavy,overlap,100,250,2,41,2,5,0,0,29,10,21,110,110
+Montrose Harbor,41.963982,-87.638181,10026.0,7717.0,17743.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Morgan St & Polk St,41.871737,-87.65103,9246.0,1584.0,10830.0,weekday-heavy,weekday_only,100,250,0,4,0,0,0,0,1,4,2,11,11
+Navy Pier,41.892278,-87.612043,19160.0,15617.0,34777.0,weekday-heavy,overlap,100,250,0,6,0,0,0,0,3,6,17,32,32
+New St & Illinois St,41.89084704062381,-87.61861681938171,13869.0,6424.0,20293.0,weekday-heavy,overlap,100,250,0,22,1,2,0,2,12,4,19,62,62
+Orleans St & Merchandise Mart Plaza,41.888243,-87.63638999999999,16865.0,3074.0,19939.0,weekday-heavy,weekday_only,100,250,0,30,1,5,0,0,10,10,16,72,72
+Peoria St & Jackson Blvd,41.87764159627531,-87.64961779117584,10115.0,2761.0,12876.0,weekday-heavy,weekday_only,100,250,0,17,0,1,0,1,11,3,13,46,46
+Pine Grove Ave & Irving Park Rd,41.95436725508892,-87.64794502215663,8971.0,4411.0,13382.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Pine Grove Ave & Waveland Ave,41.94947274088333,-87.64645278453827,10937.0,5398.0,16335.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Ravenswood Ave & Lawrence Ave,41.968445,-87.674226,13826.0,3647.0,17473.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Rush St & Cedar St,41.90230870122,-87.627690528,9762.0,4462.0,14224.0,weekday-heavy,overlap,100,250,0,25,0,0,0,0,44,1,15,85,85
+Rush St & Superior St,41.89576474564,-87.6259080327,9518.0,3262.0,12780.0,weekday-heavy,weekday_only,100,250,1,39,1,5,0,0,33,6,27,112,112
+Sedgwick St & Huron St,41.894666,-87.638437,10193.0,2740.0,12933.0,weekday-heavy,weekday_only,100,250,0,7,1,5,0,0,3,1,10,27,27
+Sedgwick St & Webster Ave,41.922167,-87.638888,8097.0,3571.0,11668.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Shedd Aquarium,41.86722596201104,-87.61535540410257,11191.0,8315.0,19506.0,weekday-heavy,overlap,100,250,0,3,0,0,0,0,0,13,5,21,21
+Sheffield Ave & Fullerton Ave,41.9256163,-87.65365740000001,12434.0,3839.0,16273.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Sheffield Ave & Waveland Ave,41.949399,-87.654529,9766.0,4422.0,14188.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Sheffield Ave & Webster Ave,41.92154,-87.653818,9245.0,4057.0,13302.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Sheffield Ave & Wellington Ave,41.936253484169214,-87.6526620968688,9145.0,3675.0,12820.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Sheffield Ave & Wrightwood Ave,41.928712,-87.653833,9249.0,4145.0,13394.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Sheridan Rd & Irving Park Rd,41.954245,-87.654406,9501.0,3972.0,13473.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Sheridan Rd & Montrose Ave,41.96167,-87.65464,8226.0,3910.0,12136.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Shore Dr & 55th St,41.795212,-87.580715,7396.0,3810.0,11206.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Southport Ave & Roscoe St,41.943739,-87.66402,9814.0,4837.0,14651.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Southport Ave & Waveland Ave,41.948226,-87.6640712,11217.0,5566.0,16783.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Southport Ave & Wellington Ave,41.93577461766458,-87.66360014677048,7347.0,3738.0,11085.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+St. Clair St & Erie St,41.89434700980045,-87.62280048612229,15631.0,4030.0,19661.0,weekday-heavy,overlap,100,250,0,42,3,9,0,1,34,5,20,114,114
+State St & Chicago Ave,41.896617200407526,-87.62857854366302,19184.0,6966.0,26150.0,weekday-heavy,overlap,100,250,2,40,0,1,0,2,19,1,24,89,89
+State St & Kinzie St,41.8893754597427,-87.62707652193124,10238.0,3141.0,13379.0,weekday-heavy,weekday_only,100,250,0,57,1,4,0,0,14,16,24,116,116
+State St & Randolph St,41.88462107257936,-87.62783423066139,8847.0,3622.0,12469.0,weekday-heavy,weekend_only,100,250,1,49,3,14,1,2,28,6,52,156,155
+Stockton Dr & Wrightwood Ave,41.93132,-87.63874200000001,8240.0,4364.0,12604.0,weekday-heavy,weekend_only,100,250,0,0,0,0,0,0,0,0,0,0,0
+Streeter Dr & Grand Ave,41.892278002970286,-87.61204300164603,17854.0,12071.0,29925.0,weekday-heavy,overlap,100,250,0,6,0,0,0,0,3,6,17,32,32
+Theater on the Lake,41.926277,-87.630834,15407.0,12444.0,27851.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+University Ave & 57th St,41.79147800295527,-87.59986050810642,16397.0,4551.0,20948.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0
+Wabash Ave & 9th St,41.870769,-87.625734,9254.0,3575.0,12829.0,weekday-heavy,overlap,100,250,0,17,1,0,0,2,14,5,25,64,64
+Wabash Ave & Grand Ave,41.891466,-87.62676099999999,15575.0,6413.0,21988.0,weekday-heavy,overlap,100,250,0,66,0,7,0,0,34,8,43,158,158
+Wabash Ave & Roosevelt Rd,41.867227,-87.625961,12698.0,5124.0,17822.0,weekday-heavy,overlap,100,250,0,20,1,2,0,1,15,3,43,85,85
+Wells St & Concord Ln,41.912133,-87.634656,18316.0,9219.0,27535.0,weekday-heavy,overlap,100,250,0,18,1,1,0,0,10,0,14,44,44
+Wells St & Elm St,41.903222,-87.634324,18124.0,8113.0,26237.0,weekday-heavy,overlap,100,250,0,15,0,1,1,0,10,0,21,48,47
+Wells St & Evergreen Ave,41.90672457611039,-87.63482999967887,9741.0,4372.0,14113.0,weekday-heavy,overlap,100,250,0,9,1,0,0,1,9,0,4,24,24
+Wells St & Hubbard St,41.889906,-87.634266,16733.0,4605.0,21338.0,weekday-heavy,overlap,100,250,1,50,1,5,0,0,18,7,25,107,107
+Wells St & Huron St,41.89478399980203,-87.6343724037867,17689.0,6052.0,23741.0,weekday-heavy,overlap,100,250,0,31,2,2,0,1,10,2,25,73,73
+Wells St & Randolph St,41.884295,-87.633963,10306.0,2048.0,12354.0,weekday-heavy,weekday_only,100,250,0,47,0,13,0,1,13,0,34,108,108
+Wells St & Walton St,41.89993001,-87.63443007,9219.0,3562.0,12781.0,weekday-heavy,weekend_only,100,250,0,7,0,0,0,0,0,0,6,13,13
+Wilton Ave & Belmont Ave,41.940231918108594,-87.65294373035431,14736.0,6607.0,21343.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0

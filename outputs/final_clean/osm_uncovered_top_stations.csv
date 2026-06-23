@@ -1,0 +1,46 @@
+end_station_name,end_lat,end_lng,return_count_weekday,return_count_weekend,total_return_count,heavy_label,topk_group,topk_union,search_radius_m,education,food_drink,health,office,other_amenity,recreation,retail,tourism,transit,total_services_all,total_services_interpretable,has_interpretable_osm
+Theater on the Lake,41.926277,-87.630834,15407.0,12444.0,27851.0,weekday-heavy,weekend_only,20,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Armitage Ave,41.918305755768,-87.63628183370878,15407.0,8627.0,24034.0,weekday-heavy,weekend_only,20,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Lincoln Ave,41.915689,-87.6346,14534.0,8838.0,23372.0,weekday-heavy,weekend_only,20,250,0,0,0,0,0,0,0,0,0,0,0,False
+DuSable Lake Shore Dr & Diversey Pkwy,41.932588,-87.636427,12317.0,7044.0,19361.0,weekday-heavy,weekend_only,20,250,0,0,0,0,0,0,0,0,0,0,0,False
+Montrose Harbor,41.963982,-87.638181,10026.0,7717.0,17743.0,weekday-heavy,weekend_only,20,250,0,0,0,0,0,0,0,0,0,0,0,False
+Theater on the Lake,41.926277,-87.630834,15407.0,12444.0,27851.0,weekday-heavy,overlap,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Armitage Ave,41.918305755768,-87.63628183370878,15407.0,8627.0,24034.0,weekday-heavy,overlap,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Lincoln Ave,41.915689,-87.6346,14534.0,8838.0,23372.0,weekday-heavy,overlap,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Wilton Ave & Belmont Ave,41.940231918108594,-87.65294373035431,14736.0,6607.0,21343.0,weekday-heavy,overlap,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+University Ave & 57th St,41.79147800295527,-87.59986050810642,16397.0,4551.0,20948.0,weekday-heavy,weekday_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Broadway & Cornelia Ave,41.945529,-87.646439,13156.0,6306.0,19462.0,weekday-heavy,overlap,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+DuSable Lake Shore Dr & Diversey Pkwy,41.932588,-87.636427,12317.0,7044.0,19361.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Broadway & Waveland Ave,41.949074,-87.648636,12636.0,5882.0,18518.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Broadway & Barry Ave,41.93758231600629,-87.6440978050232,11913.0,6288.0,18201.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Montrose Harbor,41.963982,-87.638181,10026.0,7717.0,17743.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Ellis Ave & 60th St,41.78509714636001,-87.6010727606,13248.0,4417.0,17665.0,weekday-heavy,weekday_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Ravenswood Ave & Lawrence Ave,41.968445,-87.674226,13826.0,3647.0,17473.0,weekday-heavy,weekday_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Wrightwood Ave,41.929546,-87.643118,11618.0,5702.0,17320.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Ellis Ave & 55th St,41.79430062054,-87.6014497734,13088.0,4088.0,17176.0,weekday-heavy,weekday_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Newport St,41.94454,-87.654678,11196.0,5940.0,17136.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+DuSable Lake Shore Dr & Belmont Ave,41.940775,-87.639192,10711.0,6146.0,16857.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Southport Ave & Waveland Ave,41.948226,-87.6640712,11217.0,5566.0,16783.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Lincoln Ave & Fullerton Ave,41.924161029067626,-87.64638036489487,11652.0,4908.0,16560.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Pine Grove Ave & Waveland Ave,41.94947274088333,-87.64645278453827,10937.0,5398.0,16335.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+DuSable Lake Shore Dr & Wellington Ave,41.936688449499705,-87.63682901859283,9542.0,5887.0,15429.0,weekday-heavy,weekend_only,50,250,0,0,0,0,0,0,0,0,0,0,0,False
+Theater on the Lake,41.926277,-87.630834,15407.0,12444.0,27851.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Armitage Ave,41.918305755768,-87.63628183370878,15407.0,8627.0,24034.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Lincoln Ave,41.915689,-87.6346,14534.0,8838.0,23372.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Wilton Ave & Belmont Ave,41.940231918108594,-87.65294373035431,14736.0,6607.0,21343.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+University Ave & 57th St,41.79147800295527,-87.59986050810642,16397.0,4551.0,20948.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Broadway & Cornelia Ave,41.945529,-87.646439,13156.0,6306.0,19462.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+DuSable Lake Shore Dr & Diversey Pkwy,41.932588,-87.636427,12317.0,7044.0,19361.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Broadway & Waveland Ave,41.949074,-87.648636,12636.0,5882.0,18518.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Broadway & Barry Ave,41.93758231600629,-87.6440978050232,11913.0,6288.0,18201.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Montrose Harbor,41.963982,-87.638181,10026.0,7717.0,17743.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Ellis Ave & 60th St,41.78509714636001,-87.6010727606,13248.0,4417.0,17665.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Ravenswood Ave & Lawrence Ave,41.968445,-87.674226,13826.0,3647.0,17473.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Wrightwood Ave,41.929546,-87.643118,11618.0,5702.0,17320.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Ellis Ave & 55th St,41.79430062054,-87.6014497734,13088.0,4088.0,17176.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Clark St & Newport St,41.94454,-87.654678,11196.0,5940.0,17136.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+DuSable Lake Shore Dr & Belmont Ave,41.940775,-87.639192,10711.0,6146.0,16857.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Southport Ave & Waveland Ave,41.948226,-87.6640712,11217.0,5566.0,16783.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Lincoln Ave & Fullerton Ave,41.924161029067626,-87.64638036489487,11652.0,4908.0,16560.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Pine Grove Ave & Waveland Ave,41.94947274088333,-87.64645278453827,10937.0,5398.0,16335.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False
+Sheffield Ave & Fullerton Ave,41.9256163,-87.65365740000001,12434.0,3839.0,16273.0,weekday-heavy,overlap,100,250,0,0,0,0,0,0,0,0,0,0,0,False

@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1e1cc99127ca1db1d2440f3c843fc4b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1e1cc99127ca1db1d2440f3c843fc4b4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1e1cc99127ca1db1d2440f3c843fc4b4 = L.map(
+                "map_1e1cc99127ca1db1d2440f3c843fc4b4",
+                {
+                    center: [41.907114179573156, -87.64071230092381],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03bb41c272a2461fec9ef5101428a3d3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_03bb41c272a2461fec9ef5101428a3d3.addTo(map_1e1cc99127ca1db1d2440f3c843fc4b4);
+        
+    
+            var feature_group_5328e0b21d9b81a029cf240f0c3329f4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_04de655d082aa366fa4bb437c6daa9ad = L.circleMarker(
+                [41.892278002970286, -87.61204300164603],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.654352083482614, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_1a19a3bc94205657a9d6097f633e5aac = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0bb01c2e01b456cae25711c72119086d = $(`<div id="html_0bb01c2e01b456cae25711c72119086d" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Streeter Dr & Grand Ave</h4>             <b>rainy_minus_dry_share:</b> 0.002109<br>             <b>Total compared returns:</b> 29925<br>         </div>         </div>`)[0];
+                popup_1a19a3bc94205657a9d6097f633e5aac.setContent(html_0bb01c2e01b456cae25711c72119086d);
+            
+        
+
+        circle_marker_04de655d082aa366fa4bb437c6daa9ad.bindPopup(popup_1a19a3bc94205657a9d6097f633e5aac)
+        ;
+
+        
+    
+    
+            circle_marker_04de655d082aa366fa4bb437c6daa9ad.bindTooltip(
+                `<div>
+                     Streeter Dr & Grand Ave | 0.002109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9300a615a8e57ebd22f70388b78824a3 = L.circleMarker(
+                [41.89240100000001, -87.612388],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.168975825213785, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_be5f6ffc10daabfcd637ff9435a2da2f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_61a38ae7b2cf70fb43eb8df5e33dff99 = $(`<div id="html_61a38ae7b2cf70fb43eb8df5e33dff99" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Streeter Dr/Grand Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000477<br>             <b>Total compared returns:</b> 3579<br>         </div>         </div>`)[0];
+                popup_be5f6ffc10daabfcd637ff9435a2da2f.setContent(html_61a38ae7b2cf70fb43eb8df5e33dff99);
+            
+        
+
+        circle_marker_9300a615a8e57ebd22f70388b78824a3.bindPopup(popup_be5f6ffc10daabfcd637ff9435a2da2f)
+        ;
+
+        
+    
+    
+            circle_marker_9300a615a8e57ebd22f70388b78824a3.bindTooltip(
+                `<div>
+                     Streeter Dr/Grand Ave | 0.000477
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56ac904ab4a8577e42f2c4cca6f1da8a = L.circleMarker(
+                [41.88685835666811, -87.64802209919087],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.109851571341567, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_365efc7f3adaddca2310564da184cbd3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e977b855131f3d7cefb93c6e4b1a3a10 = $(`<div id="html_e977b855131f3d7cefb93c6e4b1a3a10" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Halsted St & Fulton St</h4>             <b>rainy_minus_dry_share:</b> 0.000449<br>             <b>Total compared returns:</b> 13842<br>         </div>         </div>`)[0];
+                popup_365efc7f3adaddca2310564da184cbd3.setContent(html_e977b855131f3d7cefb93c6e4b1a3a10);
+            
+        
+
+        circle_marker_56ac904ab4a8577e42f2c4cca6f1da8a.bindPopup(popup_365efc7f3adaddca2310564da184cbd3)
+        ;
+
+        
+    
+    
+            circle_marker_56ac904ab4a8577e42f2c4cca6f1da8a.bindTooltip(
+                `<div>
+                     Halsted St & Fulton St | 0.000449
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7c3d82da224e26b72e65eb1a0e988e4 = L.circleMarker(
+                [41.903017321641414, -87.63152289470456],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.031187461767889, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_f79550276772c3e4f74b1393e506b861 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_725c0255b23b441fcabcba5220513a2f = $(`<div id="html_725c0255b23b441fcabcba5220513a2f" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Clark St & Elm St</h4>             <b>rainy_minus_dry_share:</b> 0.000415<br>             <b>Total compared returns:</b> 29365<br>         </div>         </div>`)[0];
+                popup_f79550276772c3e4f74b1393e506b861.setContent(html_725c0255b23b441fcabcba5220513a2f);
+            
+        
+
+        circle_marker_e7c3d82da224e26b72e65eb1a0e988e4.bindPopup(popup_f79550276772c3e4f74b1393e506b861)
+        ;
+
+        
+    
+    
+            circle_marker_e7c3d82da224e26b72e65eb1a0e988e4.bindTooltip(
+                `<div>
+                     Clark St & Elm St | 0.000415
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_074c11173fb657995abd934ec1a3e559 = L.circleMarker(
+                [41.8653120005395, -87.61786701481803],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.938504169287981, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_0aced9e7501ebbb6d6d6c8ac63c6f12c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2ade53240430e4a9a9d7775759cc6fc1 = $(`<div id="html_2ade53240430e4a9a9d7775759cc6fc1" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Field Museum</h4>             <b>rainy_minus_dry_share:</b> 0.000378<br>             <b>Total compared returns:</b> 10128<br>         </div>         </div>`)[0];
+                popup_0aced9e7501ebbb6d6d6c8ac63c6f12c.setContent(html_2ade53240430e4a9a9d7775759cc6fc1);
+            
+        
+
+        circle_marker_074c11173fb657995abd934ec1a3e559.bindPopup(popup_0aced9e7501ebbb6d6d6c8ac63c6f12c)
+        ;
+
+        
+    
+    
+            circle_marker_074c11173fb657995abd934ec1a3e559.bindTooltip(
+                `<div>
+                     Field Museum | 0.000378
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b43c99e7a6f1d9a676906aa020cbee7 = L.circleMarker(
+                [41.867225962011034, -87.61535540410257],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.819099131977987, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_61c71ee6101204e5ecff3b41299aae31 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a48114da8988832ac67d2309721eeec9 = $(`<div id="html_a48114da8988832ac67d2309721eeec9" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Shedd Aquarium</h4>             <b>rainy_minus_dry_share:</b> 0.000336<br>             <b>Total compared returns:</b> 19506<br>         </div>         </div>`)[0];
+                popup_61c71ee6101204e5ecff3b41299aae31.setContent(html_a48114da8988832ac67d2309721eeec9);
+            
+        
+
+        circle_marker_9b43c99e7a6f1d9a676906aa020cbee7.bindPopup(popup_61c71ee6101204e5ecff3b41299aae31)
+        ;
+
+        
+    
+    
+            circle_marker_9b43c99e7a6f1d9a676906aa020cbee7.bindTooltip(
+                `<div>
+                     Shedd Aquarium | 0.000336
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6ee48f636f04b8fc2d03b7f6880c2b3 = L.circleMarker(
+                [41.87831662050808, -87.64098109175531],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.751186044779708, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_7e585624a7cdd55cb15a390914b29390 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_989a3a04289522ff7e2875ee9a8f37c1 = $(`<div id="html_989a3a04289522ff7e2875ee9a8f37c1" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Clinton St & Jackson Blvd</h4>             <b>rainy_minus_dry_share:</b> 0.000314<br>             <b>Total compared returns:</b> 23715<br>         </div>         </div>`)[0];
+                popup_7e585624a7cdd55cb15a390914b29390.setContent(html_989a3a04289522ff7e2875ee9a8f37c1);
+            
+        
+
+        circle_marker_d6ee48f636f04b8fc2d03b7f6880c2b3.bindPopup(popup_7e585624a7cdd55cb15a390914b29390)
+        ;
+
+        
+    
+    
+            circle_marker_d6ee48f636f04b8fc2d03b7f6880c2b3.bindTooltip(
+                `<div>
+                     Clinton St & Jackson Blvd | 0.000314
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45b786c62b93471f413d05459681d2bf = L.circleMarker(
+                [41.9256163, -87.65365740000001],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.726213849047657, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_8df5fb69b9da0718dddad178ed171a97 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b7246e51444832077f3aaed61c70a416 = $(`<div id="html_b7246e51444832077f3aaed61c70a416" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Sheffield Ave & Fullerton Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000306<br>             <b>Total compared returns:</b> 16273<br>         </div>         </div>`)[0];
+                popup_8df5fb69b9da0718dddad178ed171a97.setContent(html_b7246e51444832077f3aaed61c70a416);
+            
+        
+
+        circle_marker_45b786c62b93471f413d05459681d2bf.bindPopup(popup_8df5fb69b9da0718dddad178ed171a97)
+        ;
+
+        
+    
+    
+            circle_marker_45b786c62b93471f413d05459681d2bf.bindTooltip(
+                `<div>
+                     Sheffield Ave & Fullerton Ave | 0.000306
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa191b1074e9e5446fd3b2fb60664c98 = L.circleMarker(
+                [41.889172621529056, -87.63849963502554],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.678837933907094, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_0fb993b8e612264fe5f95826afcf7605 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3f300481ef5a78c6ef47dfcfde125223 = $(`<div id="html_3f300481ef5a78c6ef47dfcfde125223" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Kingsbury St & Kinzie St</h4>             <b>rainy_minus_dry_share:</b> 0.000292<br>             <b>Total compared returns:</b> 40013<br>         </div>         </div>`)[0];
+                popup_0fb993b8e612264fe5f95826afcf7605.setContent(html_3f300481ef5a78c6ef47dfcfde125223);
+            
+        
+
+        circle_marker_aa191b1074e9e5446fd3b2fb60664c98.bindPopup(popup_0fb993b8e612264fe5f95826afcf7605)
+        ;
+
+        
+    
+    
+            circle_marker_aa191b1074e9e5446fd3b2fb60664c98.bindTooltip(
+                `<div>
+                     Kingsbury St & Kinzie St | 0.000292
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ef3d0e102a212a305a1d5dc39e757fb = L.circleMarker(
+                [41.90318794361149, -87.66894633544676],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.63150891757348, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_5bb898c1bc4533f60758995e8c5f8d6a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_304d984d4569fc022c954f465aa782ad = $(`<div id="html_304d984d4569fc022c954f465aa782ad" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Ashland Ave & Division St</h4>             <b>rainy_minus_dry_share:</b> 0.000278<br>             <b>Total compared returns:</b> 13750<br>         </div>         </div>`)[0];
+                popup_5bb898c1bc4533f60758995e8c5f8d6a.setContent(html_304d984d4569fc022c954f465aa782ad);
+            
+        
+
+        circle_marker_0ef3d0e102a212a305a1d5dc39e757fb.bindPopup(popup_5bb898c1bc4533f60758995e8c5f8d6a)
+        ;
+
+        
+    
+    
+            circle_marker_0ef3d0e102a212a305a1d5dc39e757fb.bindTooltip(
+                `<div>
+                     Ashland Ave & Division St | 0.000278
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fde7a97f916e9b4adcebb10307bb9d9 = L.circleMarker(
+                [41.940231918108594, -87.65294373035431],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.624677504204547, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_de874bd410541454bde6fde26b61aa33 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a16b5e51dda10a087b8447ec7bd1c808 = $(`<div id="html_a16b5e51dda10a087b8447ec7bd1c808" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Wilton Ave & Belmont Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000276<br>             <b>Total compared returns:</b> 21343<br>         </div>         </div>`)[0];
+                popup_de874bd410541454bde6fde26b61aa33.setContent(html_a16b5e51dda10a087b8447ec7bd1c808);
+            
+        
+
+        circle_marker_7fde7a97f916e9b4adcebb10307bb9d9.bindPopup(popup_de874bd410541454bde6fde26b61aa33)
+        ;
+
+        
+    
+    
+            circle_marker_7fde7a97f916e9b4adcebb10307bb9d9.bindTooltip(
+                `<div>
+                     Wilton Ave & Belmont Ave | 0.000276
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3244287a0656116e1c31b46715e99fa6 = L.circleMarker(
+                [41.87277296771354, -87.62398098838872],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.583477233847477, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_489f4f76e4663356dd2dc36b62fc2f63 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3552e66276549bb2e7c801cb239d553e = $(`<div id="html_3552e66276549bb2e7c801cb239d553e" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Michigan Ave & 8th St</h4>             <b>rainy_minus_dry_share:</b> 0.000265<br>             <b>Total compared returns:</b> 16047<br>         </div>         </div>`)[0];
+                popup_489f4f76e4663356dd2dc36b62fc2f63.setContent(html_3552e66276549bb2e7c801cb239d553e);
+            
+        
+
+        circle_marker_3244287a0656116e1c31b46715e99fa6.bindPopup(popup_489f4f76e4663356dd2dc36b62fc2f63)
+        ;
+
+        
+    
+    
+            circle_marker_3244287a0656116e1c31b46715e99fa6.bindTooltip(
+                `<div>
+                     Michigan Ave & 8th St | 0.000265
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fac76801ada847b0af748a88ce0d4392 = L.circleMarker(
+                [41.919936, -87.64883],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.562769110832832, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_9d6fe46867721648a38468500b1fcba8 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a65fd16f644dd141947e7ef06343ef74 = $(`<div id="html_a65fd16f644dd141947e7ef06343ef74" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Halsted St & Dickens Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000260<br>             <b>Total compared returns:</b> 11527<br>         </div>         </div>`)[0];
+                popup_9d6fe46867721648a38468500b1fcba8.setContent(html_a65fd16f644dd141947e7ef06343ef74);
+            
+        
+
+        circle_marker_fac76801ada847b0af748a88ce0d4392.bindPopup(popup_9d6fe46867721648a38468500b1fcba8)
+        ;
+
+        
+    
+    
+            circle_marker_fac76801ada847b0af748a88ce0d4392.bindTooltip(
+                `<div>
+                     Halsted St & Dickens Ave | 0.000260
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5b569063ea4c78ff81652d2e4b3e43a = L.circleMarker(
+                [41.9325593, -87.6423847],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.453156183255462, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_9e8942a637f8a93aaa138e6ce60b7569 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d0edfabc7f0e2bc69f4bd88c5c088610 = $(`<div id="html_d0edfabc7f0e2bc69f4bd88c5c088610" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Hampden Ct & Diversey Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000232<br>             <b>Total compared returns:</b> 2527<br>         </div>         </div>`)[0];
+                popup_9e8942a637f8a93aaa138e6ce60b7569.setContent(html_d0edfabc7f0e2bc69f4bd88c5c088610);
+            
+        
+
+        circle_marker_f5b569063ea4c78ff81652d2e4b3e43a.bindPopup(popup_9e8942a637f8a93aaa138e6ce60b7569)
+        ;
+
+        
+    
+    
+            circle_marker_f5b569063ea4c78ff81652d2e4b3e43a.bindTooltip(
+                `<div>
+                     Hampden Ct & Diversey Ave | 0.000232
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8915f51d988559d24de54c3342226835 = L.circleMarker(
+                [41.928712, -87.653833],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.352166562004737, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_66e0f33ec83e318842cb251cad7dfb27 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c98e783e3d800ebc0e34e7bfc7892ef2 = $(`<div id="html_c98e783e3d800ebc0e34e7bfc7892ef2" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Sheffield Ave & Wrightwood Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000210<br>             <b>Total compared returns:</b> 13394<br>         </div>         </div>`)[0];
+                popup_66e0f33ec83e318842cb251cad7dfb27.setContent(html_c98e783e3d800ebc0e34e7bfc7892ef2);
+            
+        
+
+        circle_marker_8915f51d988559d24de54c3342226835.bindPopup(popup_66e0f33ec83e318842cb251cad7dfb27)
+        ;
+
+        
+    
+    
+            circle_marker_8915f51d988559d24de54c3342226835.bindTooltip(
+                `<div>
+                     Sheffield Ave & Wrightwood Ave | 0.000210
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_981340739c96f64c3931c57ae7d12018 = L.circleMarker(
+                [41.924161029067626, -87.64638036489487],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.351780288335963, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_4a04c7dff0f8d833c32a7a33882c9d1b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6ab9530d23691197626e40ed817879e3 = $(`<div id="html_6ab9530d23691197626e40ed817879e3" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Lincoln Ave & Fullerton Ave</h4>             <b>rainy_minus_dry_share:</b> 0.000210<br>             <b>Total compared returns:</b> 16560<br>         </div>         </div>`)[0];
+                popup_4a04c7dff0f8d833c32a7a33882c9d1b.setContent(html_6ab9530d23691197626e40ed817879e3);
+            
+        
+
+        circle_marker_981340739c96f64c3931c57ae7d12018.bindPopup(popup_4a04c7dff0f8d833c32a7a33882c9d1b)
+        ;
+
+        
+    
+    
+            circle_marker_981340739c96f64c3931c57ae7d12018.bindTooltip(
+                `<div>
+                     Lincoln Ave & Fullerton Ave | 0.000210
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07e4287a26a7f6aef4c58a414bba382a = L.circleMarker(
+                [41.883378993326986, -87.64117008864396],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.319427972436381, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_188f7613be9444d43f8c6ef035c60bab = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_788f9a18cb681ff662956b98295c73bc = $(`<div id="html_788f9a18cb681ff662956b98295c73bc" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Clinton St & Washington Blvd</h4>             <b>rainy_minus_dry_share:</b> 0.000203<br>             <b>Total compared returns:</b> 30589<br>         </div>         </div>`)[0];
+                popup_188f7613be9444d43f8c6ef035c60bab.setContent(html_788f9a18cb681ff662956b98295c73bc);
+            
+        
+
+        circle_marker_07e4287a26a7f6aef4c58a414bba382a.bindPopup(popup_188f7613be9444d43f8c6ef035c60bab)
+        ;
+
+        
+    
+    
+            circle_marker_07e4287a26a7f6aef4c58a414bba382a.bindTooltip(
+                `<div>
+                     Clinton St & Washington Blvd | 0.000203
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fc361cedb2428066487da56401e5cb7 = L.circleMarker(
+                [41.88577925240433, -87.65102460980414],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.28972258067429, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_1b399b155333bc4fe4d7767eb14dce65 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3cc719939fd0a970c6d088c2cc267bd2 = $(`<div id="html_3cc719939fd0a970c6d088c2cc267bd2" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Sangamon St & Lake St</h4>             <b>rainy_minus_dry_share:</b> 0.000197<br>             <b>Total compared returns:</b> 9963<br>         </div>         </div>`)[0];
+                popup_1b399b155333bc4fe4d7767eb14dce65.setContent(html_3cc719939fd0a970c6d088c2cc267bd2);
+            
+        
+
+        circle_marker_1fc361cedb2428066487da56401e5cb7.bindPopup(popup_1b399b155333bc4fe4d7767eb14dce65)
+        ;
+
+        
+    
+    
+            circle_marker_1fc361cedb2428066487da56401e5cb7.bindTooltip(
+                `<div>
+                     Sangamon St & Lake St | 0.000197
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_613664c4efc2893c9c7a82ec72b8546c = L.circleMarker(
+                [41.86788801019692, -87.6230410031074],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.288978686954774, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_7f2806457898db08b2048b0389eb5768 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2b918929856e26612f568fd62cf318c4 = $(`<div id="html_2b918929856e26612f568fd62cf318c4" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Indiana Ave & Roosevelt Rd</h4>             <b>rainy_minus_dry_share:</b> 0.000197<br>             <b>Total compared returns:</b> 20968<br>         </div>         </div>`)[0];
+                popup_7f2806457898db08b2048b0389eb5768.setContent(html_2b918929856e26612f568fd62cf318c4);
+            
+        
+
+        circle_marker_613664c4efc2893c9c7a82ec72b8546c.bindPopup(popup_7f2806457898db08b2048b0389eb5768)
+        ;
+
+        
+    
+    
+            circle_marker_613664c4efc2893c9c7a82ec72b8546c.bindTooltip(
+                `<div>
+                     Indiana Ave & Roosevelt Rd | 0.000197
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0416f6a1178b55590c37a4e69d5ee932 = L.circleMarker(
+                [41.94454, -87.654678],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.288645852176057, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5328e0b21d9b81a029cf240f0c3329f4);
+        
+    
+        var popup_1950c8419e0987f7dd580da4684b4c1f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_564e4fa52c78c34a95ec5204bdc17d8c = $(`<div id="html_564e4fa52c78c34a95ec5204bdc17d8c" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Clark St & Newport St</h4>             <b>rainy_minus_dry_share:</b> 0.000197<br>             <b>Total compared returns:</b> 17136<br>         </div>         </div>`)[0];
+                popup_1950c8419e0987f7dd580da4684b4c1f.setContent(html_564e4fa52c78c34a95ec5204bdc17d8c);
+            
+        
+
+        circle_marker_0416f6a1178b55590c37a4e69d5ee932.bindPopup(popup_1950c8419e0987f7dd580da4684b4c1f)
+        ;
+
+        
+    
+    
+            circle_marker_0416f6a1178b55590c37a4e69d5ee932.bindTooltip(
+                `<div>
+                     Clark St & Newport St | 0.000197
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_5328e0b21d9b81a029cf240f0c3329f4.addTo(map_1e1cc99127ca1db1d2440f3c843fc4b4);
+        
+    
+            var feature_group_9e70ed83f6c910e76a19fd601f4395a0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_9af39780691d81d9813a680b28f4dd25 = L.circleMarker(
+                [41.892278, -87.612043],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.046924622737919, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_09f78117f4038bb085cb32798be3e9c1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_661482041f0d30e8c514f0823c358fa2 = $(`<div id="html_661482041f0d30e8c514f0823c358fa2" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Navy Pier</h4>             <b>rainy_minus_dry_share:</b> -0.003123<br>             <b>Total compared returns:</b> 34777<br>         </div>         </div>`)[0];
+                popup_09f78117f4038bb085cb32798be3e9c1.setContent(html_661482041f0d30e8c514f0823c358fa2);
+            
+        
+
+        circle_marker_9af39780691d81d9813a680b28f4dd25.bindPopup(popup_09f78117f4038bb085cb32798be3e9c1)
+        ;
+
+        
+    
+    
+            circle_marker_9af39780691d81d9813a680b28f4dd25.bindTooltip(
+                `<div>
+                     Navy Pier | -0.003123
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_946c244071414900df4b1e29c76fdc7e = L.circleMarker(
+                [41.926939727841415, -87.64147979309305],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.068747319809255, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_58530a9f15525eadce9dda4d6d542995 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3efde426038b701372269ddebd9625ab = $(`<div id="html_3efde426038b701372269ddebd9625ab" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Clark St & Arlington Pl</h4>             <b>rainy_minus_dry_share:</b> -0.000431<br>             <b>Total compared returns:</b> 4149<br>         </div>         </div>`)[0];
+                popup_58530a9f15525eadce9dda4d6d542995.setContent(html_3efde426038b701372269ddebd9625ab);
+            
+        
+
+        circle_marker_946c244071414900df4b1e29c76fdc7e.bindPopup(popup_58530a9f15525eadce9dda4d6d542995)
+        ;
+
+        
+    
+    
+            circle_marker_946c244071414900df4b1e29c76fdc7e.bindTooltip(
+                `<div>
+                     Clark St & Arlington Pl | -0.000431
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b2eccf85cbdf8dbe6c009080586f521 = L.circleMarker(
+                [41.93247, -87.64242],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.046709884216188, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_4a5ef47955e2608605d4eb2839769b91 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a0b6f2c7425c0003250dbfc2a0d3f8d4 = $(`<div id="html_a0b6f2c7425c0003250dbfc2a0d3f8d4" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Hampden Ct & Diversey Pkwy</h4>             <b>rainy_minus_dry_share:</b> -0.000422<br>             <b>Total compared returns:</b> 4332<br>         </div>         </div>`)[0];
+                popup_4a5ef47955e2608605d4eb2839769b91.setContent(html_a0b6f2c7425c0003250dbfc2a0d3f8d4);
+            
+        
+
+        circle_marker_3b2eccf85cbdf8dbe6c009080586f521.bindPopup(popup_4a5ef47955e2608605d4eb2839769b91)
+        ;
+
+        
+    
+    
+            circle_marker_3b2eccf85cbdf8dbe6c009080586f521.bindTooltip(
+                `<div>
+                     Hampden Ct & Diversey Pkwy | -0.000422
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e117c34da38ba8756e38921acb99fe6e = L.circleMarker(
+                [41.963982, -87.638181],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.981718759745457, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_57fb92aaecff454f9d10fe91c9945dcd = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5aecbac7b3f69d42368d7485a046a453 = $(`<div id="html_5aecbac7b3f69d42368d7485a046a453" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Montrose Harbor</h4>             <b>rainy_minus_dry_share:</b> -0.000395<br>             <b>Total compared returns:</b> 17743<br>         </div>         </div>`)[0];
+                popup_57fb92aaecff454f9d10fe91c9945dcd.setContent(html_5aecbac7b3f69d42368d7485a046a453);
+            
+        
+
+        circle_marker_e117c34da38ba8756e38921acb99fe6e.bindPopup(popup_57fb92aaecff454f9d10fe91c9945dcd)
+        ;
+
+        
+    
+    
+            circle_marker_e117c34da38ba8756e38921acb99fe6e.bindTooltip(
+                `<div>
+                     Montrose Harbor | -0.000395
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e847bebf2edd66f839334beb9cd1df6 = L.circleMarker(
+                [41.886871, -87.648089],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.924892640211521, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_51797cb115567c3bc4d3db704658e2d3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3302987de1656cbf29b79f52ff2fc9fb = $(`<div id="html_3302987de1656cbf29b79f52ff2fc9fb" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Fulton Market</h4>             <b>rainy_minus_dry_share:</b> -0.000373<br>             <b>Total compared returns:</b> 3898<br>         </div>         </div>`)[0];
+                popup_51797cb115567c3bc4d3db704658e2d3.setContent(html_3302987de1656cbf29b79f52ff2fc9fb);
+            
+        
+
+        circle_marker_2e847bebf2edd66f839334beb9cd1df6.bindPopup(popup_51797cb115567c3bc4d3db704658e2d3)
+        ;
+
+        
+    
+    
+            circle_marker_2e847bebf2edd66f839334beb9cd1df6.bindTooltip(
+                `<div>
+                     Fulton Market | -0.000373
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_886d6a4b80256c65271579b814108d3a = L.circleMarker(
+                [41.98404411519213, -87.65228122472763],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.902471703430322, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_845675f22e7f7d9283d2ed7719d0f3ee = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_325b7ad86dc332a2fd8ef61e6fad6032 = $(`<div id="html_325b7ad86dc332a2fd8ef61e6fad6032" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Lakefront Trail & Bryn Mawr Ave</h4>             <b>rainy_minus_dry_share:</b> -0.000365<br>             <b>Total compared returns:</b> 11935<br>         </div>         </div>`)[0];
+                popup_845675f22e7f7d9283d2ed7719d0f3ee.setContent(html_325b7ad86dc332a2fd8ef61e6fad6032);
+            
+        
+
+        circle_marker_886d6a4b80256c65271579b814108d3a.bindPopup(popup_845675f22e7f7d9283d2ed7719d0f3ee)
+        ;
+
+        
+    
+    
+            circle_marker_886d6a4b80256c65271579b814108d3a.bindTooltip(
+                `<div>
+                     Lakefront Trail & Bryn Mawr Ave | -0.000365
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e1e78bc950783ce86d476f51a1f01d3 = L.circleMarker(
+                [41.926277, -87.630834],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.846386407373593, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_fa5f5f42f76b9444788f5e8501efca0a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_73683fd23d32ceeacc7c2594a96c6e31 = $(`<div id="html_73683fd23d32ceeacc7c2594a96c6e31" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Theater on the Lake</h4>             <b>rainy_minus_dry_share:</b> -0.000345<br>             <b>Total compared returns:</b> 27851<br>         </div>         </div>`)[0];
+                popup_fa5f5f42f76b9444788f5e8501efca0a.setContent(html_73683fd23d32ceeacc7c2594a96c6e31);
+            
+        
+
+        circle_marker_6e1e78bc950783ce86d476f51a1f01d3.bindPopup(popup_fa5f5f42f76b9444788f5e8501efca0a)
+        ;
+
+        
+    
+    
+            circle_marker_6e1e78bc950783ce86d476f51a1f01d3.bindTooltip(
+                `<div>
+                     Theater on the Lake | -0.000345
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e66e5b3e7193e135db9deefe2992e31a = L.circleMarker(
+                [41.907655, -87.672552],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.834511606481207, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_2c5658f7c22e52cc2cf346bced380345 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_184276e4a33102c5619fa6264d89de54 = $(`<div id="html_184276e4a33102c5619fa6264d89de54" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Wood St & Beach Ave</h4>             <b>rainy_minus_dry_share:</b> -0.000341<br>             <b>Total compared returns:</b> 3132<br>         </div>         </div>`)[0];
+                popup_2c5658f7c22e52cc2cf346bced380345.setContent(html_184276e4a33102c5619fa6264d89de54);
+            
+        
+
+        circle_marker_e66e5b3e7193e135db9deefe2992e31a.bindPopup(popup_2c5658f7c22e52cc2cf346bced380345)
+        ;
+
+        
+    
+    
+            circle_marker_e66e5b3e7193e135db9deefe2992e31a.bindTooltip(
+                `<div>
+                     Wood St & Beach Ave | -0.000341
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95d2281025c670e2058047bdcb6e8134 = L.circleMarker(
+                [41.8832, -87.62662],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.72704744376189, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_e6190bfcdd874c0126a61324b7b196f3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c152596ec8c30947257653f726a4748a = $(`<div id="html_c152596ec8c30947257653f726a4748a" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Wabash Ave & Washington St</h4>             <b>rainy_minus_dry_share:</b> -0.000306<br>             <b>Total compared returns:</b> 2823<br>         </div>         </div>`)[0];
+                popup_e6190bfcdd874c0126a61324b7b196f3.setContent(html_c152596ec8c30947257653f726a4748a);
+            
+        
+
+        circle_marker_95d2281025c670e2058047bdcb6e8134.bindPopup(popup_e6190bfcdd874c0126a61324b7b196f3)
+        ;
+
+        
+    
+    
+            circle_marker_95d2281025c670e2058047bdcb6e8134.bindTooltip(
+                `<div>
+                     Wabash Ave & Washington St | -0.000306
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f393f20c116b4e22489ae4c79cebb650 = L.circleMarker(
+                [41.936688449499705, -87.63682901859283],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.70429667890845, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_116ab178428ff8391bce910af7369f6a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4986ecc96d1beabb93645f633d28c50d = $(`<div id="html_4986ecc96d1beabb93645f633d28c50d" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>DuSable Lake Shore Dr & Wellington Ave</h4>             <b>rainy_minus_dry_share:</b> -0.000299<br>             <b>Total compared returns:</b> 15429<br>         </div>         </div>`)[0];
+                popup_116ab178428ff8391bce910af7369f6a.setContent(html_4986ecc96d1beabb93645f633d28c50d);
+            
+        
+
+        circle_marker_f393f20c116b4e22489ae4c79cebb650.bindPopup(popup_116ab178428ff8391bce910af7369f6a)
+        ;
+
+        
+    
+    
+            circle_marker_f393f20c116b4e22489ae4c79cebb650.bindTooltip(
+                `<div>
+                     DuSable Lake Shore Dr & Wellington Ave | -0.000299
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24425cf7aeefeede33769d1419164d64 = L.circleMarker(
+                [41.947017, -87.654418],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.655347872478039, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_793ec9588497c70393db98319c79a132 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_666ac52d1d27b6eab760db73481fa44c = $(`<div id="html_666ac52d1d27b6eab760db73481fa44c" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Sheffield Ave & Addison St</h4>             <b>rainy_minus_dry_share:</b> -0.000285<br>             <b>Total compared returns:</b> 7339<br>         </div>         </div>`)[0];
+                popup_793ec9588497c70393db98319c79a132.setContent(html_666ac52d1d27b6eab760db73481fa44c);
+            
+        
+
+        circle_marker_24425cf7aeefeede33769d1419164d64.bindPopup(popup_793ec9588497c70393db98319c79a132)
+        ;
+
+        
+    
+    
+            circle_marker_24425cf7aeefeede33769d1419164d64.bindTooltip(
+                `<div>
+                     Sheffield Ave & Addison St | -0.000285
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5ab187ce62cf1b0553c9767b3c917c7 = L.circleMarker(
+                [41.903552899999994, -87.67042920000002],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.579658311656011, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_51d8cbbe34f4206084b38974572d1c79 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_118f3515b3e5adf5f34513c483433458 = $(`<div id="html_118f3515b3e5adf5f34513c483433458" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Paulina St & Division St</h4>             <b>rainy_minus_dry_share:</b> -0.000264<br>             <b>Total compared returns:</b> 1650<br>         </div>         </div>`)[0];
+                popup_51d8cbbe34f4206084b38974572d1c79.setContent(html_118f3515b3e5adf5f34513c483433458);
+            
+        
+
+        circle_marker_e5ab187ce62cf1b0553c9767b3c917c7.bindPopup(popup_51d8cbbe34f4206084b38974572d1c79)
+        ;
+
+        
+    
+    
+            circle_marker_e5ab187ce62cf1b0553c9767b3c917c7.bindTooltip(
+                `<div>
+                     Paulina St & Division St | -0.000264
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_761c26aeadb05585d414ea6a2f5d02c5 = L.circleMarker(
+                [41.9043, -87.62991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.568144168082005, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_916bc4c5433ffbc77d3746a3b1f735ca = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6d72ee919eec64501fe28d9bd335d0eb = $(`<div id="html_6d72ee919eec64501fe28d9bd335d0eb" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Dearborn St & Division St</h4>             <b>rainy_minus_dry_share:</b> -0.000261<br>             <b>Total compared returns:</b> 2826<br>         </div>         </div>`)[0];
+                popup_916bc4c5433ffbc77d3746a3b1f735ca.setContent(html_6d72ee919eec64501fe28d9bd335d0eb);
+            
+        
+
+        circle_marker_761c26aeadb05585d414ea6a2f5d02c5.bindPopup(popup_916bc4c5433ffbc77d3746a3b1f735ca)
+        ;
+
+        
+    
+    
+            circle_marker_761c26aeadb05585d414ea6a2f5d02c5.bindTooltip(
+                `<div>
+                     Dearborn St & Division St | -0.000261
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b33a5caf120c214a1bfc0082ff87866a = L.circleMarker(
+                [41.88318, -87.63511],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.55891533578096, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_6a4001c46df2a641c799641ecc618680 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d3fcc178cb286a1865efeae93995aa7f = $(`<div id="html_d3fcc178cb286a1865efeae93995aa7f" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Franklin St & Washington St</h4>             <b>rainy_minus_dry_share:</b> -0.000259<br>             <b>Total compared returns:</b> 4128<br>         </div>         </div>`)[0];
+                popup_6a4001c46df2a641c799641ecc618680.setContent(html_d3fcc178cb286a1865efeae93995aa7f);
+            
+        
+
+        circle_marker_b33a5caf120c214a1bfc0082ff87866a.bindPopup(popup_6a4001c46df2a641c799641ecc618680)
+        ;
+
+        
+    
+    
+            circle_marker_b33a5caf120c214a1bfc0082ff87866a.bindTooltip(
+                `<div>
+                     Franklin St & Washington St | -0.000259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_945eac79210dc64d0dde909a6e0abcc7 = L.circleMarker(
+                [41.88199, -87.63418],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.555802642756875, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_6c66d5cf32bb98e1f1416c33ab1ac6e9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d98e12bb6f47ee9a1f8559cf25b7a9a6 = $(`<div id="html_d98e12bb6f47ee9a1f8559cf25b7a9a6" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Wells St & Madison St</h4>             <b>rainy_minus_dry_share:</b> -0.000258<br>             <b>Total compared returns:</b> 2281<br>         </div>         </div>`)[0];
+                popup_6c66d5cf32bb98e1f1416c33ab1ac6e9.setContent(html_d98e12bb6f47ee9a1f8559cf25b7a9a6);
+            
+        
+
+        circle_marker_945eac79210dc64d0dde909a6e0abcc7.bindPopup(popup_6c66d5cf32bb98e1f1416c33ab1ac6e9)
+        ;
+
+        
+    
+    
+            circle_marker_945eac79210dc64d0dde909a6e0abcc7.bindTooltip(
+                `<div>
+                     Wells St & Madison St | -0.000258
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1c2b9d1e304c75cd5189eb4e03444d3 = L.circleMarker(
+                [41.90191999999999, -87.63026],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.551445541372313, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_1ffd834c63639c0772cd544b6179bde2 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_55af703eed345be4a3fbda7e18d7d1f7 = $(`<div id="html_55af703eed345be4a3fbda7e18d7d1f7" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Dearborn St & Maple St</h4>             <b>rainy_minus_dry_share:</b> -0.000257<br>             <b>Total compared returns:</b> 2940<br>         </div>         </div>`)[0];
+                popup_1ffd834c63639c0772cd544b6179bde2.setContent(html_55af703eed345be4a3fbda7e18d7d1f7);
+            
+        
+
+        circle_marker_c1c2b9d1e304c75cd5189eb4e03444d3.bindPopup(popup_1ffd834c63639c0772cd544b6179bde2)
+        ;
+
+        
+    
+    
+            circle_marker_c1c2b9d1e304c75cd5189eb4e03444d3.bindTooltip(
+                `<div>
+                     Dearborn St & Maple St | -0.000257
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aede8241e8b5b6fd1ee1a904057b3105 = L.circleMarker(
+                [41.913754, -87.6826658],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.542569051665536, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_0c2be14a94ff70bdad09d545fed35d29 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_540bb74d78bb13cfc851a5f5ab81cd55 = $(`<div id="html_540bb74d78bb13cfc851a5f5ab81cd55" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Milwaukee Ave & The 606</h4>             <b>rainy_minus_dry_share:</b> -0.000254<br>             <b>Total compared returns:</b> 8094<br>         </div>         </div>`)[0];
+                popup_0c2be14a94ff70bdad09d545fed35d29.setContent(html_540bb74d78bb13cfc851a5f5ab81cd55);
+            
+        
+
+        circle_marker_aede8241e8b5b6fd1ee1a904057b3105.bindPopup(popup_0c2be14a94ff70bdad09d545fed35d29)
+        ;
+
+        
+    
+    
+            circle_marker_aede8241e8b5b6fd1ee1a904057b3105.bindTooltip(
+                `<div>
+                     Milwaukee Ave & The 606 | -0.000254
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1229dc5814b50431de47dcdd0f785b10 = L.circleMarker(
+                [41.911722, -87.626804],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.481994156778793, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_47eb04e8213d280ea0a04a253479b2fe = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_658f5d17f48e9ab153b74d0516d8c1cd = $(`<div id="html_658f5d17f48e9ab153b74d0516d8c1cd" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>DuSable Lake Shore Dr & North Blvd</h4>             <b>rainy_minus_dry_share:</b> -0.000239<br>             <b>Total compared returns:</b> 34670<br>         </div>         </div>`)[0];
+                popup_47eb04e8213d280ea0a04a253479b2fe.setContent(html_658f5d17f48e9ab153b74d0516d8c1cd);
+            
+        
+
+        circle_marker_1229dc5814b50431de47dcdd0f785b10.bindPopup(popup_47eb04e8213d280ea0a04a253479b2fe)
+        ;
+
+        
+    
+    
+            circle_marker_1229dc5814b50431de47dcdd0f785b10.bindTooltip(
+                `<div>
+                     DuSable Lake Shore Dr & North Blvd | -0.000239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56e35f267546a3d651430742c3abe5a8 = L.circleMarker(
+                [41.90096039009614, -87.62377663865593],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.420435965191544, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_699b88cb3b00226da16af6772dba7c94 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8f6418b3210863452879c7ffa6bb5b07 = $(`<div id="html_8f6418b3210863452879c7ffa6bb5b07" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Michigan Ave & Oak St</h4>             <b>rainy_minus_dry_share:</b> -0.000225<br>             <b>Total compared returns:</b> 34628<br>         </div>         </div>`)[0];
+                popup_699b88cb3b00226da16af6772dba7c94.setContent(html_8f6418b3210863452879c7ffa6bb5b07);
+            
+        
+
+        circle_marker_56e35f267546a3d651430742c3abe5a8.bindPopup(popup_699b88cb3b00226da16af6772dba7c94)
+        ;
+
+        
+    
+    
+            circle_marker_56e35f267546a3d651430742c3abe5a8.bindTooltip(
+                `<div>
+                     Michigan Ave & Oak St | -0.000225
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76a55c16116600c1f37f5607e661aaf6 = L.circleMarker(
+                [41.89242000000001, -87.66205999999998],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.417462210193385, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e70ed83f6c910e76a19fd601f4395a0);
+        
+    
+        var popup_74e855e38598153a4a9eca88c2e72d94 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7f156876c4f5669a00aeac043709bf7d = $(`<div id="html_7f156876c4f5669a00aeac043709bf7d" style="width: 100.0%; height: 100.0%;">         <div style="width: 330px;">             <h4>Noble St & Ohio St</h4>             <b>rainy_minus_dry_share:</b> -0.000224<br>             <b>Total compared returns:</b> 2054<br>         </div>         </div>`)[0];
+                popup_74e855e38598153a4a9eca88c2e72d94.setContent(html_7f156876c4f5669a00aeac043709bf7d);
+            
+        
+
+        circle_marker_76a55c16116600c1f37f5607e661aaf6.bindPopup(popup_74e855e38598153a4a9eca88c2e72d94)
+        ;
+
+        
+    
+    
+            circle_marker_76a55c16116600c1f37f5607e661aaf6.bindTooltip(
+                `<div>
+                     Noble St & Ohio St | -0.000224
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_9e70ed83f6c910e76a19fd601f4395a0.addTo(map_1e1cc99127ca1db1d2440f3c843fc4b4);
+        
+    
+            var layer_control_e02fcc0bb4b091b02e4aad30683931cb_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_03bb41c272a2461fec9ef5101428a3d3,
+                },
+                overlays :  {
+                    "Rainy-oriented return stations" : feature_group_5328e0b21d9b81a029cf240f0c3329f4,
+                    "Dry-oriented return stations" : feature_group_9e70ed83f6c910e76a19fd601f4395a0,
+                },
+            };
+            let layer_control_e02fcc0bb4b091b02e4aad30683931cb = L.control.layers(
+                layer_control_e02fcc0bb4b091b02e4aad30683931cb_layers.base_layers,
+                layer_control_e02fcc0bb4b091b02e4aad30683931cb_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_1e1cc99127ca1db1d2440f3c843fc4b4);
+
+        
+</script>
+</html>

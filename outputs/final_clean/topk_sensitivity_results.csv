@@ -1,0 +1,4 @@
+topk_union,union_station_count,stations_used,station_coverage_share,covered_return_share,profile_difference_l1,most_weekend_oriented_service,most_weekday_oriented_service,osm_radius_m
+20,29,24,0.8275862068965517,0.8527170294091431,0.19325398817661835,tourism,food_drink,250
+50,72,45,0.625,0.6856260513794886,0.14989390759696586,tourism,food_drink,250
+100,129,75,0.5813953488372093,0.6362693836986936,0.12306125346782058,tourism,food_drink,250

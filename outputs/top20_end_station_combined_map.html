@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a868b4a86d71833dcef03737568a3bff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a868b4a86d71833dcef03737568a3bff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a868b4a86d71833dcef03737568a3bff = L.map(
+                "map_a868b4a86d71833dcef03737568a3bff",
+                {
+                    center: [41.880418910526316, -87.63048289473683],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_035d235537d31d39145f466a42374a2e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_035d235537d31d39145f466a42374a2e.addTo(map_a868b4a86d71833dcef03737568a3bff);
+        
+    
+            var feature_group_a016542073309b2f3e6c90b75bd57056 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_71f4ff617d2576be004d01aa3b42fc7c = L.heatLayer(
+                [[41.8891873, -87.638528, 10495.0], [41.8834683, -87.6411569, 7856.0], [41.8827604, -87.6412057, 7603.0], [41.8922419, -87.6119493, 7584.0], [41.8816545, -87.6395712, 7507.0], [41.7914785, -87.5998378, 6980.0], [41.9029296, -87.6313227, 6941.0], [41.7851231, -87.6010967, 6237.0], [41.8784565, -87.6409984, 5916.0], [41.9032468, -87.6343279, 5756.0], [41.8792478, -87.6400073, 5709.0], [41.8965841, -87.6286602, 5452.0], [41.897744, -87.642884, 5328.0], [41.912198, -87.6346694, 5216.0], [41.8989441, -87.6299106, 5056.0], [41.8947285, -87.634423, 5026.0], [41.8841812, -87.6296407, 4892.0], [41.883885, -87.6246938, 4840.0], [41.8898997, -87.6342914, 4800.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 13,
+  "radius": 25,
+  "blur": 18,
+}
+            );
+        
+    
+            heat_map_71f4ff617d2576be004d01aa3b42fc7c.addTo(feature_group_a016542073309b2f3e6c90b75bd57056);
+        
+    
+            feature_group_a016542073309b2f3e6c90b75bd57056.addTo(map_a868b4a86d71833dcef03737568a3bff);
+        
+    
+            var feature_group_fe923545390fb1bdc97c6d946766bc41 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_1b48e89be81cc104a40928fec426a927 = L.circleMarker(
+                [41.8891873, -87.638528],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.17249967412258, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_670a5e97bfab18a423ae771ef4db4322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52c25df8fc75e41d8707a4a85c53400d = $(`<div id="html_52c25df8fc75e41d8707a4a85c53400d" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>End trips: 10495<br>Matched address: Kingsbury St & Kinzie St, Kinzie Street Bikeway, River North, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60654, United States</div>`)[0];
+                popup_670a5e97bfab18a423ae771ef4db4322.setContent(html_52c25df8fc75e41d8707a4a85c53400d);
+            
+        
+
+        circle_marker_1b48e89be81cc104a40928fec426a927.bindPopup(popup_670a5e97bfab18a423ae771ef4db4322)
+        ;
+
+        
+    
+    
+            circle_marker_1b48e89be81cc104a40928fec426a927.bindTooltip(
+                `<div>
+                     Kingsbury St & Kinzie St (10495)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe6d761024b3acf3ff23353aacdbd678 = L.circleMarker(
+                [41.8834683, -87.6411569],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.979440088783882, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_f9acf54018674ff0a0d093f711b9a021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63a24d54cf49d9b9193385489101af7c = $(`<div id="html_63a24d54cf49d9b9193385489101af7c" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Washington Blvd</b><br>End trips: 7856<br>Matched address: Clinton St & Washington Blvd, Clinton Street Bikeway, West Loop Gate, West Loop, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60675, United States</div>`)[0];
+                popup_f9acf54018674ff0a0d093f711b9a021.setContent(html_63a24d54cf49d9b9193385489101af7c);
+            
+        
+
+        circle_marker_fe6d761024b3acf3ff23353aacdbd678.bindPopup(popup_f9acf54018674ff0a0d093f711b9a021)
+        ;
+
+        
+    
+    
+            circle_marker_fe6d761024b3acf3ff23353aacdbd678.bindTooltip(
+                `<div>
+                     Clinton St & Washington Blvd (7856)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a5f15e9331bd4bb87227c827d643920 = L.circleMarker(
+                [41.8827604, -87.6412057],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.957619802405546, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_c0945b4d2845fae55b11c9859020674e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae39a409a045e1c95156b9b8018481a0 = $(`<div id="html_ae39a409a045e1c95156b9b8018481a0" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>End trips: 7603<br>Matched address: Clinton St / Madison St, Clinton Street Bikeway, West Loop Gate, West Loop, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60675, United States</div>`)[0];
+                popup_c0945b4d2845fae55b11c9859020674e.setContent(html_ae39a409a045e1c95156b9b8018481a0);
+            
+        
+
+        circle_marker_0a5f15e9331bd4bb87227c827d643920.bindPopup(popup_c0945b4d2845fae55b11c9859020674e)
+        ;
+
+        
+    
+    
+            circle_marker_0a5f15e9331bd4bb87227c827d643920.bindTooltip(
+                `<div>
+                     Clinton St & Madison St (7603)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3de369f77df95a384b19830655480c61 = L.circleMarker(
+                [41.8922419, -87.6119493],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.95595192785509, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_8871df818c2e2b9878280ea703cf5051 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa06c796fc972e29d7d94a0120362948 = $(`<div id="html_aa06c796fc972e29d7d94a0120362948" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>End trips: 7584<br>Matched address: Streeter Dr & Grand Ave, Lakefront Trail Connector, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60611, United States</div>`)[0];
+                popup_8871df818c2e2b9878280ea703cf5051.setContent(html_aa06c796fc972e29d7d94a0120362948);
+            
+        
+
+        circle_marker_3de369f77df95a384b19830655480c61.bindPopup(popup_8871df818c2e2b9878280ea703cf5051)
+        ;
+
+        
+    
+    
+            circle_marker_3de369f77df95a384b19830655480c61.bindTooltip(
+                `<div>
+                     Streeter Dr & Grand Ave (7584)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e57b9a4b08acb5920dc1f10c769c2a31 = L.circleMarker(
+                [41.8816545, -87.6395712],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.949149598470932, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_9c327497f31c322999d18454e14cd659 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd360404c60cb3edcfede7f485aef83e = $(`<div id="html_bd360404c60cb3edcfede7f485aef83e" style="width: 100.0%; height: 100.0%;"><b>Canal St & Madison St</b><br>End trips: 7507<br>Matched address: Canal St & Madison St, South Canal Street, West Loop Gate, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60675, United States</div>`)[0];
+                popup_9c327497f31c322999d18454e14cd659.setContent(html_bd360404c60cb3edcfede7f485aef83e);
+            
+        
+
+        circle_marker_e57b9a4b08acb5920dc1f10c769c2a31.bindPopup(popup_9c327497f31c322999d18454e14cd659)
+        ;
+
+        
+    
+    
+            circle_marker_e57b9a4b08acb5920dc1f10c769c2a31.bindTooltip(
+                `<div>
+                     Canal St & Madison St (7507)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfe42d51f246a96f8f1f8d0054d4758c = L.circleMarker(
+                [41.7914785, -87.5998378],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.900631634646935, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_2520ea145622b0627909dbb3fae5949f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dc1ac0672d9ee6719ea0701df1bf437 = $(`<div id="html_4dc1ac0672d9ee6719ea0701df1bf437" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>End trips: 6980<br>Matched address: University Ave & 57th St, East 57th Street, Hyde Park, Chicago, Hyde Park Township, Cook County, Illinois, 60637, United States</div>`)[0];
+                popup_2520ea145622b0627909dbb3fae5949f.setContent(html_4dc1ac0672d9ee6719ea0701df1bf437);
+            
+        
+
+        circle_marker_cfe42d51f246a96f8f1f8d0054d4758c.bindPopup(popup_2520ea145622b0627909dbb3fae5949f)
+        ;
+
+        
+    
+    
+            circle_marker_cfe42d51f246a96f8f1f8d0054d4758c.bindTooltip(
+                `<div>
+                     University Ave & 57th St (6980)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d818be3afaece7807b7ac05b02d3eac = L.circleMarker(
+                [41.9029296, -87.6313227],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.896896797614488, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_72ab9d0b58353eb56474e66e40f0b050 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7bb18024c3a2b71e83cdfdac8694076 = $(`<div id="html_a7bb18024c3a2b71e83cdfdac8694076" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>End trips: 6941<br>Matched address: Clark St & Elm St, North Clark Street, Gold Coast, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60610, United States</div>`)[0];
+                popup_72ab9d0b58353eb56474e66e40f0b050.setContent(html_a7bb18024c3a2b71e83cdfdac8694076);
+            
+        
+
+        circle_marker_5d818be3afaece7807b7ac05b02d3eac.bindPopup(popup_72ab9d0b58353eb56474e66e40f0b050)
+        ;
+
+        
+    
+    
+            circle_marker_5d818be3afaece7807b7ac05b02d3eac.bindTooltip(
+                `<div>
+                     Clark St & Elm St (6941)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3916f6ab76611c982ed12ee552912eb4 = L.circleMarker(
+                [41.7851231, -87.6010967],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.825609931445165, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_c5ba0cd55400d3a3bd4152b1044ab53f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39f89579a5089716b68a11e2b44f4dc9 = $(`<div id="html_39f89579a5089716b68a11e2b44f4dc9" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>End trips: 6237<br>Matched address: Ellis Ave & 60th St, South Ellis Avenue, Woodlawn, Chicago, Hyde Park Township, Cook County, Illinois, 60637, United States</div>`)[0];
+                popup_c5ba0cd55400d3a3bd4152b1044ab53f.setContent(html_39f89579a5089716b68a11e2b44f4dc9);
+            
+        
+
+        circle_marker_3916f6ab76611c982ed12ee552912eb4.bindPopup(popup_c5ba0cd55400d3a3bd4152b1044ab53f)
+        ;
+
+        
+    
+    
+            circle_marker_3916f6ab76611c982ed12ee552912eb4.bindTooltip(
+                `<div>
+                     Ellis Ave & 60th St (6237)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_115bf20d5a3a983cb22c2f9bde39a975 = L.circleMarker(
+                [41.8784565, -87.6409984],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.790389895117794, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_2ddad7b2adc433b00c5cb6b1aa46f229 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35ceb2e9a19d716ecda5a4e1d40a3e1f = $(`<div id="html_35ceb2e9a19d716ecda5a4e1d40a3e1f" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Jackson Blvd</b><br>End trips: 5916<br>Matched address: Clinton St & Jackson Blvd, Clinton Street Bikeway, West Loop Gate, West Loop, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60675, United States</div>`)[0];
+                popup_2ddad7b2adc433b00c5cb6b1aa46f229.setContent(html_35ceb2e9a19d716ecda5a4e1d40a3e1f);
+            
+        
+
+        circle_marker_115bf20d5a3a983cb22c2f9bde39a975.bindPopup(popup_2ddad7b2adc433b00c5cb6b1aa46f229)
+        ;
+
+        
+    
+    
+            circle_marker_115bf20d5a3a983cb22c2f9bde39a975.bindTooltip(
+                `<div>
+                     Clinton St & Jackson Blvd (5916)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1820a2db0fc23a63efaef2874338bca1 = L.circleMarker(
+                [41.9032468, -87.6343279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.772114523117207, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_c2b82aa125833d79134d5fe87ff2952d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_256474542043044edfa3dd7ea1cf5a48 = $(`<div id="html_256474542043044edfa3dd7ea1cf5a48" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>End trips: 5756<br>Matched address: Wells St & Elm St, North Wells Street, River North, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60610, United States</div>`)[0];
+                popup_c2b82aa125833d79134d5fe87ff2952d.setContent(html_256474542043044edfa3dd7ea1cf5a48);
+            
+        
+
+        circle_marker_1820a2db0fc23a63efaef2874338bca1.bindPopup(popup_c2b82aa125833d79134d5fe87ff2952d)
+        ;
+
+        
+    
+    
+            circle_marker_1820a2db0fc23a63efaef2874338bca1.bindTooltip(
+                `<div>
+                     Wells St & Elm St (5756)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09bf203b7d609f57ec1c3ac8bdf9ca34 = L.circleMarker(
+                [41.8792478, -87.6400073],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.766649535100036, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_bc206810579c3a529988d444373c1ebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5ea3a936988f929516b3646f6eaa549 = $(`<div id="html_c5ea3a936988f929516b3646f6eaa549" style="width: 100.0%; height: 100.0%;"><b>Canal St & Adams St</b><br>End trips: 5709<br>Matched address: Canal St & Adams St, West Adams Street, West Loop Gate, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60675, United States</div>`)[0];
+                popup_bc206810579c3a529988d444373c1ebd.setContent(html_c5ea3a936988f929516b3646f6eaa549);
+            
+        
+
+        circle_marker_09bf203b7d609f57ec1c3ac8bdf9ca34.bindPopup(popup_bc206810579c3a529988d444373c1ebd)
+        ;
+
+        
+    
+    
+            circle_marker_09bf203b7d609f57ec1c3ac8bdf9ca34.bindTooltip(
+                `<div>
+                     Canal St & Adams St (5709)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a762d88ac154b346e19fa3bdfef3f2c = L.circleMarker(
+                [41.8965841, -87.6286602],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.735947463284042, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_358fe3755bcab2d2b404586f3b8dfeea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b603838e172fdd3f43c3a9289a27c40e = $(`<div id="html_b603838e172fdd3f43c3a9289a27c40e" style="width: 100.0%; height: 100.0%;"><b>State St & Chicago Ave</b><br>End trips: 5452<br>Matched address: State St & Chicago Ave, West Chicago Avenue, Magnificent Mile, Gold Coast, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60654, United States</div>`)[0];
+                popup_358fe3755bcab2d2b404586f3b8dfeea.setContent(html_b603838e172fdd3f43c3a9289a27c40e);
+            
+        
+
+        circle_marker_0a762d88ac154b346e19fa3bdfef3f2c.bindPopup(popup_358fe3755bcab2d2b404586f3b8dfeea)
+        ;
+
+        
+    
+    
+            circle_marker_0a762d88ac154b346e19fa3bdfef3f2c.bindTooltip(
+                `<div>
+                     State St & Chicago Ave (5452)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15c0181741a17fc086022605a9b3c2df = L.circleMarker(
+                [41.897744, -87.642884],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.720612588197856, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_265fbef950076243086c3527bc7eb0c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa7bc2863d664cbe30a6a9cfcc28c49c = $(`<div id="html_aa7bc2863d664cbe30a6a9cfcc28c49c" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Kingsbury St</b><br>End trips: 5328<br>Matched address: Larrabee St & Kingsbury St, North Larrabee Street, River North, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60610, United States</div>`)[0];
+                popup_265fbef950076243086c3527bc7eb0c8.setContent(html_aa7bc2863d664cbe30a6a9cfcc28c49c);
+            
+        
+
+        circle_marker_15c0181741a17fc086022605a9b3c2df.bindPopup(popup_265fbef950076243086c3527bc7eb0c8)
+        ;
+
+        
+    
+    
+            circle_marker_15c0181741a17fc086022605a9b3c2df.bindTooltip(
+                `<div>
+                     Larrabee St & Kingsbury St (5328)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d862e631b230ad4b3f295226790e0d31 = L.circleMarker(
+                [41.912198, -87.6346694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.706451868681594, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_7e212a9003a27c98715e590ddd641dcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8600e6517681c94d4abe682e3b9717c5 = $(`<div id="html_8600e6517681c94d4abe682e3b9717c5" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>End trips: 5216<br>Matched address: Wells St & Concord Ln, North Wells Street, Old Town Triangle, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois, 60610, United States</div>`)[0];
+                popup_7e212a9003a27c98715e590ddd641dcc.setContent(html_8600e6517681c94d4abe682e3b9717c5);
+            
+        
+
+        circle_marker_d862e631b230ad4b3f295226790e0d31.bindPopup(popup_7e212a9003a27c98715e590ddd641dcc)
+        ;
+
+        
+    
+    
+            circle_marker_d862e631b230ad4b3f295226790e0d31.bindTooltip(
+                `<div>
+                     Wells St & Concord Ln (5216)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a607161baf85e7b5adfcc8446741deba = L.circleMarker(
+                [41.8989441, -87.6299106],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.685685800719988, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_1925123fda4c2853f789ad5bb1a02128 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c99571a0526e026f537116b8ee46de68 = $(`<div id="html_c99571a0526e026f537116b8ee46de68" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>End trips: 5056<br>Matched address: Dearborn Pkwy & Delaware Pl, North Dearborn Street, Magnificent Mile, Gold Coast, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60610, United States</div>`)[0];
+                popup_1925123fda4c2853f789ad5bb1a02128.setContent(html_c99571a0526e026f537116b8ee46de68);
+            
+        
+
+        circle_marker_a607161baf85e7b5adfcc8446741deba.bindPopup(popup_1925123fda4c2853f789ad5bb1a02128)
+        ;
+
+        
+    
+    
+            circle_marker_a607161baf85e7b5adfcc8446741deba.bindTooltip(
+                `<div>
+                     Dearborn Pkwy & Delaware Pl (5056)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eabce9f7fa5ee6fa46a5bcdbeb8a0573 = L.circleMarker(
+                [41.8947285, -87.634423],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.681719109128384, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_55a2c92633cb71cbca3d8da38414ac51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb5bcbb4d86f634939469d6a2b3adfb4 = $(`<div id="html_fb5bcbb4d86f634939469d6a2b3adfb4" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>End trips: 5026<br>Matched address: Wells St & Huron St, West Huron Street, River North, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60610, United States</div>`)[0];
+                popup_55a2c92633cb71cbca3d8da38414ac51.setContent(html_fb5bcbb4d86f634939469d6a2b3adfb4);
+            
+        
+
+        circle_marker_eabce9f7fa5ee6fa46a5bcdbeb8a0573.bindPopup(popup_55a2c92633cb71cbca3d8da38414ac51)
+        ;
+
+        
+    
+    
+            circle_marker_eabce9f7fa5ee6fa46a5bcdbeb8a0573.bindTooltip(
+                `<div>
+                     Wells St & Huron St (5026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6c3238eee7c232cbe0171956c217f12 = L.circleMarker(
+                [41.8841812, -87.6296407],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.663707260859415, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_1f1ad0358ff24c09484fd41f5536e597 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb093deffc6a590f912888b94dd83160 = $(`<div id="html_bb093deffc6a590f912888b94dd83160" style="width: 100.0%; height: 100.0%;"><b>Daley Center Plaza</b><br>End trips: 4892<br>Matched address: Daley Center Plaza, Daley Plaza, Theatre District, Loop, Chicago, South Chicago Township, Cook County, Illinois, 60602, United States</div>`)[0];
+                popup_1f1ad0358ff24c09484fd41f5536e597.setContent(html_bb093deffc6a590f912888b94dd83160);
+            
+        
+
+        circle_marker_d6c3238eee7c232cbe0171956c217f12.bindPopup(popup_1f1ad0358ff24c09484fd41f5536e597)
+        ;
+
+        
+    
+    
+            circle_marker_d6c3238eee7c232cbe0171956c217f12.bindTooltip(
+                `<div>
+                     Daley Center Plaza (4892)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7472055bf633e6753d99e1d274c624c1 = L.circleMarker(
+                [41.883885, -87.6246938],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.65658439329313, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_ee22796418c2f3d0552133cc97f0b142 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_151e987f9c972d3d3e993291aa653dd8 = $(`<div id="html_151e987f9c972d3d3e993291aa653dd8" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>End trips: 4840<br>Matched address: Michigan Ave & Washington St, Pedway, Jewelers Row, Loop, Chicago, South Chicago Township, Cook County, Illinois, 60602, United States</div>`)[0];
+                popup_ee22796418c2f3d0552133cc97f0b142.setContent(html_151e987f9c972d3d3e993291aa653dd8);
+            
+        
+
+        circle_marker_7472055bf633e6753d99e1d274c624c1.bindPopup(popup_ee22796418c2f3d0552133cc97f0b142)
+        ;
+
+        
+    
+    
+            circle_marker_7472055bf633e6753d99e1d274c624c1.bindTooltip(
+                `<div>
+                     Michigan Ave & Washington St (4840)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78d37f0cda3e5a2619952e1bd3802b38 = L.circleMarker(
+                [41.8898997, -87.6342914],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.651053005687295, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fe923545390fb1bdc97c6d946766bc41);
+        
+    
+        var popup_628a206c53ce03e4308d19573983d3cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de1e7079d2b6f201b88fe23b666ca920 = $(`<div id="html_de1e7079d2b6f201b88fe23b666ca920" style="width: 100.0%; height: 100.0%;"><b>Wells St & Hubbard St</b><br>End trips: 4800<br>Matched address: Wells St & Hubbard St, West Hubbard Street, River North, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60654, United States</div>`)[0];
+                popup_628a206c53ce03e4308d19573983d3cc.setContent(html_de1e7079d2b6f201b88fe23b666ca920);
+            
+        
+
+        circle_marker_78d37f0cda3e5a2619952e1bd3802b38.bindPopup(popup_628a206c53ce03e4308d19573983d3cc)
+        ;
+
+        
+    
+    
+            circle_marker_78d37f0cda3e5a2619952e1bd3802b38.bindTooltip(
+                `<div>
+                     Wells St & Hubbard St (4800)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_fe923545390fb1bdc97c6d946766bc41.addTo(map_a868b4a86d71833dcef03737568a3bff);
+        
+    
+            var layer_control_336d34fd1b06e25a8cae3fd781816756_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_035d235537d31d39145f466a42374a2e,
+                },
+                overlays :  {
+                    "Weighted heatmap: Top 20 end stations" : feature_group_a016542073309b2f3e6c90b75bd57056,
+                    "Point markers: Top 20 end stations" : feature_group_fe923545390fb1bdc97c6d946766bc41,
+                },
+            };
+            let layer_control_336d34fd1b06e25a8cae3fd781816756 = L.control.layers(
+                layer_control_336d34fd1b06e25a8cae3fd781816756_layers.base_layers,
+                layer_control_336d34fd1b06e25a8cae3fd781816756_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a868b4a86d71833dcef03737568a3bff);
+
+        
+</script>
+</html>
