@@ -413,7 +413,28 @@ EN: These limitations do not invalidate the project. They define the correct cla
 
 CN: 这些限制不是说 project 失败，而是定义正确结论范围：谨慎的 exploratory spatial association。
 
-## 13. Meeting Talk Track
+## 13. Feedback Integration
+
+这个 section 对应 rubric 里的 Feedback Integration。Notebook 里需要保留它，因为老师明确给了 10%。
+
+| Feedback / rubric issue | How the notebook responds |
+|---|---|
+| Project cannot be only weekday/weekend descriptive comparison | Reframed as destination-service profiling using OSM service environments |
+| Pipeline must be clear | Added explicit filtering, temporal stratification, aggregation, and saved outputs |
+| Results need spatial evidence | Added normalized heatmaps and weekend-minus-weekday difference map |
+| OSM matching should be defensible | Uses station coordinates and radius-based local OSM POI matching |
+| Categories must be interpretable | Defines service categories and excludes heterogeneous `other_amenity` from main claims |
+| Top20-only analysis is fragile | Uses Top100 as the main profile and checks Top20/50/100 sensitivity |
+| Validation should be stronger | Adds label shuffle, station-demand randomization, station-service permutation, bootstrap, influence, coverage, and sensitivity checks |
+| Conclusion should be careful | States label shuffle is not significant and frames result as exploratory association, not causality |
+
+**开会怎么讲**
+
+EN: We integrated feedback by moving from simple weekday/weekend summaries to a full destination-service profiling pipeline with spatial heatmaps, coordinate-based OSM matching, stronger validation, and more careful claims.
+
+CN: 我们把反馈整合进 final notebook：从简单 weekday/weekend summary 扩展成 destination-service profiling pipeline，加了 spatial heatmaps、基于坐标的 OSM matching、更完整的 validation，并且把结论写得更谨慎。
+
+## 14. Meeting Talk Track
 
 Use this order if you need to present quickly.
 
@@ -451,7 +472,7 @@ Use this order if you need to present quickly.
    EN: The result is exploratory, structured, and partly stable, but not causal.  
    CN: 结果是 exploratory、structured、partly stable，但不是 causality。
 
-## 14. Q&A Defense Lines
+## 15. Q&A Defense Lines
 
 **Q: Is this just visualization?**  
 EN: No. Visualization is only one part. The notebook includes cleaning, temporal stratification, aggregation, coordinate-based OSM profiling, and validation.  
@@ -481,7 +502,7 @@ CN: 不证明。它只是排除一个简单 demand-allocation null，不证明�
 EN: Rain-effect L1 is only about 0.0089, so the weather signal is small.  
 CN: Rain-effect L1 只有约 0.0089，所以 weather signal 很小。
 
-## 15. Safe Wording
+## 16. Safe Wording
 
 **Say this / 可以说**
 
@@ -507,7 +528,7 @@ CN: Rain-effect L1 只有约 0.0089，所以 weather signal 很小。
 - EN: Recreation is the main weekend result.
 - CN: Recreation 是主要 weekend 结果。
 
-## 16. Files To Mention
+## 17. Files To Mention
 
 **Final notebook**
 
